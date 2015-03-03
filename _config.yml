@@ -11,8 +11,15 @@ author :
   twitter : yourtion
 
 # Build settings
-markdown: kramdown
-
+markdown: rdiscount
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - strikethrough
+    - autolink
+    - tables
+highlighter: none
 # permalink
 permalink: /:title.html
 

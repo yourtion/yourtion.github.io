@@ -1,0 +1,293 @@
+---
+"/Users/Yourtion/Codes/Yourtion/blog/_posts/wordpress/2014-10-22-ios-custom-textfield-clearbutton.markdown":
+  mtime: 2015-03-03 18:17:58.000000000 +08:00
+  deps:
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments-providers/duoshuo.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/post.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/header.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/analytics"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+"/Users/Yourtion/Codes/Yourtion/blog/_posts/wordpress/2014-12-20-ios-realtime-uitextfield-contect.markdown":
+  mtime: 2015-03-03 18:18:31.000000000 +08:00
+  deps:
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments-providers/duoshuo.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/post.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/header.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/analytics"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+"/Users/Yourtion/Codes/Yourtion/blog/_posts/wordpress/2015-03-02-mongodb-2-6-adduser.markdown":
+  mtime: 2015-03-03 18:14:55.000000000 +08:00
+  deps:
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments-providers/duoshuo.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/post.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/header.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/analytics"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+"/Users/Yourtion/Codes/Yourtion/blog/_posts/2015-03-03-welcome-to-jekyll.markdown":
+  mtime: 2015-03-03 16:55:47.000000000 +08:00
+  deps:
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments-providers/duoshuo.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/post.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/header.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/analytics"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+"/Users/Yourtion/Codes/Yourtion/blog/about.md":
+  mtime: 2015-03-03 10:54:02.000000000 +08:00
+  deps:
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/page.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/header.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/analytics"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+"/Users/Yourtion/Codes/Yourtion/blog/atom.xml":
+  mtime: 2015-03-03 13:29:17.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/categories.html":
+  mtime: 2015-03-03 16:07:22.000000000 +08:00
+  deps:
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/categories_list"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/pages_list"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/page.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/header.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/analytics"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+"/Users/Yourtion/Codes/Yourtion/blog/feed.xml":
+  mtime: 2015-03-03 10:54:02.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/index.html":
+  mtime: 2015-03-03 10:54:02.000000000 +08:00
+  deps:
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/header.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/analytics"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+"/Users/Yourtion/Codes/Yourtion/blog/rss.xml":
+  mtime: 2015-03-03 13:29:17.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/sitemap.txt":
+  mtime: 2015-03-03 13:29:17.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/tags.html":
+  mtime: 2015-03-03 16:05:15.000000000 +08:00
+  deps:
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/tags_list"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/pages_list"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/page.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/header.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/analytics"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/CHANGES.md":
+  mtime: 2014-11-18 11:26:40.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/LICENSE":
+  mtime: 2013-10-30 14:40:44.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/README.md":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/README.ru.md":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/highlight.pack.js":
+  mtime: 2015-03-03 01:51:22.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/arta.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/ascetic.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-dune.dark.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-dune.light.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-forest.dark.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-forest.light.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-heath.dark.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-heath.light.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-lakeside.dark.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-lakeside.light.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-seaside.dark.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/atelier-seaside.light.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/brown_paper.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/brown_papersq.png":
+  mtime: 2013-10-30 14:40:44.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/codepen-embed.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/color-brewer.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/dark.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/default.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/docco.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/far.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/foundation.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/github.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/googlecode.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/hybrid.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/idea.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/ir_black.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/kimbie.dark.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/kimbie.light.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/magula.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/mono-blue.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/monokai.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/monokai_sublime.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/obsidian.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/paraiso.dark.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/paraiso.light.css":
+  mtime: 2014-08-20 14:47:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/pojoaque.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/pojoaque.jpg":
+  mtime: 2013-10-30 14:40:44.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/railscasts.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/rainbow.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/school_book.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/school_book.png":
+  mtime: 2013-10-30 14:40:44.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/solarized_dark.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/solarized_light.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/sunburst.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/tomorrow-night-blue.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/tomorrow-night-bright.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/tomorrow-night-eighties.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/tomorrow-night.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/tomorrow.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/vs.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/xcode.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/assets/highlight/styles/zenburn.css":
+  mtime: 2014-11-18 11:26:42.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/images/201503/CIMG7330.jpg":
+  mtime: 2015-03-02 11:15:37.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/publish.sh":
+  mtime: 2015-03-03 11:24:14.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/robots.txt":
+  mtime: 2015-03-03 13:29:17.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/setup":
+  mtime: 2015-03-03 16:50:00.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/_layouts/page.html":
+  mtime: 2015-03-03 10:54:02.000000000 +08:00
+  deps: []
+"/Users/Yourtion/Codes/Yourtion/blog/_includes/head.html":
+  mtime: 2015-03-03 19:26:29.000000000 +08:00
+  deps: []
