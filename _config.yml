@@ -1,5 +1,6 @@
 # Site settings
-title: 钇钛网——郭宇翔的博客
+title: 钇钛网
+subtitle: 郭宇翔的博客
 description: Yourtion's Blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 encoding: utf-8
