@@ -15,10 +15,31 @@ markdown: kramdown
 
 # permalink
 permalink: /:title.html
+
+safe: false
+production_url : http://blog.yourtion.com
+cdn_url : http://yourtion.u.qiniudn.com
+
 JB :
   version : 0.3.0
-  
+
+  BASE_PATH : false
+  ASSET_PATH : false
+  IMAGE_PATH : false
+
+  # categories_path : /categories.html
+  # tags_path : /tags.html
+  # atom_path : /atom.xml
+  # rss_path : /rss.xml
+
   comments :
-      provider : duoshuo
-      duoshuo :
-        short_name : yourtion
+    provider : duoshuo
+    duoshuo :
+      short_name : yourtion
+
+  analytics :
+    provider : google
+    baidu :
+      tracking_id : '1'
+    google :
+      tracking_id : '2'

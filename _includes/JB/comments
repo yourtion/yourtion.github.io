@@ -2,7 +2,7 @@
 
 {% case site.JB.comments.provider %}
 {% when "duoshuo" %}
-  {% include comments/duoshuo.html %}
+  {% include JB/comments-providers/duoshuo.html %}
 {% endcase %}
 
 {% endif %}

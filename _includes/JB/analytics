@@ -1,0 +1,12 @@
+{% if site.JB.analytics.provider and page.JB.analytics != false %}
+
+{% case site.JB.analytics.provider %}
+{% when "baidu" %}
+  {% include JB/analytics-providers/baidu.html %}
+{% when "google" %}
+  {% include JB/analytics-providers/google.html %}
+{% when "custom" %}
+  {% include custom/analytics %}
+{% endcase %}
+
+{% endif %}

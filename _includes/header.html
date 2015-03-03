@@ -13,12 +13,21 @@
         </svg>
       </a>
 
-      <div class="trigger">
+      <!-- <div class="trigger">
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
+      </div> -->
+      <div class="trigger">
+        <ul>
+            <a class="page-link" href="{{ HOME_PATH }}" title="首页">首页</a>
+            <a class="page-link" href="{{ site.JB.categories_path }}" title="分类">分类</a>
+            <a class="page-link" href="{{ site.JB.tags_path }}" title="标签">标签</a>
+            <a class="page-link" href="{{ site.JB.messages_path }}" title="留言板">留言板</a>
+            <a class="page-link" href="{{ site.JB.about_path }}" title="关于我">关于我</a>
+            <a class="page-link" href="{{ site.JB.rss_path }}" title="订阅 RSS"><i class="icon-large icon-fixed-width icon-rss"></i></a>
       </div>
     </nav>
 
