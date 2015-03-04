@@ -10,6 +10,8 @@ layout: default
   <p>{{ page.author }}  <span class="glyphicon glyphicon-time"></span> {{ page.date | date: "%b %-d, %Y" }}</p>
   <hr>
   {{ content }}
+  <hr>
+  {% include JB/comments %}
 </div>
 <script src="{{ ASSET_PATH }}js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>

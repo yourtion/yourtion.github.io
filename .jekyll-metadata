@@ -10,6 +10,8 @@
   - "/Users/Yourtion/Codes/Yourtion/blog/_includes/widgets.html"
   - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
   - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments-providers/duoshuo.html"
 "/Users/Yourtion/Codes/Yourtion/blog/_posts/2014-12-20-ios-realtime-uitextfield-contect.markdown":
   mtime: 2015-03-03 18:17:58.000000000 +08:00
   deps:
@@ -21,6 +23,8 @@
   - "/Users/Yourtion/Codes/Yourtion/blog/_includes/widgets.html"
   - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
   - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments-providers/duoshuo.html"
 "/Users/Yourtion/Codes/Yourtion/blog/_posts/2015-03-02-mongodb-2-6-adduser.markdown":
   mtime: 2015-03-03 18:17:58.000000000 +08:00
   deps:
@@ -32,6 +36,8 @@
   - "/Users/Yourtion/Codes/Yourtion/blog/_includes/widgets.html"
   - "/Users/Yourtion/Codes/Yourtion/blog/_includes/footer.html"
   - "/Users/Yourtion/Codes/Yourtion/blog/_layouts/default.html"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments"
+  - "/Users/Yourtion/Codes/Yourtion/blog/_includes/JB/comments-providers/duoshuo.html"
 "/Users/Yourtion/Codes/Yourtion/blog/about.md":
   mtime: 2015-03-03 22:06:50.000000000 +08:00
   deps:
