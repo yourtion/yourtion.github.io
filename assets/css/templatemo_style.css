@@ -110,25 +110,24 @@ h2 { font-size: 24px; }
 	font-size: 30px;
 	margin-top: 0;
 }
-article { margin-top: 40px; }
 article p {
 	margin-bottom: 15px;
 	text-align: justify;
 }
 footer {
 	overflow: hidden;
-	position: fixed;
+	/*position: fixed;
 	bottom: 0;
 	width: 55%;
 	background-color: white;
-	padding-bottom: 10px;
+	padding-bottom: 10px;*/
 }
 footer p { margin-bottom: 0; }
 footer .col-lg-6, footer .col-md-6 {
 	padding-left: 0;
 	padding-right: 0;
 }
-.templatemo-social { text-align: right; }
+.templatemo-social {  }
 .templatemo-social i {
 	border: 1px solid #ccc;
 	padding-top: 7px;
@@ -175,6 +174,37 @@ iframe { border: none; }
     margin-bottom: 30px;
 }
 .margin-bottom-60 {	margin-bottom: 60px; }
+
+.inline {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+}
+.inline li {
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	line-height: 30px;
+}
+.templatemo-item ul li {
+	line-height: 180%;
+}
+.tag-box a {
+	padding: 4px 6px;
+	margin: 2px;
+	background: #eee;
+	color: #555;
+	border-radius: 3px;
+	text-decoration: none;
+	border: 1px dashed #cccccc;
+}
+.tag-box a span {
+	vertical-align: super;
+	font-size: .8em;
+}
+.tag-list li {
+	list-style: inherit !important;
+}
 
 /* Media Queries
 ----------------------------------------*/
