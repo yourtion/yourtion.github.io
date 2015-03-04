@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-<h1 class="templatemo-header">Posts</h1>
-<p>Nulla aliquet, dolor condimentum ullamcorper pellentesque, augue turpis bibendum tellus, non pulvinar augue tortor dapibus purus. Aliquam at turpis ac lacus pharetra accumsan. Fusce congue augue dignissim tortor consequat semper rhoncus sit amet arcu.</p>
+<h4 class="templatemo-header">最新文章</h4>
 {% for post in site.posts %}
   <article class="templatemo-item">
     <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
-    <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+    <p>{{ post.content | strip_html | truncate:50 }}</p>
   </article>
 {% endfor %}
