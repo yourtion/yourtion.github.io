@@ -42,6 +42,9 @@ JB :
   atom_path : /atom.xml
   rss_path : /rss.xml
 
+  categorie_list: ["iOS","Android"]
+  tag_list: ["MongoDB","Android"]
+
   comments :
     provider : duoshuo
     duoshuo :

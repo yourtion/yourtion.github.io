@@ -1,5 +1,5 @@
 ---
-author: admin
+author: Yourtion
 comments: true
 date: 2014-12-20 18:10:21+00:00
 excerpt: 想在用户输入内容的时候同时检测UITextField的输入并根据用户的输入内容响应页面上的事件
@@ -25,13 +25,13 @@ post_format:
     if (range.location == 11) {
         return NO;
     }else{
-        
+
         if (![string isEqualToString:@""]) {
             checkString=[self.textfield.text stringByAppendingString:string];
         }else{
             checkString=[checkString stringByDeletingLastPathComponent];
         }
-        
+
         if ([self isMobileNumber:checkString]) {
             NSLog(@"号码满足");
         }else{
@@ -58,4 +58,3 @@ post_format:
 }
 
 ```
-

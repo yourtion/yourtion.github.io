@@ -12,6 +12,9 @@
 .templatemo-item ul li {
 	line-height: 180%;
 }
+.tag-box {
+	padding: 10px;
+}
 .tag-box a {
 	padding: 4px 6px;
 	margin: 2px;
