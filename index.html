@@ -1,12 +1,17 @@
 ---
 layout: default
 ---
-<h4 class="templatemo-header">最新文章</h4>
-{% for post in site.posts %}
-  <article class="templatemo-item">
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <p>{{ post.content | strip_html | truncate:50 }}</p>
-  </article>
+<div class="col-md-8">
+  <h1 class="page-header">最新文章</h1>
+  {% for post in site.posts %}
+  <!-- Blog Post -->
+  <h2>
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.author }}</a> <span class="glyphicon glyphicon-time"></span> {{ post.date | date: "%b %-d, %Y" }}</p>
+  <hr>
+  <p>{{ post.content | strip_html | truncate:200 }}</p>
+  <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl }}">阅读更多 <span class="glyphicon glyphicon-chevron-right"></span></a>
+  <hr>
 {% endfor %}
+</div>

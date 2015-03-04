@@ -1,18 +1,27 @@
 <head>
   {% include JB/setup %}
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}——{{ site.subtitle }}{% endif %}</title>
-	<meta name="keywords" content="" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ site.author.name }}">
 
-	<link href="{{ ASSET_PATH }}css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="{{ ASSET_PATH }}css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="{{ ASSET_PATH }}css/templatemo_style.css" rel="stylesheet" type="text/css">
-  <link href="{{ ASSET_PATH }}css/railscasts.css" rel="stylesheet" type="text/css">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}——{{ site.subtitle }}{% endif %}</title>
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <!-- Bootstrap Core CSS -->
+  <link href="{{ ASSET_PATH }}css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{{ ASSET_PATH }}css/blog-home.css" rel="stylesheet">
+  <link href="{{ ASSET_PATH }}css/railscasts.css" rel="stylesheet">
+  <link href="{{ ASSET_PATH }}css/my_style.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
 </head>
