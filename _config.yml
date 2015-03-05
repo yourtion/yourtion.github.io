@@ -32,8 +32,8 @@ JB :
   version : 0.3.0
 
   BASE_PATH : false
-  ASSET_PATH : false
-  IMAGE_PATH : false
+  ASSET_PATH : "/assets/"
+  IMAGE_PATH : "/images/"
 
   categories_path : /categories.html
   tags_path : /tags.html
