@@ -14,6 +14,7 @@ tags:
 - Neon
 - 加速
 ---
+{% include JB/setup %}
 
 这是很久前就像写的文章，大概一个月了吧，各种忙碌与偷懒，现在终于开始写下来。前段时间主要在做一个C语言程序的移动平台移植，因为设计到性能问题，所以大概看了一下Neon技术。
 
@@ -34,11 +35,11 @@ C语言实现：
 static float calc_c(const float* data, int size)
 {
     float sum = 0.f;
-
+    
     for (int i = 0; i < size; ++i) {
         sum += data[i];
     }
-
+    
     return sum;
 }
 ```
@@ -50,24 +51,24 @@ static float calc_neon(const float* data, int size)
 {
     float sum = 0.f;
     float32x4_t sum_vec = vdupq_n_f32(0);
-
+    
     for (int i = 0; i < size / 4; ++i) {
         float32x4_t tmp_vec = vld1q_f32 (data + 4*i);
         sum_vec = vaddq_f32(sum_vec, tmp_vec);
     }
-
+    
     sum += vgetq_lane_f32(sum_vec, 0);
     sum += vgetq_lane_f32(sum_vec, 1);
     sum += vgetq_lane_f32(sum_vec, 2);
     sum += vgetq_lane_f32(sum_vec, 3);
-
+    
     int odd = size & 3;
     if(odd) {
         for(int i = size - odd; i < size; ++i) {
             sum += data[i];
         }
     }
-
+    
     return sum;
 }
 ```
@@ -129,10 +130,10 @@ static void div_by_2neon(int16_t *x, int n)
     }
     double deltaTime1 = [[NSDate date] timeIntervalSinceDate:tmpStartData1];
     NSLog(@"calc_c cost time = %f ms", deltaTime1*1000);
-
+    
     int n = 1024000;
     int16_t* x= malloc(sizeof(int16_t)*n);
-
+    
     NSDate* tmpStartData2 = [NSDate date];
     for (int t = 0; t<100; t++) {
         div_by_2c(x,n);
@@ -152,8 +153,6 @@ static void div_by_2neon(int16_t *x, int n)
 
 执行速度对比（测试环境为iPhone5 iOS 8.0.2 Xcode6）：
 
-[![iPhone5]({{ IMAGE_PATH }}2014/09/Screen-Shot-2014-09-29-at-1.42.24-PM.png)]({{ IMAGE_PATH }}wp/2014/09/Screen-Shot-2014-09-29-at-1.42.24-PM.png)
-
-<a href="{{ IMAGE_PATH }}2014/09/Screen-Shot-2014-09-29-at-1.42.24-PM.png">分类</a>
+[![iPhone5]({{ IMAGE_PATH }}2014/09/Screen-Shot-2014-09-29-at-1.42.24-PM.png)]({{ IMAGE_PATH }}2014/09/Screen-Shot-2014-09-29-at-1.42.24-PM.png)
 
 从测试效果上看，在iPhone5上可以提升1.3倍和16.5倍性能，当然这个只是一个简单的测试应用，具体实现和实践中的效果只有运用到算法中才能体现。

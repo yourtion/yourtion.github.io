@@ -24,9 +24,9 @@
     {% if site.JB.IMAGE_PATH %}
       {% assign IMAGE_PATH = site.JB.IMAGE_PATH %}
     {% elsif site.safe %}
-      {% capture IMAGE_PATH %}{{ site.cdn_url }}/images{% endcapture %}
+      {% capture IMAGE_PATH %}{{ site.cdn_url }}/images/{% endcapture %}
     {% else %}
-      {% capture IMAGE_PATH %}{{ BASE_PATH }}/images{% endcapture %}
+      {% capture IMAGE_PATH %}{{ BASE_PATH }}/images/{% endcapture %}
     {% endif %}
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}
