@@ -21,32 +21,10 @@
         <iframe width="300" height="25" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=300&height=24&uid=1691023294&style=3&btn=light&dpc=1"></iframe>
     </div>
 
-    <!-- Side Widget Well -->
-    {% if site.JB.comments.provider == 'duoshuo' %}
-      {% include JB/widget-providers/duoshuo_top_threads.html %}
-    {% endif %}
-
     {% if site.JB.comments.provider == 'duoshuo' %}
       {% include JB/widget-providers/duoshuo_recent_comments.html %}
     {% endif %}
 
     {% include JB/widget-providers/recommend.html %}
-    {% if site.JB.categorie_list %}
-    <!-- Blog Categories Well -->
-    <div class="well">
-        <h4>推荐内容</h4>
-        <div class="row">
-                <ul class="tag-box inline">
-                  {% for cat in site.JB.categorie_list %}
-                    <li><a href="/categories.html#{{ cat }}-ref">{{ cat }}</a></li>
-                  {% endfor %}
-                  {% for tag in site.JB.tag_list %}
-                    <li><a href="/tags.html#{{ cat }}-ref">{{ tag }}</a></li>
-                  {% endfor %}
-                </ul>
-        </div>
-        <!-- /.row -->
-    </div>
-    {% endif %}
 
 </div>
