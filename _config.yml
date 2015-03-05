@@ -20,7 +20,8 @@ redcarpet:
     - strikethrough
     - autolink
     - tables
-highlighter: none
+syntax-highlighting:
+  enabled : false
 # permalink
 permalink: /:title.html
 
