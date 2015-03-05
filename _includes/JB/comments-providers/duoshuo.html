@@ -1,6 +1,6 @@
 {% if duoshuo != 'jsonly' %}
-<div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{% if page.wordpress_id %}{{ page.wordpress_id }}{% else %}{{ page.title }} {% endif %}"></div>
-{% endif %}
+<div id="ds-thread" class="ds-thread" data-url="{{ site.production_url }}{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{% if page.wordpress_id %}{{ page.wordpress_id }}{% else %}{{ page.title }} {% endif %}"></div>
+{% else %}
 <script type="text/javascript">
 var duoshuoQuery = {short_name: '{{ site.JB.comments.duoshuo.short_name }}'};
 (function() {
@@ -11,3 +11,4 @@ var duoshuoQuery = {short_name: '{{ site.JB.comments.duoshuo.short_name }}'};
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
 })();
 </script>
+{% endif %}

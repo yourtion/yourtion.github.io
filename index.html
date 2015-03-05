@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="col-md-8">
   <h1 class="page-header">最新文章</h1>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:10 %}
   <!-- Blog Post -->
   <h2>
     <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -25,7 +25,3 @@ layout: default
   <hr>
 {% endfor %}
 </div>
-{% if site.JB.comments.provider == 'duoshuo' %}
-  {% assign duoshuo = 'jsonly' %}
-  {% include JB/comments-providers/duoshuo.html %}
-{% endif %}

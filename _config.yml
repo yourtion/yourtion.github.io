@@ -2,7 +2,8 @@
 title: 钇钛网
 subtitle: 郭宇翔的博客
 description: Yourtion's Blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+production_url : http://blog.yourtion.com
+cdn_url : http://7x2vxl.com1.z0.glb.clouddn.com
 encoding: utf-8
 
 author :
@@ -12,6 +13,7 @@ author :
   twitter : yourtion
 
 # Build settings
+safe: false
 markdown: rdiscount
 redcarpet:
   extensions:
@@ -22,12 +24,11 @@ redcarpet:
     - tables
 syntax-highlighting:
   enabled : false
+
 # permalink
 permalink: /:title.html
 
-safe: false
-production_url : http://blog.yourtion.com
-cdn_url : http://7x2vxl.com1.z0.glb.clouddn.com
+
 
 JB :
   version : 0.3.0
@@ -43,13 +44,13 @@ JB :
   atom_path : /atom.xml
   rss_path : /rss.xml
 
-  categorie_list: ["iOS","Android"]
-  tag_list: ["MongoDB","Android"]
-
   comments :
     provider : duoshuo
     duoshuo :
       short_name : yourtion
+      top_threads_num : 5
+      top_threads_range : monthly
+
 
   analytics :
     provider : google

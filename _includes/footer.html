@@ -19,3 +19,7 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ ASSET_PATH }}js/bootstrap.min.js"></script>
+{% if site.JB.comments.provider == 'duoshuo' %}
+  {% assign duoshuo = 'jsonly' %}
+  {% include JB/comments-providers/duoshuo.html %}
+{% endif %}

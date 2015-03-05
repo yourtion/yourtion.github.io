@@ -21,6 +21,15 @@
         <iframe width="300" height="25" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=300&height=24&uid=1691023294&style=3&btn=light&dpc=1"></iframe>
     </div>
 
+    <!-- Side Widget Well -->
+    {% if site.JB.comments.provider == 'duoshuo' %}
+      {% include JB/widget-providers/duoshuo_top_threads.html %}
+    {% endif %}
+
+    {% if site.JB.comments.provider == 'duoshuo' %}
+      {% include JB/widget-providers/duoshuo_recent_comments.html %}
+    {% endif %}
+
     {% if site.JB.categorie_list %}
     <!-- Blog Categories Well -->
     <div class="well">
