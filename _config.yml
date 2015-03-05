@@ -26,14 +26,14 @@ permalink: /:title.html
 
 safe: false
 production_url : http://blog.yourtion.com
-cdn_url : http://yourtion.u.qiniudn.com
+cdn_url : http://7x2vxl.com1.z0.glb.clouddn.com
 
 JB :
   version : 0.3.0
 
   BASE_PATH : false
-  ASSET_PATH : "/assets/"
-  IMAGE_PATH : "/images/"
+  ASSET_PATH : false
+  IMAGE_PATH : false
 
   categories_path : /categories.html
   tags_path : /tags.html
