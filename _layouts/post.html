@@ -7,7 +7,17 @@ layout: default
     {{ page.title }}
     <small>{% if page.meta %} • {{ page.meta }}{% endif %}</small>
   </h1>
-  <p>{{ page.author }}  <span class="glyphicon glyphicon-time"></span> {{ page.date | date: "%b %-d, %Y" }}</p>
+  <p  class="row">
+    <span class="col-md-2 col-xs-6">
+      <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+      <a href="/categories.html#{{ post.categories[0] }}-ref">{{ page.categories[0] }}</a>
+    </span>
+    <span class="col-md-2 col-xs-6">
+      <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+      <a href="/tags.html#{{ post.tags[0] }}-ref">{{ page.tags[0] }}</a>
+    </span>
+    <span class="col-md-3 col-xs-6"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ page.date | date: "%B %d %Y" }}</span>
+  </p>
   <hr>
   {{ content }}
   <hr>

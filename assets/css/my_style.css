@@ -31,3 +31,13 @@
 .tag-list li {
 	list-style: inherit !important;
 }
+@media (max-width: 768px)
+{
+	.h1,h1{font-size:20px}
+	.h2,h2{font-size:18px}
+	.h3,h3{font-size:16px}
+	.h4,h4{font-size:14px}
+	.h5,h5{font-size:12px}
+	.h6,h6{font-size:10px}
+	.lead{font-size:14px;}
+}

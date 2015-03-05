@@ -9,10 +9,10 @@ layout: default
     <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </h2>
   <p  class="row">
-    <span class="col-md-2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ post.author }}</span>
-    <span class="col-md-2"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> {{ post.categories[0] }}</span>
-    <span class="col-md-3"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ post.date | date: "%B %d %Y" }}</span>
-    <span class="col-md-3">
+    <span class="col-md-2 col-xs-6"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ post.author }}</span>
+    <span class="col-md-2 col-xs-6"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> {{ post.categories[0] }}</span>
+    <span class="col-md-3 col-xs-6"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ post.date | date: "%b %d %Y" }}</span>
+    <span class="col-md-3 col-xs-6">
       <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
       {% if site.JB.comments.provider == 'duoshuo' %}
         <a href="{{ post.url }}#ds-thread" title="查看此文章的评论"><span class="ds-thread-count" data-thread-key="{% if post.wordpress_id %}{{ post.wordpress_id }}{% else %}{{ post.title }} {% endif %}" data-count-type="comments"></span></a>
