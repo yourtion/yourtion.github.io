@@ -21,16 +21,16 @@ tags:
 
 最后用语句：
 
-
-<blockquote>INSERT INTO jcom_mall.ecm_member VALUES (NULL , 'yourtion', 'mail@yourtion.com', '5fa2db591ebb44529673957ed8b738fc', '', '0', NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '0', NULL , NULL , '0', '0', NULL , '0', NULL , '');</blockquote>
-
+```sql
+INSERT INTO jcom_mall.ecm_member VALUES (NULL , 'yourtion', 'mail@yourtion.com', '5fa2db591ebb44529673957ed8b738fc', '', '0', NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '0', NULL , NULL , '0', '0', NULL , '0', NULL , '');
+```
 
 添加好用户，然后是用Excel表格进行用户名等数据的代入和SQL语句的生成，查了不少资料和尝试多次之后得出语句:
 
+```sql
+CONCATENATE("INSERT INTO jcom_mall.ecm_member VALUES (NULL , '",A1,"', 'mail@yourtion.com', '5fa2db591ebb44529673957ed8b738fc', '', '0', NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '0', NULL , NULL , '0', '0', NULL , '0', NULL , '');")
+```
 
-<blockquote>=CONCATENATE("INSERT INTO jcom_mall.ecm_member VALUES (NULL , '",A1,"', 'mail@yourtion.com', '5fa2db591ebb44529673957ed8b738fc', '', '0', NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '0', NULL , NULL , '0', '0', NULL , '0', NULL , '');")</blockquote>
-
-
-其中“A1”就是用户名所在列，其他用户信息忽略，等用户第一次登陆更改密码和其信息时候更改，你也可以在Excel上面写好按照",A1,"的形式导入语句。
+其中“```A1```”就是用户名所在列，其他用户信息忽略，等用户第一次登陆更改密码和其信息时候更改，你也可以在Excel上面写好按照",```A1```,"的形式导入语句。
 
 希望你能举一反三，有空我会找一些关于SQL和Excel的资料，希望对你有帮助～

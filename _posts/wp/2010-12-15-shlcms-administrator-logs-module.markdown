@@ -22,8 +22,11 @@ tags:
 创建数据表：
 
 
-<blockquote>-- 表的结构 'web_log'
+-- 表的结构 'web_log'
+
 [![]({{ IMAGE_PATH }}2010/12/weblogdb-300x89.jpg)]({{ IMAGE_PATH }}2010/12/weblogdb.jpg)
+
+```sql
 DROP TABLE IF EXISTS web_log;
 CREATE TABLE IF NOT EXISTS web_log (
 id int(11) NOT NULL AUTO_INCREMENT,'name' varchar(64) CHARACTER SET utf8 NOT NULL,
@@ -33,17 +36,17 @@ events varchar(128) CHARACTER SET utf8 NOT NULL,
 ip varchar(64) CHARACTER SET utf8 NOT NULL,
 PRIMARY KEY (id)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;</blockquote>
-
+```
 
 **注意引号换为半角
 注意把web_log中的web_前缀改为你的数据表前缀。然后执行**
 
-http://你的CMS目录/inc/models/
+```http://你的CMS目录/inc/models/```
 
-生成log数据表的models类。
+生成```log```数据表的```models```类。
 
 下载：weblog模块替换到深喉咙安装目录：[weblog模块](http://dl.dbank.com/c08i39tb4a)
 
 这样安装就基本完成了。
 
-我已经在login里面添加了日志选项，接下来我会写在其他地方添加日志的教程，敬请期待~~~~~~
+我已经在```login```里面添加了日志选项，接下来我会写在其他地方添加日志的教程，敬请期待~~~~~~

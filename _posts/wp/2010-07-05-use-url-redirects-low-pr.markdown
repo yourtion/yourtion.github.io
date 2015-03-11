@@ -22,23 +22,23 @@ tags:
 
 我们可以用重定向来解决这个问题，这样可以让你文章中的外链不会影响到自己的站点在搜索引擎中的权重。
 
-首先创建一个文本文档，保存为“re_link.php”，当然，你可以用你喜欢的文件名来替换“re_link”，在这“re_link.php”中拷贝下面的内容进去
+首先创建一个文本文档，保存为···，当然，你可以用你喜欢的文件名来替换```re_link```，在这```re_link.php```中拷贝下面的内容进去
 
+```php
+<?php
+	// Change to the URL you want to redirect to
+	$R_URL=$_GET['url'];
+	echo $R_URL;
+	header(”Location: $R_URL”);
+?>
+```
 
-<blockquote><?php
-// Change to the URL you want to redirect to
-$R_URL=$_GET['url'];
-echo $R_URL;
-header(”Location: $R_URL”);
-?></blockquote>
-
-
-保存后上传到你的站点根目录中，这样当我们在建立一个指向比如”http://www.oxoxox.com”这个链接的时候这样写“http://www.yoursite.com/redirect_url.php?url=http://www.oxoxox.com”就万无一失了。
+保存后上传到你的站点根目录中，这样当我们在建立一个指向比如 http://www.oxoxox.com 这个链接的时候这样写 http://www.yoursite.com/redirect_url.php?url=http://www.oxoxox.com 就万无一失了。
 
 如果打打开链接后，看到一个关于header的warning，检查两个地方来搞定这个问题：
 
-1. 看看你的“re_link.php“文件的php起止符(也就是)前后是否有空格和空行。如果有，删除它们。
+1. 看看你的```re_link.php```文件的php起止符(也就是)前后是否有空格和空行。如果有，删除它们。
 
-2. 打开主机根目录下的php.ini文件，确保: “output_buffering = on” 或者 “output_buffering = n” n为4096或其他接近的数字。
+2. 打开主机根目录下的```php.ini```文件，确保: “```output_buffering = on```” 或者 “```output_buffering = n```” n为4096或其他接近的数字。
 
 发现如果后面要转向的地址也是带有?的地址，会出现错误，所以，避免该死的问号

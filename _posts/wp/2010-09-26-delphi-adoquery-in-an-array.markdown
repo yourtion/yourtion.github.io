@@ -18,22 +18,22 @@ tags:
 
 比如 select B from A ，把查询的字段B放到一个数组中（假设是字符型的）：
 
-```
+```delphi
 procedure TForm1.Button1Click(Sender: TObject);
 var
-A: Array of String;//定义动态数组
-Index: Integer;//定义数组下标变量
-begin ADOQuery.SQL.Clear;
-ADOQuery.SQL.Add('Select B from A');
-ADOQuery.Open;
-Setlength(A,ADOQuery.RecordCount); //设置数组宽度
-Index := 0;//初始化下标
-ADOQuery.First;
-While Not ADOQuery.Eof Do //数据集循环
-begin
-A[Index] := ADOQuery.FieldByName('B').asString;//数据添加到数组中 Inc(Index);
-ADOQuery.Next;
-end;
-end;
+	A: Array of String;//定义动态数组
+	Index: Integer;//定义数组下标变量
+	begin ADOQuery.SQL.Clear;
+		ADOQuery.SQL.Add('Select B from A');
+		ADOQuery.Open;
+		Setlength(A,ADOQuery.RecordCount); //设置数组宽度
+		Index := 0;//初始化下标
+		ADOQuery.First;
+		While Not ADOQuery.Eof Do //数据集循环
+			begin
+				A[Index] := ADOQuery.FieldByName('B').asString;//数据添加到数组中 Inc(Index);
+				ADOQuery.Next;
+			end;
+	end;
 ```
 

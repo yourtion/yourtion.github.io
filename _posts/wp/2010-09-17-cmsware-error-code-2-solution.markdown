@@ -19,13 +19,13 @@ tags:
 今天下午学校主页突然模版不正常了~显示图片出错~然后提示：
 
 
-<blockquote>[CMS] Template Running Error, click here to learn more.</blockquote>
+>[CMS] Template Running Error, click here to learn more.
 
 
 但是在此之前并没有动过网站和服务器~详细出错内容如下：
 
-
-<blockquote>[CMS] Template Running Error, click here to learn more.
+```
+[CMS] Template Running Error, click here to learn more.
 Exception message: fopen(http://newsadmin.jyu.edu.cn/resource/img/h000/h04/img201008132155131.jpg) [function.fopen]: failed to open stream: operation failed
 Error code: 2
 -- Backtrace --
@@ -35,8 +35,8 @@ Error code: 2
 /srv/httpd/htdocs/cmsware/include/lib/kTemplate/kTemplate.class.php(347): include
 /srv/httpd/htdocs/cmsware/include/lib/kTemplate/kTemplate.class.php(546): kTemplate._fetch
 /srv/httpd/htdocs/cmsware/include/admin/publishAdmin.class.php(2183): kTemplate.fetch
-/srv/httpd/htdocs/cmsware/admin/admin_task.php(250): publishAdmin.refreshIndex</blockquote>
-
+/srv/httpd/htdocs/cmsware/admin/admin_task.php(250): publishAdmin.refreshIndex
+```
 
 很明显是图片打不开导致的~但是之前是完全没问题的~刚刚添加的新闻删除页没有效果~
 

@@ -14,9 +14,11 @@ tags:
 ---
 {% include JB/setup %}
 
-最近在做个抽奖程序，想加入抽奖声音，本来打算使用了TMediaPlayer控件来播放音乐。最后发现可以直接使用WINDOWS为我们提供的API函数来播放音乐，方法如下：首先需要在uses部分加入mmsystem，接着写入下列语句，其中e:\1.mid为播放的文件，NN为自定义名称标志。
+最近在做个抽奖程序，想加入抽奖声音，本来打算使用了```TMediaPlayer```控件来播放音乐。
 
-```
+最后发现可以直接使用WINDOWS为我们提供的API函数来播放音乐，方法如下：首先需要在```uses```部分加入mmsystem，接着写入下列语句，其中```e:\1.mid```为播放的文件，```NN```为自定义名称标志。
+
+```delphi
 procedure TForm1.Button1Click(Sender: TObject);
 begin
 //播放音乐

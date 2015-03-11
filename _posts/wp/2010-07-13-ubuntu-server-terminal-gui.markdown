@@ -17,53 +17,57 @@ tags:
 
 1、连接网络，你一定要确保网络通畅，如果你和我一样使用Wireless，那先找根网线插上
 
-2、安装xinit:   sudo apt-get install xinit   如果你此时重起，你就会大显你能够进入一个图形化界面了，只是除了鼠标指针，什么也没有
+2、安装xinit:   
 
-3、安装环境管理器 如果你喜欢 GNOME，使用
+```bash
+sudo apt-get install xinit
+```  
 
+如果你此时重起，你就会大显你能够进入一个图形化界面了，只是除了鼠标指针，什么也没有
 
-<blockquote>sudo apt-get install gdm</blockquote>
+3、安装环境管理器 如果你喜欢 ``GNOME``，使用
 
+```bash
+sudo apt-get install gdm
+```
 
-KDE和Xface用户分别改为 KDM和XDM
+```KDE```和```Xface```用户分别改为 ```KDM```和```XDM```
 
 4、安装桌面环境
 
+```bash
+sudo apt-get install Ubuntu-desktop
+```
 
-<blockquote>sudo apt-get install Ubuntu-desktop</blockquote>
-
-
-或者
-
-
-<blockquote>kubuntu-desktop  xubuntu-desktop</blockquote>
-
+或者```kubuntu-desktop```、```xubuntu-desktop```
 
 如果你只想装界面的核心环境，或者网速比较曼的话，可以
 
+```bash
+sudo apt-get install gnome-core 
+```
 
-<blockquote>sudo apt-get install gnome-core  或者 kde-core xface4</blockquote>
-
+或者 ```kde-core``` ```xface4```
 
 5、如果你装的是CORE的，那么你还需要做以下的工作
 
 1、安装新立得软件包管理器
 
-
-<blockquote>sudo apt-get install gsynaptic</blockquote>
-
+```bash
+sudo apt-get install gsynaptic
+```
 
 2、安装无线上网模块（如果需要）
 
-
-<blockquote>sudo apt-get install network-manager*</blockquote>
-
+```bash
+sudo apt-get install network-manager*
+```
 
 3、安装中文支持（能够显示中文）
 
-
-<blockquote>sudo apt-get install language-support-zh</blockquote>
-
+```bash
+sudo apt-get install language-support-zh
+```
 
 4、从新立得软件包管理器中选择中文输入法支持和中文界面支持
 

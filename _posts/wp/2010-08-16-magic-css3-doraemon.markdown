@@ -28,22 +28,40 @@ tags:
 
 按照介绍，它对webkit内核的浏览器支持最佳，比如gg浏览器，火狐浏览器，至于IE下面嘛，惨不忍睹，看图：
 
-
 ![]({{ IMAGE_PATH }}2010/08/01.png)
-
 
 看上面这张图，在chrome5.0和firefox3.6下很不错，有阴影有立体感，而且眼睛还能动。opera10没有了阴影，至于IE8，都成变形金刚了。  测试结果如下：
 
-
 ![]({{ IMAGE_PATH }}2010/08/Firefox-.png)
-
 
 效果在其次的是Firefox (3.6)，效果和Safari的一样，但眼睛不能动。
 
-
 ![]({{ IMAGE_PATH }}2010/08/Opera10.5.png)
 
+在Opera (10.53) 里，看不到渐变色。  
 
-在Opera (10.53) 里，看不到渐变色。  ![]({{ IMAGE_PATH }}2010/08/Safari.png) iPhone OS 3.1的Safari里，它的脸是方的 -_-！！！  ![]({{ IMAGE_PATH }}2010/08/IE9.png) 在IE9测试版里，阿蒙的胳膊是方的…强劲的肌肉么？  ![]({{ IMAGE_PATH }}2010/08/IE8.png) 在IE8里，阿蒙是…方的，很有喜感  ![]({{ IMAGE_PATH }}2010/08/IE7.png) 在IE7里，雷死人啊，大花猫啊。  ![]({{ IMAGE_PATH }}2010/08/IE6.png) 在IE6里…小叮当害羞了╮(╯▽╰)╭。  ![]({{ IMAGE_PATH }}2010/08/dora.jpg) 这才是人家的真面目。
+![]({{ IMAGE_PATH }}2010/08/Safari.png) 
+
+iPhone OS 3.1的Safari里，它的脸是方的 -_-！！！  
+
+![]({{ IMAGE_PATH }}2010/08/IE9.png) 
+
+在IE9测试版里，阿蒙的胳膊是方的…强劲的肌肉么？  
+
+![]({{ IMAGE_PATH }}2010/08/IE8.png) 
+
+在IE8里，阿蒙是…方的，很有喜感  
+
+![]({{ IMAGE_PATH }}2010/08/IE7.png) 
+
+在IE7里，雷死人啊，大花猫啊。  
+
+![]({{ IMAGE_PATH }}2010/08/IE6.png) 
+
+在IE6里…小叮当害羞了╮(╯▽╰)╭。  
+
+![]({{ IMAGE_PATH }}2010/08/dora.jpg) 
+
+这才是人家的真面目。
 
 来自：http://soamz.com/devsign/duolaameng-xiaodingdang-css.html

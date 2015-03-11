@@ -28,25 +28,22 @@ tags:
 
 **CSS滤镜过滤色彩代码**：
 
+```css
+html 
+{ 
+	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
+}
+```
 
-<blockquote>html { filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); }</blockquote>
-
-
-第二种方法:只支持IE
-
-
-<blockquote>*{filter:Gray;}</blockquote>
-
+第二种方法:只支持IE```*{filter:Gray;}```
 
 上面的代码可以使除了FLASH之外的网页所有元素变灰,如果网页中含有FLASH,可以使用下面的方法使FLASH变灰:
 
-第一种方法:如果是用下面的方式调用FLASH,则在代码中加入
-
-
-<blockquote>wmode="opaque"</blockquote>
+第一种方法:如果是用下面的方式调用FLASH,则在代码中加入```wmode="opaque"```
 
 
 第二种方法:如果是用下面的方式调用FLASH,则在代码中加入
 
-
-<blockquote><param name="wmode" value="opaque"></blockquote>
+```html
+<param name="wmode" value="opaque">
+```

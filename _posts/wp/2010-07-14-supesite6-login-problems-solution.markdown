@@ -16,18 +16,21 @@ tags:
 
 最近在做一个SuperSite和UC的站点，不知什么时候开始，登陆SupeSite要二次验证，输入安全验证答案，可是用户本身并没有设置这个问题，就是在Ucenter里面去掉问答还是会提示。在网络中翻了半天，总算找到了一个解决办法
 
-在bath.login.php中
+在```bath.login.php```中
 
 
-<blockquote>if(empty($_SCONFIG['noseccode']) || empty($_SCONFIG['ucmode']) && $member['secques'])</blockquote>
+```php
+if(empty($_SCONFIG['noseccode']) || empty($_SCONFIG['ucmode']) && $member['secques'])
+```
 
 
 这个东西是不是错了呀？
 
 我的改成：
 
-
-<blockquote>if((empty($_SCONFIG['noseccode']) || empty($_SCONFIG['ucmode'])) && $member['secques'])</blockquote>
+```php
+if((empty($_SCONFIG['noseccode']) || empty($_SCONFIG['ucmode'])) && $member['secques'])
+```
 
 
 不再提示我二次提问 / 安全提问了~~~~目前就这样解决这个问题，不知道还有没有更好的方法。

@@ -20,11 +20,9 @@ tags:
 
 效果：[http://t.yourtion.com/?act=photos](http://t.yourtion.com/?act=photos)
 
-
-
 改造过程：
 
-因为PageCookery调用Flick的相册后生成的<uk>和<li>标签，所以先从标签入手，
+因为PageCookery调用Flick的相册后生成的```<ul>```和```<li>```标签，所以先从标签入手，
 
 下载：[ImageFlow_1.3.0.zip](http://www.dbank.com/download.action?t=40&k=NDQ3NDAyNjE=&pcode=LCwxMjAzODksMTIwMzg5&rnd=4)
 
@@ -32,57 +30,44 @@ tags:
 
 然后把template下的photos.html中的
 
-
-<blockquote><div id="main" style="padding: 0;">
-
+```html
+<div id="main" style="padding: 0;">
 <ul>
 
 <!--{foreach ($recent_photos['items'] AS $photo)}-->
-
 <li>
-
 <div style="background: url({$photo['media']['m']}) no-repeat center center"title="{$photo['title']}"></div>
-
 <a href="{$photo['link']}" target="_blank">{$photo['title']}</a>
-
 </li>
-
 <!--{/foreach}-->
 
 </ul>
-
 <div style="clear:left"></div>
-
 </div></blockquote>
-
+```
 
 替换为：
 
-
-<blockquote><div id="main" style="padding: 0;" >
-
+```html
+<div id="main" style="padding: 0;" >
 <div id="myImageFlow" class="imageflow" >
 
 <!--{foreach ($recent_photos['items'] AS $photo)}-->
-
 <img src="{$photo['media']['m']}" longdesc="{$photo['link']}"  alt="{$photo['title']}">
-
 <!--{/foreach}--> 
 
 </div>
-
 <div style="clear:left"></div>
-
-</div></blockquote>
-
+</div>
+```
 
 然后在前面加上
 
+```html
+<script type="text/javascript" src="imageflow/imageflow.packed.js"></script>
+```
 
-<blockquote><script type="text/javascript" src="imageflow/imageflow.packed.js"></script></blockquote>
-
-
-最后在head.html中的<head>中加入
+最后在```head.html```中的```<head>```中加入
 
 
 <blockquote><link rel="stylesheet" href="imageflow/imageflow.packed.css" type="text/css" /></blockquote>
@@ -90,7 +75,7 @@ tags:
 
 这样就大功告成了，剩下的是一些微调的工作。
 
-下面是我博客的head、photo还有imageflow文件的打包。希望对你有帮助，举一反三自己改造咯
+下面是我博客的```head```、```photo```还有imageflow文件的打包。希望对你有帮助，举一反三自己改造咯
 
 我博客的文件打包：[ImageFlow.rar](http://www.dbank.com/download.action?t=40&k=NDQ3NDE1NTk=&pcode=LCwxMjAzODksMTIwMzg5&rnd=4)
 

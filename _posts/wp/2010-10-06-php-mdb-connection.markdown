@@ -17,9 +17,9 @@ tags:
 
 因为之前做的PingSwitch要做一个WEB展示的前端，因为一开始用了Delphi和access的结构，而Delphi与MySQL的连接又相对麻烦，最后只能选择用PHP+Access的组合，比较奇怪，但是也合理·····
 
-在PHP中连接access数据库的话我们必须ADO来连接，这跟ASP中连接数据库非常的类似。下边给出了一段DEMO供大家参考。
+在PHP中连接access数据库的话我们必须```ADO```来连接，这跟ASP中连接数据库非常的类似。下边给出了一段DEMO供大家参考。
 
-```
+```php
 <?PHP
 /*
 创建ADO连接
@@ -36,9 +36,9 @@ $rs->Open("select * from dbo_dirs",$conn,1,3);
 循环读取数据
 */
 while(!$rs->eof){
-echo "$rs->Fields["title"]->Value;
-echo "<br/>";
-$rs->Movenext(); //将记录集指针下移
+	echo "$rs->Fields["title"]->Value;
+	echo "<br/>";
+	$rs->Movenext(); //将记录集指针下移
 }
 $rs->close();
 ?>

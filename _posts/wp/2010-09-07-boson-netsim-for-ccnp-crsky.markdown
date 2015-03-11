@@ -23,11 +23,11 @@ tags:
 
 如何进行破解，请跟我来：
 
-1.去Boson的官网上下载Boson NetSim for CCNP 的最新版本。
-2.安装Boson NetSim for CCNP 并运行，选择 Use Demo Version。
-3.选择主界面上的Tools菜单中Check for Updates。直接更新全部文件。并重启程序。
-4.关闭程序，将我提供的3个文件覆盖到安装文件夹。
-5.启动程序后，选择 Use Demo Version
+1. 去Boson的官网上下载Boson NetSim for CCNP 的最新版本。
+2. 安装Boson NetSim for CCNP 并运行，选择 Use Demo Version。
+3. 选择主界面上的Tools菜单中Check for Updates。直接更新全部文件。并重启程序。
+4. 关闭程序，将我提供的3个文件覆盖到安装文件夹。
+5. 启动程序后，选择 Use Demo Version
 
 现在看看是不是可以使用全部的命令了？只是主界面上显示的7.05。
 

@@ -21,32 +21,32 @@ tags:
 
 新浪那边提供的MySQL连接信息：
 
-
-<blockquote>Host: $_SERVER['HTTP_MYSQLPORT'].mysql.sae.sina.com.cn
-Port: $_SERVER['HTTP_MYSQLPORT']</blockquote>
-
+```php
+Host: $_SERVER['HTTP_MYSQLPORT'].mysql.sae.sina.com.cn
+Port: $_SERVER['HTTP_MYSQLPORT']
+```
 
 如果直接用
 
-
-<blockquote>$query=mysql_connect($_SERVER['HTTP_MYS
-QLPORT'].mysql.sae.sina.com.cn,DB_USER,DB_PASSWORD);</blockquote>
-
+```php
+$query=mysql_connect($_SERVER['HTTP_MYS
+QLPORT'].mysql.sae.sina.com.cn,DB_USER,DB_PASSWORD);
+```
 
 会提示：
 
-
-<blockquote>SAE_Warning: mysql_connect() [function.mysql-connect]: Unknown MySQL server host '3308mysqlsaesinacomcn' (1) in index.php on line 14</blockquote>
-
+```php
+SAE_Warning: mysql_connect() [function.mysql-connect]: Unknown MySQL server host '3308mysqlsaesinacomcn' (1) in index.php on line 14
+```
 
 研究了很久，得出连接字符串应该这么写
 
-
-<blockquote>define('DB_HOST',$_SERVER['HTTP_MYSQL
+```
+define('DB_HOST',$_SERVER['HTTP_MYSQL
 PORT'].'.mysql.sae.sina.com.cn:'.$_SERVER['HTTP_MYSQLPORT']);
 
-$query=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD);</blockquote>
-
+$query=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD);
+```
 
 这样就可以成功连接和使用MySQL了·······
 

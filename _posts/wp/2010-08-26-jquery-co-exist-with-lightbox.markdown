@@ -21,86 +21,80 @@ tags:
 
 很快我就想到是JS的兼容问题，当我去掉原来jquery.min的时候，LightBox效果就正常了。原来的代码如下：
 
-
-<blockquote><script type="text/javascript" src="jquery.min.js"></script>
+```javascript
+<script type="text/javascript" src="jquery.min.js"></script>
 <script language="javascript">
 $(document).ready(function() {
+	/*	2nd example	*/
+	$("#menu2 li a").wrapInner( '<span></span>' );
 
-/*	2nd example	*/
-$("#menu2 li a").wrapInner( '<span></span>' );
+	$("#menu2 li a").each(function() {
+		$( '<span>' + $(this).text() + '</span>').appendTo(this);
+	});
 
-$("#menu2 li a").each(function() {
-$( '<span>' +  $(this).text() + '</span>' ).appendTo( this );
+	$("#menu2 li a").hover(function() {
+		$(".out",	this).stop().animate({'top':'45px'},200); // move down - hide
+		$(".over",this).stop().animate({'top':'0px'},	200); // move down - show
+	}, function() {
+		$(".out",	this).stop().animate({'top':'0px'},	200); // move up - show
+		$(".over",this).stop().animate({'top':'-45px'},200); // move up - hide
+	});
 });
-
-$("#menu2 li a").hover(function() {
-$(".out",	this).stop().animate({'top':	'45px'},	200); // move down - hide
-$(".over",	this).stop().animate({'top':	'0px'},		200); // move down - show
-
-}, function() {
-$(".out",	this).stop().animate({'top':	'0px'},		200); // move up - show
-$(".over",	this).stop().animate({'top':	'-45px'},	200); // move up - hide
-});
-
-});
-</script></blockquote>
+</script>
+```
 
 
 LightBox要加入的代码：
 
-
-<blockquote><script type="text/javascript" src="js/prototype.js"></script>
+```html
+<script type="text/javascript" src="js/prototype.js"></script>
 <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
-<script type="text/javascript" src="js/lightbox.js"></script></blockquote>
+<script type="text/javascript" src="js/lightbox.js"></script>
+```
 
 
 然后根据jquery的多库共存机制，他的应用代码是：
 
-
-<blockquote>jQuery.noConflict();
+```javascript
+jQuery.noConflict();
 (function($) {
-$(function() {
-// 使用 $ 作为 jQuery 别名的代码
-});
+	$(function() {
+	// 使用 $ 作为 jQuery 别名的代码
+	});
 })(jQuery);
 // 其他用 $ 作为别名的库的代码</blockquote>
-
+```
 
 所以整合之后的代码就变成：
 
-
-<blockquote><script type="text/javascript" src="jquery.min.js"></script>
+```javascript
+<script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="js/prototype.js"></script>
 <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
 <script type="text/javascript" src="js/lightbox.js"></script>
 <script language="javascript">
 jQuery.noConflict();
 (function($) {
-$(function() {
+	$(function() {
+		$(document).ready(function() {
+		/*	2nd example	*/
+			$("#menu2 li a").wrapInner( '<span></span>' );
 
-$(document).ready(function() {
+			$("#menu2 li a").each(function() {
+				$( '<span>' + $(this).text() + '</span>').appendTo(this);
+			});
 
-/*	2nd example	*/
-$("#menu2 li a").wrapInner( '<span></span>' );
-
-$("#menu2 li a").each(function() {
-$( '<span>' +  $(this).text() + '</span>' ).appendTo( this );
-});
-
-$("#menu2 li a").hover(function() {
-$(".out",	this).stop().animate({'top':	'45px'},	200); // move down - hide
-$(".over",	this).stop().animate({'top':	'0px'},		200); // move down - show
-
-}, function() {
-$(".out",	this).stop().animate({'top':	'0px'},		200); // move up - show
-$(".over",	this).stop().animate({'top':	'-45px'},	200); // move up - hide
-});
-
-});
-
-});
+			$("#menu2 li a").hover(function() {
+				$(".out",	this).stop().animate({'top':'45px'},200); // move down - hide
+				$(".over",this).stop().animate({'top':'0px'},	200); // move down - show
+			}, function() {
+				$(".out",	this).stop().animate({'top':'0px'},	200); // move up - show
+				$(".over",this).stop().animate({'top':'-45px'},200); // move up - hide
+			});
+		});
+	});
 })(jQuery);
-</script></blockquote>
-
+</script>
+```
 
 这样主页的导航jquery和LightBox就完美地共存了··
