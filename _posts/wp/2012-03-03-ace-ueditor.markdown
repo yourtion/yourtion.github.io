@@ -21,63 +21,65 @@ tags:
 
 修改”server\upload\php“里的up.php，把：
 
-```
+```php
  //保存图片
-    if($state == "SUCCESS"){
-        $tmp_file=$_FILES["picdata"]["name"];
-        $file = $path.rand(1,10000).time().strrchr($tmp_file,'.');
-        $result = move_uploaded_file($_FILES["picdata"]["tmp_name"],$file);
-        if(!$result){
-            $state = "图片保存失败！";
-        }
-    }
+ if($state == "SUCCESS"){
+    $tmp_file=$_FILES["picdata"]["name"];
+    $file = $path.rand(1,10000).time().strrchr($tmp_file,'.');
+    $result = move_uploaded_file($_FILES["picdata"]["tmp_name"],$file);
+    if(!$result){
+      $state = "图片保存失败！";
+     }
+}
     //向浏览器返回数据json数据
-    $file= str_replace('../','',$file);  //为方便理解，替换掉所有类似../和./等相对路径标识
-    echo "{'url':'".$file."','title':'".$title."','state':'".$state."'}";
+$file= str_replace('../','',$file);  //为方便理解，替换掉所有类似../和./等相对路径标识
+echo "{'url':'".$file."','title':'".$title."','state':'".$state."'}";
 ```
 
 修改为：
 
-```
-    //保存图片
-    if($state == "SUCCESS"){
-        $tmp_file=$_FILES["picdata"]["name"];
-        $file = rand(1,10000).time().strrchr($tmp_file,'.');
+```php
+//保存图片
+if($state == "SUCCESS"){
+	$tmp_file=$_FILES["picdata"]["name"];
+	$file = rand(1,10000).time().strrchr($tmp_file,'.');
 	if(file_exists($_FILES["picdata"]["tmp_name"])){ 
 		$storage = new CEStorage(); 
 		$file_url = $storage->upload($_FILES["picdata"]["tmp_name"],$file);;
-  	// $file_url will be XXX.aliapp.com/aliyun_ce_storage/title.jpg
-		}
-    }
-	$file_url= str_replace('aliyun_ce_storage/','',$file_url);
-    //向浏览器返回数据json数据
-    echo "{'url':'".$file_url."','title':'".$title."','state':'".$state."'}";
+	  	// $file_url will be XXX.aliapp.com/aliyun_ce_storage/title.jpg
+	}
+}
+$file_url= str_replace('aliyun_ce_storage/','',$file_url);
+//向浏览器返回数据json数据
+echo "{'url':'".$file_url."','title':'".$title."','state':'".$state."'}";
 ```
 
 修改”editor_config.js“，将：
 
-```
+```javascript
 var tmp = window.location.pathname,
-        URL= tmp.substr(0,tmp.lastIndexOf("\/")+1).replace("_examples/","");//这里你可以配置成ueditor目录在您网站的相对路径或者绝对路径（指以http开头的绝对路径）
-    UEDITOR_CONFIG = {
-        imagePath:URL + "server/upload/", //图片文件夹所在的路径，用于显示时修正后台返回的图片url！具体图片保存路径需要在后台设置。！important
-        compressSide:0, //等比压缩的基准，确定maxImageSideLength参数的参照对象。0为按照最长边，1为按照宽度，2为按照高度
-        maxImageSideLength:900, //上传图片最大允许的边长，超过会自动等比缩放,不缩放就设置一个比较大的值
-        relativePath:true,      //是否开启相对路径。开启状态下所有本地图片的路径都将以相对路径形式进行保存.强烈建议开启！
-        UEDITOR_HOME_URL:URL, //为editor添加一个全局路径
+URL= tmp.substr(0,tmp.lastIndexOf("\/")+1).replace("_examples/","");//这里你可以配置成ueditor目录在您网站的相对路径或者绝对路径（指以http开头的绝对路径）
+UEDITOR_CONFIG = {
+	imagePath:URL + "server/upload/", //图片文件夹所在的路径，用于显示时修正后台返回的图片url！具体图片保存路径需要在后台设置。！important
+	compressSide:0, //等比压缩的基准，确定maxImageSideLength参数的参照对象。0为按照最长边，1为按照宽度，2为按照高度
+	maxImageSideLength:900, //上传图片最大允许的边长，超过会自动等比缩放,不缩放就设置一个比较大的值
+	relativePath:true,      //是否开启相对路径。开启状态下所有本地图片的路径都将以相对路径形式进行保存.强烈建议开启！
+	UEDITOR_HOME_URL:URL, //为editor添加一个全局路径
+}
 ```
 
 修改为：
 
-```
+```javascript
 var tmp = window.location.pathname,
-        URL= tmp.substr(0,tmp.lastIndexOf("\/")+1).replace("/ueditor/","");//这里你可以配置成ueditor目录在您网站的相对路径或者绝对路径（指以http开头的绝对路径）
-    UEDITOR_CONFIG = {
-        imagePath:URL + "/aliyun_ce_storage/", //图片文件夹所在的路径，用于显示时修正后台返回的图片url！具体图片保存路径需要在后台设置。！important
-        compressSide:0, //等比压缩的基准，确定maxImageSideLength参数的参照对象。0为按照最长边，1为按照宽度，2为按照高度
-        maxImageSideLength:900, //上传图片最大允许的边长，超过会自动等比缩放,不缩放就设置一个比较大的值
-        relativePath:false,      //是否开启相对路径。开启状态下所有本地图片的路径都将以相对路径形式进行保存.强烈建议开启！
-        UEDITOR_HOME_URL:URL, //为editor添加一个全局路径
+URL= tmp.substr(0,tmp.lastIndexOf("\/")+1).replace("/ueditor/","");//这里你可以配置成ueditor目录在您网站的相对路径或者绝对路径（指以http开头的绝对路径）
+UEDITOR_CONFIG = {
+	imagePath:URL + "/aliyun_ce_storage/", //图片文件夹所在的路径，用于显示时修正后台返回的图片url！具体图片保存路径需要在后台设置。！important
+	compressSide:0, //等比压缩的基准，确定maxImageSideLength参数的参照对象。0为按照最长边，1为按照宽度，2为按照高度
+	maxImageSideLength:900, //上传图片最大允许的边长，超过会自动等比缩放,不缩放就设置一个比较大的值
+	relativePath:false,      //是否开启相对路径。开启状态下所有本地图片的路径都将以相对路径形式进行保存.强烈建议开启！
+	UEDITOR_HOME_URL:URL, //为editor添加一个全局路径
+}
 ```
 
 这样就大功告成了。

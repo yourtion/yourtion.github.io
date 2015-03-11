@@ -22,9 +22,6 @@ categories:
 
 ## 2.大学教学：
 
-
-
-
 ### 北京理工大学：
 [http://mirror.bit.edu.cn](http://mirror.bit.edu.cn/) (IPv4 only)
 

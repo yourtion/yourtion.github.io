@@ -20,7 +20,7 @@ categories:
 
 电脑版演示在这里：[http://demo.yourtion.com/html5/fishjoy/](http://demo.yourtion.com/html5/fishjoy/)
 
-[![]({{ IMAGE_PATH }}2012/06/bydh1-560x419.jpg)]({{ IMAGE_PATH }}2012/06/bydh1.jpg)
+[![]({{ IMAGE_PATH }}2012/06/bydh1.jpg)]({{ IMAGE_PATH }}2012/06/bydh1.jpg)
 
 我的U9GT2只有20FPS左右，但是我朋友的ME860却可以在50FPS完美运行，不多说了，直接上应用，因为的今晚刚刚弄好，没做任何优化，自己玩玩吧，有想法就回复留言咯。
 

@@ -17,17 +17,17 @@ tags:
 
 最近看到百度出了Uedit编辑器，感觉还不错，所以想把它集成到深喉咙里面，研究了一番，终于搞定了，现在将方法和大家共享，有需要的同学可以举一反三老做一下，刚刚弄好可能不是非常完美，大家有什么意见建议也欢迎提出，互相学习。
 
-首先下载Ueditor并解压到shl根目录下，命名为ueditor。
+首先下载```Ueditor```并解压到```shl```根目录下，命名为```ueditor```。
 
-之后将admini\views\system\options下的index.php中的：
+之后将```admini\views\system\options```下的```index.php```中的：
 
-```
+```php
 $editor_arr = array('kindeditor'=>'KindEditor','fckeditor'=>'FCKeditor');
 ```
 
 改为：
 
-```
+```php
 $editor_arr = array('kindeditor'=>'KindEditor','fckeditor'=>'FCKeditor','ueditor'=>'Ueditor');
 ```
 
@@ -35,7 +35,7 @@ $editor_arr = array('kindeditor'=>'KindEditor','fckeditor'=>'FCKeditor','ueditor
 
 然后修改inc目录下的common.php，在
 
-```
+```php
 case 'fckeditor':
         $oFCKeditor = new FCKeditor($name) ;
 	$oFCKeditor->Value = $content;
@@ -43,14 +43,9 @@ case 'fckeditor':
 break;
 ```
 
-
-
 插入以下代码：
 
-
-
-
-```
+```php
 case 'ueditor':
     echo '<script type="text/javascript" charset="utf-8" src="'.ROOTPATH.'/ueditor/editor_config.js"></script>';
     echo '<script type="text/javascript" src="'.ROOTPATH.'/ueditor/editor_all.js"></script>';
@@ -65,7 +60,7 @@ break;
 
 这样编辑器的嵌入就完成了，但是你会发现上传图片这些都打不开，所以接下来修改Uedito目录下的editor_config.js，将：
 
-```
+```php
 //var URL = window.UEDITOR_HOME_URL || '../';
     var tmp = window.location.pathname,
         URL= tmp.substr(0,tmp.lastIndexOf("\/")+1).replace("_examples/","");//这里你可以配置成ueditor目录在您网站的相对路径或者绝对路径（指以http开头的绝对路径）
@@ -75,7 +70,7 @@ break;
 
 改为：
 
-```
+```php
  //var URL = window.UEDITOR_HOME_URL || '../';
     var tmp = window.location.pathname,
     URL = tmp.substr(0, tmp.lastIndexOf("\/") + 1).replace("admini/", "ueditor/");//这里你可以配置成ueditor目录在您网站的相对路径或者绝对路径（指以http开头的绝对路径）
@@ -85,7 +80,7 @@ break;
 
 这样上传图片视频等的按键打开就正常了，最后是修改图片上传模块，将ueditor\server\upload\php下的up.php复制到ueditor根目录下，并将
 
-```
+```php
 $config = array(
         "uploadPath"=>"../uploadfiles/",                          //保存路径
         "fileType"=>array(".gif",".png",".jpg",".jpeg",".bmp"),   //文件允许格式
@@ -95,7 +90,7 @@ $config = array(
 
 改为：
 
-```
+```php
   $config = array(
         "uploadPath"=>'../upload/',                          //保存路径
         "fileType"=>array(".gif",".png",".jpg",".jpeg",".bmp"),   //文件允许格式

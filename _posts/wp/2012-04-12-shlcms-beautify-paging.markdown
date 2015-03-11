@@ -15,23 +15,24 @@ categories:
 很久没有写博客了，最近在做一个网站，因为前台页面人家已经写好。我只是负责嵌入，所以要按照要求把页面做得跟设计一样，深喉咙的分页代码太丑了，所以进行了一些美化，效果和代码如下，和大家分享一下：
 
 效果：
+
 [![]({{ IMAGE_PATH }}2012/04/SHLCMS-Page.jpg)]({{ IMAGE_PATH }}2012/04/SHLCMS-Page.jpg)
 
-首先修改”\inc\class.pager.php“，将
+首先修改”```\inc\class.pager.php```“，将
 
-```
+```php
 public function Show($url,$style=0)
 ```
 
 改为
 
-```
+```php
 public function Show($url,$style=2)
 ```
 
-然后将”elseif($style==2)“花括号中的内容改为：
+然后将”```elseif($style==2)```“花括号中的内容改为：
 
-```
+```php
 elseif($style==2)
 {
 	$tpageNum=8;
@@ -73,7 +74,7 @@ elseif($style==2)
 
 最后在样式表中增加：
 
-```
+```css
 .pagenum a{ padding:0px 6px; *padding:2px 6px; _padding:2px 6px; line-height:21px; margin:0px 2px; background:#fff; border:1px solid #e4e4e4;}
 .page button{ font-size:12px;}
 .btn1{ width: 56px; height:21px; line-height:21px; padding-left:6px; text-align:left; border:none; background:url(../images/btnbg.jpg) left -104px no-repeat;}

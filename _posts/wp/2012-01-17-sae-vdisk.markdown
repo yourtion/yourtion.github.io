@@ -12,32 +12,19 @@ categories:
 ---
 {% include JB/setup %}
 
-微盘Open API是为第三方开发者提供的一套REST接口,通过该接口任何第三方的公司和个人都可以创建基于微盘的应用,开发者可以将用户的存储需要交给微盘处理。
+微盘Open API是为第三方开发者提供的一套```REST```接口,通过该接口任何第三方的公司和个人都可以创建基于微盘的应用,开发者可以将用户的存储需要交给微盘处理。
 
 该接口具有以下特点：
 
-
-<blockquote>基于HTTP协议
-
-通过json格式返回数据
-
-可以通过任何支持REST的语言调用</blockquote>
-
+* 基于HTTP协议
+* 通过json格式返回数据
+* 可以通过任何支持REST的语言调用
 
 应用场景
 
-
-
-	
   * 论坛插件，存储用户附件
-
-	
   * 浏览器插件，一键保存到微盘
-
-	
   * 终端设备
-
-	
   * 其他各种需要云存储的地方
 
 
@@ -45,7 +32,7 @@ categories:
 
 支持基于PHP的SDK开发，更多接口说明，请访问http://vdisk.me/api/doc
 
-```
+```php
 <?php
 include_once('vdisk.ex.class.php');
 $appkey=1234567;
@@ -74,4 +61,3 @@ $r=$vdisk->move_dir(3929,"我的图片们",0);
 print_r($r);
 ?>
 ```
-

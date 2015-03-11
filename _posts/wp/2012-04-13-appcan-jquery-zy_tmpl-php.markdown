@@ -15,17 +15,17 @@ tags:
 ---
 {% include JB/setup %}
 
-第一次写关于AppCan开发的文章，有人写了关于jQuery或者原生Ajax与json的交互，那我就稍微写写我开发过程中使用jQuery获取json后使用zy_tmpl生成下拉菜单的实例吧。
+第一次写关于AppCan开发的文章，有人写了关于jQuery或者原生```Ajax```与```json```的交互，那我就稍微写写我开发过程中使用jQuery获取json后使用```zy_tmpl```生成下拉菜单的实例吧。
 
-PHP服务端生成json的那部分就不写那么多了，就是输入一个数组$res,然后
+PHP服务端生成json的那部分就不写那么多了，就是输入一个数组```$res```,然后
 
-```
+```php
 echo $_GET['jsoncallback'] . "(" . json_encode($res) . ")";
 ```
 
 在AppCan的模版中，先加入一个下拉菜单，我的菜单是：
 
-```
+```html
 <!--下拉列表开始-->
 <div class=" ui-has-label">
 	<label  class="ui-select ">选择楼群：</label>
@@ -48,7 +48,7 @@ echo $_GET['jsoncallback'] . "(" . json_encode($res) . ")";
 
 然后在<script></script>中加入：
 
-```
+```javascript
 function getlq(){
 	$.getJSON('http://localhost/json.php?jsoncallback=?', function(data) {
 		var tmpl='<option value="${BuildingId}">${BuildingName}</option>';
@@ -58,4 +58,4 @@ function getlq(){
 }
 ```
 
-这样在onload或者onchange、onclick时执行getlq();就能实现select的更新。
+这样在```onload```或者```onchange```、```onclick```时执行```getlq()```;就能实现```select```的更新。

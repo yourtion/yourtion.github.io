@@ -2,11 +2,7 @@
 author: Yourtion
 comments: true
 date: 2012-02-25 02:31:30+00:00
-excerpt: '中文分词服务应用场景：
-
-  1. 对博客标题进行分词，提取其中的名词作为文章关键词。
-
-  2. 对用户搜索条件进行分词，提取其中关键词语进行搜索。'
+excerpt: '中文分词服务应用场景：对博客标题进行分词，提取其中的名词作为文章关键词。对用户搜索条件进行分词，提取其中关键词语进行搜索。'
 layout: post
 slug: sae-chinese-word-segmentation-trial
 title: SAE中文分词服务试用
@@ -23,26 +19,23 @@ tags:
 中文分词服务应用场景：
 
 1. 对博客标题进行分词，提取其中的名词作为文章关键词。
-
 2. 对用户搜索条件进行分词，提取其中关键词语进行搜索。
 
 如，用户搜索”SAE中文分词服务试用Yourtion”，可分词为"sae","中文","分词","服务","试用","yourtion"六个关键词来进行搜索，提高搜索成功率。
 
 使用指南
 
-在SAE在线管理平台进入应用的“分词服务”管理页面，启用分词服务，即可开始使用。代码示例：
+在SAE在线管理平台进入应用的“```分词服务```”```管理页面```，```启用分词服务```，即可开始使用。代码示例：
 
-```
+```php
 <?php
-        $str = "明天是星期天"
-        $seg = new SaeSegment();
-        $ret = $seg->segment($str, 1);
-
-        print_r($ret);    //输出
-
-        // 失败时输出错误码和错误信息
-        if ($ret === false)
-            var_dump($seg->errno(), $seg->errmsg());
+$str = "明天是星期天"
+$seg = new SaeSegment();
+$ret = $seg->segment($str, 1);
+print_r($ret);    //输出
+// 失败时输出错误码和错误信息
+if ($ret === false)
+	var_dump($seg->errno(), $seg->errmsg());
 ?>
 ```
 

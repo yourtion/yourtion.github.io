@@ -2,13 +2,7 @@
 author: Yourtion
 comments: true
 date: 2012-01-11 04:04:07+00:00
-excerpt: '做Web前端开发的童鞋们一定都知道PNG是一个相当不错的图片格式，但是这个好的格式却在IE6时代造成了麻烦，IE6会使透明的PNG的透明部分出现#DBEAED的色彩。透明不了。使得在FF下开发表现很好的界面换成IE浏览就惨不忍睹，又逼着换成GIF，而GIF的假透明在变换背景时造成毛边现象。
-
-  最近在做一个有背景像素图的网页，为了让图像背景可以穿透，只能使用PNG-24。
-
-  找了一番，结果发现居然还有官方的解决方案。;)
-
-  核心代码如下：'
+excerpt: '做Web前端开发的童鞋们一定都知道PNG是一个相当不错的图片格式，但是这个好的格式却在IE6时代造成了麻烦，IE6会使透明的PNG的透明部分出现#DBEAED的色彩。透明不了。使得在FF下开发表现很好的界面换成IE浏览就惨不忍睹，又逼着换成GIF，而GIF的假透明在变换背景时造成毛边现象。'
 layout: post
 slug: fix-ie6-png-transparent
 title: 修复IE6下PNG透明问题的官方解决方法
@@ -28,7 +22,7 @@ tags:
 
 核心代码如下：
 
-```
+```javascript
 /* 
 Correctly handle PNG transparency in Win IE 5.5 & 6. 
 Copyright 2007 Ignia, LLC 
@@ -63,6 +57,6 @@ function fixPng() {
 fixPng();
 ```
 
-使用方法就是把下面压缩包的js和images拷贝到你网站的目录，然后引用MSIE.PNG.js，就是这么简单。
+使用方法就是把下面压缩包的js和images拷贝到你网站的目录，然后引用```MSIE.PNG.js```，就是这么简单。
 
-下载地址：[![msiepng.rar (1.48K)](/wp-includes/images/dbank.jpg)](http://dl.dbank.com/c0yqm9kbbc)
+下载地址：[msiepng.rar)](http://dl.dbank.com/c0yqm9kbbc)

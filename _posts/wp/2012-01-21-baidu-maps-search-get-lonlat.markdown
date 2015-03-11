@@ -20,7 +20,7 @@ categories:
 
 核心的代码如下：
 
-```
+```javascript
 var map = new BMap.Map("container");//在指定的容器内创建地图实例
 map.setDefaultCursor("crosshair");//设置地图默认的鼠标指针样式
 map.enableScrollWheelZoom();//启用滚轮放大缩小，默认禁用。
@@ -43,16 +43,12 @@ function sear(result){//地图搜索
 }
 ```
 
-
-
 ### 实例请点击：
 
 
 [http://demo.yourtion.com/BaiduMap/mapSearch_getLonlet.html](http://demo.yourtion.com/BaiduMap/mapSearch_getLonlet.html)
 
-
 ### 源码：
-
 
 [https://github.com/yourtion/BlogCodes/blob/master/baidu-maps-search-get-lonlat.html](https://github.com/yourtion/BlogCodes/blob/master/baidu-maps-search-get-lonlat.html)
 
