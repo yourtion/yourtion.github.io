@@ -14,17 +14,15 @@ tags:
 ---
 {% include JB/setup %}
 
-iOS7之后，可以使用原生的CIFilter创建二维码，但是生成的二维码只有黑白，而且大小不好控制，找了一下资料，发现解决的方法，使二维码透明背景，自定义颜色，还能加上阴影效果，方法很简单，直接调用即可，效果如下：
+iOS7之后，可以使用原生的```CIFilter```创建二维码，但是生成的二维码只有黑白，而且大小不好控制，找了一下资料，发现解决的方法，使二维码透明背景，自定义颜色，还能加上阴影效果，方法很简单，直接调用即可，效果如下：
 
-
-
-[![CustomQRCodeDemo]({{ IMAGE_PATH }}2014/06/IMG_3977-315x560.png)]({{ IMAGE_PATH }}2014/06/IMG_3977.png)
+[![CustomQRCodeDemo]({{ IMAGE_PATH }}2014/06/IMG_3977.png)]({{ IMAGE_PATH }}2014/06/IMG_3977.png)
 
 **Demo地址：[https://github.com/yourtion/Demo_CustomQRCode](https://github.com/yourtion/Demo_CustomQRCode)**
 
-首先是二维码的生成，使用CIFilter很简单，直接传入生成二维码的字符串即可：
+首先是二维码的生成，使用```CIFilter```很简单，直接传入生成二维码的字符串即可：
 
-```
+```objc
 - (CIImage *)createQRForString:(NSString *)qrString {
     NSData *stringData = [qrString dataUsingEncoding:NSUTF8StringEncoding];
     // 创建filter
@@ -37,9 +35,9 @@ iOS7之后，可以使用原生的CIFilter创建二维码，但是生成的二�
 }
 ```
 
-因为生成的二维码是一个CIImage，我们直接转换成UIImage的话大小不好控制，所以使用下面方法返回需要大小的UIImage：
+因为生成的二维码是一个```CIImage```，我们直接转换成```UIImage```的话大小不好控制，所以使用下面方法返回需要大小的```UIImage```：
 
-```
+```objc
 - (UIImage *)createNonInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat) size {
     CGRect extent = CGRectIntegral(image.extent);
     CGFloat scale = MIN(size/CGRectGetWidth(extent), size/CGRectGetHeight(extent));
@@ -61,9 +59,9 @@ iOS7之后，可以使用原生的CIFilter创建二维码，但是生成的二�
 }
 ```
 
-因为生成的二维码是黑白的，所以还要对二维码进行颜色填充，并转换为透明背景，使用遍历图片像素来更改图片颜色，因为使用的是CGContext，速度非常快：
+因为生成的二维码是黑白的，所以还要对二维码进行颜色填充，并转换为透明背景，使用遍历图片像素来更改图片颜色，因为使用的是```CGContext```，速度非常快：
 
-```
+```objc
 void ProviderReleaseData (void *info, const void *data, size_t size){
     free((void*)data);
 }
@@ -109,9 +107,9 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
 }
 ```
 
-经过这样的处理，基本上二维码就成型了，如果还想加上阴影，就在ImageView的Layer上使用下面代码添加阴影：
+经过这样的处理，基本上二维码就成型了，如果还想加上阴影，就在```ImageView```的```Layer```上使用下面代码添加阴影：
 
-```
+```objc
 ImageView.layer.shadowOffset = CGSizeMake(0, 0.5);  // 设置阴影的偏移量
 ImageView.layer.shadowRadius = 1;  // 设置阴影的半径
 ImageView.layer.shadowColor = [UIColor blackColor].CGColor; // 设置阴影的颜色为黑色

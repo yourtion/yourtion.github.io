@@ -16,18 +16,18 @@ tags:
 ---
 {% include JB/setup %}
 
-这是很久前就像写的文章，大概一个月了吧，各种忙碌与偷懒，现在终于开始写下来。前段时间主要在做一个C语言程序的移动平台移植，因为设计到性能问题，所以大概看了一下Neon技术。
+这是很久前就像写的文章，大概一个月了吧，各种忙碌与偷懒，现在终于开始写下来。前段时间主要在做一个C语言程序的移动平台移植，因为设计到性能问题，所以大概看了一下```Neon```技术。
 
 
-<blockquote>ARM® NEON™ 通用 SIMD 引擎可有效处理当前和将来的多媒体格式，从而改善用户体验。
-NEON 技术可加速多媒体和信号处理算法（如视频编码/解码、2D/3D 图形、游戏、音频和语音处理、图像处理技术、电话和声音合成），其性能至少为 ARMv5 性能的 3 倍，为 ARMv6 SIMD 性能的 2 倍。</blockquote>
+>ARM® NEON™ 通用 SIMD 引擎可有效处理当前和将来的多媒体格式，从而改善用户体验。
+NEON 技术可加速多媒体和信号处理算法（如视频编码/解码、2D/3D 图形、游戏、音频和语音处理、图像处理技术、电话和声音合成），其性能至少为 ARMv5 性能的 3 倍，为 ARMv6 SIMD 性能的 2 倍。
 
 
 详细介绍可以看：http://www.arm.com/zh/products/processors/technologies/neon.php
 
 先贴一下我用来测试的两个简单Demo吧。
 
-第一个是使用已经iOS或者Android已经封装的Neon实现（参考：http://www.verydemo.com/demo_c92_i387648.html）：
+第一个是使用已经iOS或者Android已经封装的```Neon```实现（参考：http://www.verydemo.com/demo_c92_i387648.html）：
 
 C语言实现：
 
@@ -44,7 +44,7 @@ static float calc_c(const float* data, int size)
 }
 ```
 
-Neon的实现（需要引入Neon#include <arm_neon.h>）：
+Neon的实现（需要引入```Neon``` ```#include <arm_neon.h>```）：
 
 ```c
 static float calc_neon(const float* data, int size)
@@ -73,7 +73,7 @@ static float calc_neon(const float* data, int size)
 }
 ```
 
-第二个是使用Neon的汇编代码实现除2运算（参考：http://blog.noctua-software.com/arm-asm.html）
+第二个是使用```Neon```的汇编代码实现除2运算（参考：http://blog.noctua-software.com/arm-asm.html）
 
 C语言实现：
 
@@ -86,7 +86,7 @@ static void div_by_2c(int16_t *x, int n)
 }
 ```
 
-Neon加汇编（ARM assembly）实现：
+Neon加汇编（```ARM assembly```）实现：
 
 ```c
 static void div_by_2neon(int16_t *x, int n)

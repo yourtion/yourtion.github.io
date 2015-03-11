@@ -15,7 +15,7 @@ categories:
 
 **Demo：[https://github.com/yourtion/Demo_iOSRadiusAvatar](https://github.com/yourtion/Demo_iOSRadiusAvatar)**
 
-思路：使用view的layer属性，通过设置cornerRadius来设置圆角的半径，当view是正方形同时圆角为边长一般时形成圆形的头像。
+思路：使用```view```的```layer```属性，通过设置```cornerRadius```来设置圆角的半径，当```view```是正方形同时圆角为边长一般时形成圆形的头像。
 
 代码如下：
 
@@ -27,4 +27,4 @@ self.imageView1.layer.contents = (id)[[UIImage imageNamed:@"image"] CGImage];
 
 更多效果参见Demo。效果如下：
 
-[![iOS-RadiusAvatar-Demo]({{ IMAGE_PATH }}2014/02/iOS-RadiusAvatar-Demo-373x560.png)]({{ IMAGE_PATH }}2014/02/iOS-RadiusAvatar-Demo.png)
+[![iOS-RadiusAvatar-Demo]({{ IMAGE_PATH }}2014/02/iOS-RadiusAvatar-Demo.png)]({{ IMAGE_PATH }}2014/02/iOS-RadiusAvatar-Demo.png)

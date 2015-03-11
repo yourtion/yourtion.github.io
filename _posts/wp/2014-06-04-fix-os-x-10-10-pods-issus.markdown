@@ -36,57 +36,20 @@ tags:
 
 找了一下，找到解决的方法：
 
-首先安装Xcode6 的 Command Line Tools，在开发者中心下载
+首先安装Xcode6 的 ```Command Line Tools```，在开发者中心下载
 
 接下来按照下面步骤操作：
-
-
-
 	
   1. 打开 Xcode 6
+  2. 打开 ```Preferences```
+  3. 选择 ```Locations```选项卡
+  4. 将 ```Command Line Tools```选择为 ```Xcode 6.0```
+  5. 卸载 ```cocoapods```执行```$ sudo gem uninstall cocoapods```
+  6. 安装 ```xcodeproj```执行```$ sudo gem install xcodeproj```
+  7. 再安装 ```cocoapods```执行```$ sudo gem install cocoapods```
 
-	
-  2. 打开 Preferences
+最后运行 ```pod --version```
 
-	
-  3. 选择 `Locations
-```
- 选项卡
-
-	
-  4. 将 `Command Line Tools
-```
- 选择为 `Xcode 6.0
-```
-
-
-	
-  5. 卸载 `cocoapods
-```
-
-`$ sudo gem uninstall cocoapods
-```
-
-
-	
-  6. 安装 `xcodeproj
-```
-
-`$ sudo gem install xcodeproj
-```
-
-
-	
-  7. 再安装 `cocoapods
-```
-
-`$ sudo gem install cocoapods
-```
-
-
-
-最后运行 `pod --version
-```
- 就看到Pod正常了。
+就看到Pod正常了。
 
 _参考：[https://github.com/CocoaPods/CocoaPods/issues/2219#issuecomment-44979127](https://github.com/CocoaPods/CocoaPods/issues/2219#issuecomment-44979127)_

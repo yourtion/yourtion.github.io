@@ -13,9 +13,9 @@ tags:
 ---
 {% include JB/setup %}
 
-在Python项目中运行出现了“AttributeError: ResourceManager instance has no attribute '_warn_unsafe_extraction'”问题，研究了一下，发现是setuptools在MacOS下的一个问题（见下图），我出现问题的是pymongo的库，需要删除pymongo，然后降级setuptools再重新安装。
+在Python项目中运行出现了“AttributeError: ResourceManager instance has no attribute '_warn_unsafe_extraction'”问题，研究了一下，发现是```setuptools```在MacOS下的一个问题（见下图），我出现问题的是```pymongo```的库，需要删除```pymongo```，然后降级```setuptools```再重新安装。
 
-[![warn_unsafe_extraction]({{ IMAGE_PATH }}2014/02/warn_unsafe_extraction-560x267.png)]({{ IMAGE_PATH }}2014/02/warn_unsafe_extraction.png)
+[![warn_unsafe_extraction]({{ IMAGE_PATH }}2014/02/warn_unsafe_extraction.png)]({{ IMAGE_PATH }}2014/02/warn_unsafe_extraction.png)
 
 解决方法：
 

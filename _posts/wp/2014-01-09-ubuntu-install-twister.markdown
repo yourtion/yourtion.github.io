@@ -28,22 +28,23 @@ Twister 由三部分组成：第一部分就是基于块链的分布式用户注
 
 首先安装依赖：
 
-```
+```bash
 sudo apt-get git autoconf libtool
 sudo apt-get install build-essential libboost-all-dev libssl-dev libminiupnpc-dev
 ```
 
-再安装Berkeley DB：
+再安装```Berkeley DB```：
 
-```
+```bash
 sudo apt-get install libdb4.8-dev
 sudo apt-get install libdb++-dev
 ```
 
 更多相关依赖参见：[UNIX BUILD NOTES](https://github.com/miguelfreitas/twister-core/blob/master/doc/build-unix.md)
-接着安装libtorrent：
 
-```
+接着安装```libtorrent```：
+
+```bahs
 $ git clone https://github.com/miguelfreitas/twister-core twister
 $ cd twister/libtorrent
 $ ./bootstrap.sh
@@ -51,11 +52,11 @@ $ ./configure --enable-logging --enable-debug --enable-dht
 $ make
 ```
 
-如果是64位的系统，在./configure 后添加 "--with-boost-libdir=/usr/lib/x86_64-linux-gnu"
+如果是64位的系统，在```./configure``` 后添加 "```--with-boost-libdir=/usr/lib/x86_64-linux-gnu```"
 
 安装twister：
 
-```
+```bash
 $ cd src
 $ make -f makefile.unix
 ```
@@ -65,12 +66,9 @@ $ make -f makefile.unix
 注意：
 
 
-<blockquote>twister-html 必须按照在：`USERHOME/.twister/html
-```
+twister-html 必须按照在：```USERHOME/.twister/html```
 
-如果需要自定义twister-html的位置，需要添加参数： `-htmldir=directory
-```
-</blockquote>
+如果需要自定义twister-html的位置，需要添加参数： ```-htmldir=directory```
 
 
 
@@ -82,26 +80,24 @@ $ git clone https://github.com/miguelfreitas/twister-html.git html
 
 这样安装就完成了，使用下面命令启动twister
 
-```
+```bash
 ./twisterd -daemon -rpcuser=user -rpcpassword=pwd -rpcallowip=127.0.0.1
 ```
 
-
-
-<blockquote> 注意：不要修改“user”和“pwd”，它们是硬编码到html中的，如果修改会导致服务无法启动</blockquote>
+注意：不要修改“```user```”和“```pwd```”，它们是硬编码到html中的，如果修改会导致服务无法启动
 
 
 现在你可以通过：[http://127.0.0.1:28332/index.html](http://127.0.0.1:28332/index.html) 访问twister了！
 
-启动后需要等Block更新完成，如下图就是已经更新完成了。
+启动后需要等```Block```更新完成，如下图就是已经更新完成了。
 
-[![twister-block-update]({{ IMAGE_PATH }}2014/01/twister-block-update-560x356.png)]({{ IMAGE_PATH }}2014/01/twister-block-update.png)
+[![twister-block-update]({{ IMAGE_PATH }}2014/01/twister-block-update.png)]({{ IMAGE_PATH }}2014/01/twister-block-update.png)
 
-接下来就是，创建用户，如下图，“Create a new user”，然后检查用户名是否可用之后就可以创建用户了，创建同时会给你一个“Secret key”，千万别弄丢哦，弄丢了就和比特币一样再也找不回帐号了！
+接下来就是，创建用户，如下图，“```Create a new user```”，然后检查用户名是否可用之后就可以创建用户了，创建同时会给你一个“```Secret key```”，千万别弄丢哦，弄丢了就和比特币一样再也找不回帐号了！
 
-[![twister-add-user]({{ IMAGE_PATH }}2014/01/twister-add-user-560x362.png)]({{ IMAGE_PATH }}2014/01/twister-add-user.png)
+[![twister-add-user]({{ IMAGE_PATH }}2014/01/twister-add-user.png)]({{ IMAGE_PATH }}2014/01/twister-add-user.png)
 
-用户创建之后不是立即可用的，和比特币一样需要等待其他节点的确认，现在上线的人比较少，需要的时间比较长，只有用户被确认之后才可以更改你的Profile
+用户创建之后不是立即可用的，和比特币一样需要等待其他节点的确认，现在上线的人比较少，需要的时间比较长，只有用户被确认之后才可以更改你的```Profile```
 
 [![twister-wait]({{ IMAGE_PATH }}2014/01/twister-wait.png)]({{ IMAGE_PATH }}2014/01/twister-wait.png)
 
