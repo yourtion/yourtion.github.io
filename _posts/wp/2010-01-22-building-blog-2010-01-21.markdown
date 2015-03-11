@@ -1,0 +1,27 @@
+---
+author: Yourtion
+comments: true
+date: 2010-01-22 04:55:24+00:00
+layout: post
+slug: building-blog-2010-01-21
+title: 开博历程·第一天（2010-01-21）
+wordpress_id: 5
+categories:
+- 博客大事记
+tags:
+- Blog
+- King
+- Yourtion
+- 域名
+---
+{% include JB/setup %}
+
+King看到我申请了免费的空间和域名，说：“不如我们开博客吧？”
+
+然后就开始了轰轰烈烈的开博历程，一开始使用.cz.cc的域名和 awardspace.com的200m免费空间加10M数据库。结果发现King注册不了？-_-|||更大的问题是awardspace居然有500k的文件限制？？？有个po文件和一个js上不去。宣告这个空间不适合。
+
+然后是King找到的 freehostnow.org的1G空间和5个数据库，好不容易上传完成却发生php的head错误，原因未明···
+
+最后终于找到﻿pbmaster.com的250m空间，比较稳定和可靠。而且本身有提供wp-2.8.5。所以确定支持wp是没问题的。还注册了yourtion.tk顶级域名。一番幸苦和努力之后终于在晚上8点钟完成http://yourtion.tk的架设，之后是插件的安装。更加郁闷的问题出现了·TK域名不是很稳定·有时能访问有时不能？？⊙﹏⊙b汗
+
+算了，很晚了。明天继续研究·······

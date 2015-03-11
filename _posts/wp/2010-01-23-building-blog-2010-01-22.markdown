@@ -1,0 +1,18 @@
+---
+author: Yourtion
+comments: true
+date: 2010-01-23 13:20:52+00:00
+layout: post
+slug: building-blog-2010-01-22
+title: 开博历程·第二天（2010-01-22）
+wordpress_id: 270
+categories:
+- 博客大事记
+tags:
+- QQ空间
+- ru
+---
+{% include JB/setup %}
+
+因为pbmaster.com的ns服务器与tk域名的组合十分不稳定。所以今天又开始了寻找新免费空间与域名的历程。相继注册了weebly.com的自助建站还有全是德文还是什么意大利问的Xoom空间。但是都相继失败告终。最后成功注册了zymic.com的空间却发现还是会出现WordPress的解析问题。还有就是不断去抢ru域名，但是都没成功。好难好难···
+今天除了注册空间域名外，成功将QQ空间的文章和评论导入自己的站点。但是包括分类和标签都没有。还要自己手工慢慢加上去。至于导入的教程。稍后会贴上来。

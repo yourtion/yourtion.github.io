@@ -1,0 +1,77 @@
+---
+author: Yourtion
+comments: true
+date: 2012-01-17 12:03:46+00:00
+excerpt: 微盘Open API是为第三方开发者提供的一套REST接口,通过该接口任何第三方的公司和个人都可以创建基于微盘的应用,开发者可以将用户的存储需要交给微盘处理。
+layout: post
+slug: sae-vdisk
+title: SAE推出微盘开放接口
+wordpress_id: 3553
+categories:
+- 新浪SAE
+---
+{% include JB/setup %}
+
+微盘Open API是为第三方开发者提供的一套REST接口,通过该接口任何第三方的公司和个人都可以创建基于微盘的应用,开发者可以将用户的存储需要交给微盘处理。
+
+该接口具有以下特点：
+
+
+<blockquote>基于HTTP协议
+
+通过json格式返回数据
+
+可以通过任何支持REST的语言调用</blockquote>
+
+
+应用场景
+
+
+
+	
+  * 论坛插件，存储用户附件
+
+	
+  * 浏览器插件，一键保存到微盘
+
+	
+  * 终端设备
+
+	
+  * 其他各种需要云存储的地方
+
+
+使用指南
+
+支持基于PHP的SDK开发，更多接口说明，请访问http://vdisk.me/api/doc
+
+```
+<?php
+include_once('vdisk.ex.class.php');
+$appkey=1234567;
+$appsecret='123456739cc20556637a576ea1234567';
+$username='username@gmail.com';
+$password='123456';
+
+$vdisk=newvDisk($appkey,$appsecret);
+$vdisk->get_token($username,$password);
+$_SESSION['token']=$vdisk->token;
+$vdisk->keep_token();
+
+$r=$vdisk->upload_share_file('文件.txt',0);
+$r=$vdisk->get_list(0);
+$r=$vdisk->get_quota();
+$r=$vdisk->upload_with_md5('测试.pdf','03d5717869bb075e3bad73b527fabc8a');
+$r=$vdisk->get_file_info(219379);
+$r=$vdisk->create_dir('测试一下');
+$r=$vdisk->delete_dir(35647);
+$r=$vdisk->delete_file(123);
+$r=$vdisk->copy_file(219379,0,'副本.txt');
+$r=$vdisk->move_file(219379,0,'副本.txt');
+$r=$vdisk->rename_file(219379,'新的新的新的.z');
+$r=$vdisk->rename_dir(3929,'新的新的新的');
+$r=$vdisk->move_dir(3929,"我的图片们",0);
+print_r($r);
+?>
+```
+

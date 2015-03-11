@@ -1,5 +1,5 @@
 ---
-author: admin
+author: Yourtion
 comments: true
 date: 2014-09-29 05:53:26+00:00
 excerpt: 实现C语言程序的移动平台移植，因为设计到性能问题，所以大概看了一下Neon技术。从测试效果上看，在iPhone5上可以提升1.3倍和16.5倍性能
