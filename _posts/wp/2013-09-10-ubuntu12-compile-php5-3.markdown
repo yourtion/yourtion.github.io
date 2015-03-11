@@ -19,31 +19,31 @@ tags:
 
 安装Apache2.2
 
-```
+```bash
 sudo apt-get install apache2 -y
 ```
 
 然后安装MySQL5.5
 
-```
+```bash
 sudo apt-get install mysql-server-5.5 -y
 ```
 
 接着就是编译依赖环境：
 
-```
+```bash
  sudo apt-get install gcc g++ autoconf build-essential -y
 ```
 
 相关的lib支持库：
 
-```
+```bash
 sudo apt-get install libxml2 libxml2-dev libevent-1.4-2 libevent-dev bzip2 libbz2-dev libcurl3-gnutls libcurl4-gnutls-dev libpng12-0 libpng12-dev libjpeg62 libjpeg62-dev libfreetype6 libfreetype6-dev libmcrypt4 libmcrypt-dev zlib1g-dev libtidy-dev libmysqlclient-dev  -y
 ```
 
 安装：
 
-```
+```bash
 ./configure --prefix=/usr/local/php --with-mcrypt --with-gettext --with-mysql --with-gd --with-jpeg-dir --with-png-dir --with-curl --with-freetype-dir --enable-gd-native-ttf --enable-mbstring --enable-sockets --with-pdo-mysql --enable-fpm --with-zlib --enable-zip --with-bz2 --enable-bcmath --with-tidy --with-fpm-user=daemon --with-fpm-group=daemon
 
 sudo make
@@ -53,13 +53,13 @@ sudo make install
 
 然后安装cli和dev：
 
-```
+```bash
 sudo apt-get install php5-cli php5-dev
 ```
 
 最后开启Apache2支持：
 
-```
+```bash
 sudo apt-get install libapache2-mod-php5
 ```
 

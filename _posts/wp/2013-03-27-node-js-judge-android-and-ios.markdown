@@ -17,11 +17,11 @@ tags:
 ---
 {% include JB/setup %}
 
-最近在做微信公众账号相关的一些东西，然后遇到对用户浏览器判断的问题，因为想在服务器端得到相应的结果并返回不同的URL，所以就写了使用node.js判断Android与iOS浏览器的function，和大家共享。
+最近在做微信公众账号相关的一些东西，然后遇到对用户浏览器判断的问题，因为想在服务器端得到相应的结果并返回不同的URL，所以就写了使用```node.js```判断Android与iOS浏览器的```function```，和大家共享。
 
-function brows()还有使用代码如下：
+```function brows()```还有使用代码如下：
 
-```
+```javascript
 var http = require('http');
 function brows($agent){//移动终端浏览器版本信息
     return {
@@ -51,4 +51,4 @@ http.createServer(function (req, res) {
 console.log('Server running at http://127.0.0.1:1337/');
 ```
 
-事实上方法也很简单，就是将request.headers['user-agent']字段传入进行判断就OK了。
+事实上方法也很简单，就是将```request.headers['user-agent']```字段传入进行判断就OK了。

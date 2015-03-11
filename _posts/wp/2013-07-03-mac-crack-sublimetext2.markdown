@@ -14,20 +14,20 @@ tags:
 ---
 {% include JB/setup %}
 
-因为重装了Mac，所以很多软件都要重新安装，突然想起SublimeText2的破解，记得之前看到的教程是替换3342为3242，然后输入一个Key就可以了，但是替换保存后总是提示意外退出，进不去软件。所有重新研究一番，解决了这个问题。
+因为重装了Mac，所以很多软件都要重新安装，突然想起```SublimeText2```的破解，记得之前看到的教程是替换```3342```为```3242```，然后输入一个Key就可以了，但是替换保存后总是提示意外退出，进不去软件。所有重新研究一番，解决了这个问题。
 
-首先在“应用程序”中找到SublimeText2，右键“显示包内容”在包中找到路径“Contents/MacOS/Sublime Text 2”文件，复制一份，用SublimeText2打开复制的副本：
+首先在“应用程序”中找到```SublimeText2```，右键“显示包内容”在包中找到路径“```Contents/MacOS/Sublime Text 2```”文件，复制一份，用```SublimeText2```打开复制的副本：
 
-查找替换所有“3342 3032”为“3242 3032”保存退出SublimeText2，将复制保存的版本替换回原来的“Sublime Text 2”文件。
+查找替换所有“```3342 3032```”为“```3242 3032```”保存退出```SublimeText2```，将复制保存的版本替换回原来的“```Sublime Text 2```”文件。
 
-重新启动Sublime Text 2，在菜单“Help”选择“Enter License ”输入下面注册码，然后点击“Use”即完成破解。
+重新启动```Sublime Text 2```，在菜单“Help”选择“```Enter License``` ”输入下面注册码，然后点击“```Use```”即完成破解。
 
 [![SublimeText2]({{ IMAGE_PATH }}2013/07/SublimeText2.png)]({{ IMAGE_PATH }}2013/07/SublimeText2.png)
 
 License列表：
 
-
-<blockquote>—–BEGIN LICENSE—–
+```
+—–BEGIN LICENSE—–
 USA
 Unlimited User License
 EA7E-1640
@@ -95,4 +95,5 @@ DC42B172E38962890A87035FCE26049F
 C9167F72F4B25ED5E8E593D2E19F43E7
 C7EC9F459EA62F1DD1757DC9967C4801
 8E48683A4F0F9CAC3CC0621F2D48292F
-—–END LICENSE—–</blockquote>
+—–END LICENSE—–
+```

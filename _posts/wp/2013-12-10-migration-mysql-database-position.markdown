@@ -18,63 +18,54 @@ tags:
 
 首先建立数据库即将迁移到的目录
 
-```
+```bash
 mkdir /media/hdb1/db
 ```
 
 复制linux下原数据到新目录下
 
-```
+```bash
 cp -dpR /var/lib/mysql/* /media/hdb1/db
 ```
 
 给新目录重命属性
 
-```
+```bash
 chown mysql:mysql /media/hdb1/db
 ```
 
-修改文件"/etc/apparmor.d/usr.sbin.mysqld"
+修改文件"```/etc/apparmor.d/usr.sbin.mysqld```"
 
-```
+```bash
 sudo vim /etc/apparmor.d/usr.sbin.mysqld
 ```
 
 把
 
-
-<blockquote>/var/lib/mysql r,
-/var/lib/mysql/** rwk,</blockquote>
-
+```bash
+/var/lib/mysql r,
+/var/lib/mysql/** rwk,
+```
 
 改成
 
-
-<blockquote>/media/hdb1/db r,
+```bash
+/media/hdb1/db r,
 /media/hdb1/db/** rwk,</blockquote>
-
+```
 
 修改目录
 
-```
+```bash
 sudo vim /etc/mysql/my.cnf
 ```
 
-如
-
-
-<blockquote>datadir = /var/mysql</blockquote>
-
-
-换成
-
-
-<blockquote>datadir = /media/hdb1/db</blockquote>
+如```datadir = /var/mysql```换成```datadir = /media/hdb1/db```
 
 
 再开服务器
 
-```
+```bash
 sudo /etc/init.d/apparmor restart sudo /etc/init.d/mysql restart
 ```
 

@@ -14,13 +14,13 @@ tags:
 ---
 {% include JB/setup %}
 
-刚刚开始使用Python写OpenCV的东西，发现关于使用Python写OpenCV的还是比较少的，先整了一个人脸识别的最简单实例，与大家共享！
+刚刚开始使用Python写OpenCV的东西，发现关于使用```Python```写```OpenCV```的还是比较少的，先整了一个人脸识别的最简单实例，与大家共享！
 
-环境：Python 2.7.4、OpenCV 2.4.6、LinuxMint 15
+环境：```Python``` 2.7.4、```OpenCV``` 2.4.6、```LinuxMint``` 15
 
 最简单代码如下：
 
-```
+```python
 import os,sys,cv2
 pth = os.path.dirname(sys.argv[0])
 cv2.namedWindow("camera")
@@ -42,7 +42,7 @@ cv2.destroyWindow("camera")
 
 接下来我还增加输出统计人数的功能，还是最简单的方法，统计找到的obj数目，只有在变化的时候才输出，代码如下：
 
-```
+```python
 import os,sys,cv2
 
 pth = os.path.dirname(sys.argv[0])

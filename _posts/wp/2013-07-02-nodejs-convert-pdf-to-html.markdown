@@ -24,8 +24,7 @@ Poppler：http://poppler.freedesktop.org/
 
 这样就能在Node.js中利用子线程调用转换了，不多说，实现代码如下：
 
-
-```
+```javascript
 function getData(file,callback){
     var out="";
     last = exec('pdftohtml -p -noframes '+file);
@@ -35,13 +34,11 @@ function getData(file,callback){
 }
 ```
 
-
 PDF文件上传处理部分：
 
 jade：
 
-
-```
+```javascript
 form(method="post", enctype="multipart/form-data", action="/upload")
     fieldset
         legend General
@@ -52,11 +49,10 @@ form(method="post", enctype="multipart/form-data", action="/upload")
         input(type="submit", value="Save")
 ```
 
-
 Node.js：
 
 
-```
+```javascript
 app.post('/upload', function (req, res) {
     // 获得文件的临时路径
     var date = new Date();

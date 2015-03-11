@@ -14,11 +14,11 @@ tags:
 ---
 {% include JB/setup %}
 
-使用在Ubuntu下使用g++编译一个opencv的项目，用作者写的sh文件编译一直出错，研究了许久，终于找到解决的方法。共享之！
+使用在Ubuntu下使用```g++```编译一个```opencv```的项目，用作者写的sh文件编译一直出错，研究了许久，终于找到解决的方法。共享之！
 
 原来的编译代码如下：
 
-```
+```bash
 g++ `pkg-config opencv --libs --cflags opencv` tclip.cpp -o tclip
 ```
 
@@ -28,9 +28,9 @@ g++ `pkg-config opencv --libs --cflags opencv` tclip.cpp -o tclip
 
 
 
-研究一番发现是opencv的库没有成功的调用，找了很久文档，发现编译的命令有问题，改成下面的命令就正常了。
+研究一番发现是```opencv```的库没有成功的调用，找了很久文档，发现编译的命令有问题，改成下面的命令就正常了。
 
-```
+```bash
 g++ tclip.cpp -o tclip `pkg-config --cflags --libs opencv`
 ```
 

@@ -19,13 +19,13 @@ tags:
 
 安装sync：在CentOS服务器，我们可以执行以下命令安装
 
-```
+```bash
 yum install rsync
 ```
 
 对于debian、ubuntu服务器，则是以下命令
 
-```
+```bash
 sudo apt-get install rsync
 ```
 
@@ -33,11 +33,11 @@ sudo apt-get install rsync
 
 首先，服务器端（192.168.2.100）及客户端（192.168.2.199）都需要安装rsync，以root用户登录，重点在配置服务器端上；
 
-需要两个配置，一个是主配置文件rsyncd.conf ，另一个是设定客户端访问服务器端的用户名密码信息的文件，名称任意，只要主配置文件中指定正确即可，这里命名为rsync.pwd；
+需要两个配置，一个是主配置文件```rsyncd.conf``` ，另一个是设定客户端访问服务器端的用户名密码信息的文件，名称任意，只要主配置文件中指定正确即可，这里命名为```rsync.pwd```；
 
-我们把主配置文件rsyncd.conf 放置在/etc/目录下，内容如下：
+我们把主配置文件```rsyncd.conf``` 放置在```/etc/```目录下，内容如下：
 
-```
+```ini
 # Minimal configuration file for rsync daemon
 # See rsync(1) and rsyncd.conf(5) man pages for help
 # This line is required by the /etc/init.d/rsyncd script
@@ -78,35 +78,35 @@ auth users = backup
 secrets file = /etc/rsync.pwd
 ```
 
-另一个文件（rsync.pwd）为客户端向服务器端传输文件时的用户名及口令，我们就将它新建成rsync.pwd便于识别，我也将他放置在/etc/目录下；
+另一个文件（```rsync.pwd```）为客户端向服务器端传输文件时的用户名及口令，我们就将它新建成rsync.pwd便于识别，我也将他放置在```/etc/```目录下；
 
 内容这样写，前面是用户名，后面是客户端访问的密码
 
-```
+```bash
 backup:backup
 ```
 
-将两个文件的权限设置为600，如下：
+将两个文件的权限设置为```600```，如下：
 
-```
+```bash
 sudo chmod 600 /etc/rsyncd.conf
 sudo chmod 600 /etc/rsync.pwd
 ```
 
 启动服务器端的rsync：
 
-```
+```bash
 sudo rsync --daemon
 ```
 
-接下来是客户端设置，新建一密码文件rsync.pass，内容写入与主配置rsync.pwd内密码一致的内容，即：backup，将此文件放置在/etc目录下
+接下来是客户端设置，新建一密码文件```rsync.pass```，内容写入与主配置```rsync.pwd```内密码一致的内容，即：backup，将此文件放置在/etc目录下
 
 例如我们需要将客户端目录下的/www/myfile 目录备份至服务器，可以使用如下命令：
 
-```
+```bash
 rsync -aSvH --password-file=/etc/rsync.pass /www/myfile tadu@192.168.2.100::files
 ```
 
-可以列出传输的文件，待传输完毕，我们去服务器端的/home/backup/file目录查看，可以看到myfile目录已经备份过来了。
+可以列出传输的文件，待传输完毕，我们去服务器端的```/home/backup/file```目录查看，可以看到```myfile```目录已经备份过来了。
 
 

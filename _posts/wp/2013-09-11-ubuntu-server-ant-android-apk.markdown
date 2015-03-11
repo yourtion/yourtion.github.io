@@ -16,7 +16,7 @@ tags:
 ---
 {% include JB/setup %}
 
-最近在做一个电子书生成的项目，需要根据电子书的内容资源在线添加后自动打包成不同的包名的APK，同时自动添加各个市场渠道等内容信息，由于需要与后端联动，一键生成，所以必须在服务器上进行Android项目的打包生成，因为服务器是UbuntuServer，没有图像界面，所有只能搭建一个命令行环境，直接执行ant脚本打包，找了一下资料，根据自己的环境配置搭建过程与大家分享
+最近在做一个电子书生成的项目，需要根据电子书的内容资源在线添加后自动打包成不同的包名的APK，同时自动添加各个市场渠道等内容信息，由于需要与后端联动，一键生成，所以必须在服务器上进行Android项目的打包生成，因为服务器是UbuntuServer，没有图像界面，所有只能搭建一个命令行环境，直接执行```ant```脚本打包，找了一下资料，根据自己的环境配置搭建过程与大家分享
 
 
 ### Ant环境准备
@@ -24,32 +24,32 @@ tags:
 
 最简单的就是使用：
 
-```
+```bash
 sudo apt-get install ant
 ```
 
 或者是手动安装：
 
-一、到Apache官网下载最新版本的ant：http://ant.apache.org/ 。解压下载下来的.tar.gz文件：
+一、到Apache官网下载最新版本的ant：http://ant.apache.org/ 。解压下载下来的```.tar.gz```文件：
 
-```
+```bash
 tar -xf apache-ant-1.8.2-bin.tar.gz
 ```
 
-二、将解压出来的文件移动到/opt/下：sudo mv apache-ant-1.8.2 /opt/ （sudo 不能省，否则没有权限）
+二、将解压出来的文件移动到```/opt/```下：```sudo mv apache-ant-1.8.2 /opt/``` （sudo 不能省，否则没有权限）
 
-三、配置环境变量：sudo vim /etc/profile，在原来基础上添加以下蓝体字：
+三、配置环境变量：```sudo vim /etc/profile```，在原来基础上添加以下蓝体字：
 
-
-<blockquote>export ANT_HOME=/opt/apache-ant-1.8.2
+```bash
+export ANT_HOME=/opt/apache-ant-1.8.2
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
 export PATH=$JAVA_HOME/bin:$PATH:$ANT_HOME/bin
-export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</blockquote>
-
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+```
 
 四、验证是否安装成功：
 
-```
+```bash
 ant -version
 ```
 
@@ -62,40 +62,40 @@ Apache Ant(TM) version 1.8.2 compiled on December 20 2010
 
 在http://developer.android.com/sdk/index.html 下载adt-bundle-linux-x86_64-20130729.zip或者相应最新版本，并解压：
 
-```
+```bash
 unzip adt-bundle-linux-x86_64-20130729.zip
 ```
 
 将解压后的sdk目录拷贝到/opt/sdk
 
-```
+```bash
 cp ./adt-bundle-linux-x86_64-20130729/sdk/ /opt/sdk
 ```
 
 设置环境变量：
 
-```
+```bash
 vim /etc/bash.bashrc
 ```
 
 在最下面加上:
 
-
-<blockquote>export ANDROID_SDK_HOME=/opt/sdk/
-export PATH=$PATH:$ANDROID_SDK_HOME/tools:$ANDROID_SDK_HOME/build-tools/android-4.3:$ANDORID_SDK_HOME/platforms/android-18/</blockquote>
-
+```bash
+export ANDROID_SDK_HOME=/opt/sdk/
+export PATH=$PATH:$ANDROID_SDK_HOME/tools:$ANDROID_SDK_HOME/build-tools/android-4.3:$ANDORID_SDK_HOME/platforms/android-18/
+```
 
 保存后运行一下：bash使环境变量生效。
 
 现在可以通过运行android来测试是否成功了！
 
-```
+```bash
 android create project --target "android-18" --name APP --path App --activity MainActivity --package com.yourtion.android
 ```
 
 在编译生成APK的时候还需要JRE，可能需要先安装，我安装的是JRE7的
 
-```
+```bash
 sudo apt-get install openjdk-7-jre openjdk-7-jdk openjdk-7-jre-lib
 ```
 
