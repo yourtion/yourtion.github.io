@@ -17,7 +17,7 @@ tags:
 
 使用Ticker显示滚动消息和使用日期函数获取时间~~
 
-```
+```java
 import javax.microedition.midlet.*;
 import javax.microedition.lcdui.*;
 import java.util.*;

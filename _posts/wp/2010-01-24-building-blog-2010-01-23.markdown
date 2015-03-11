@@ -9,20 +9,18 @@ wordpress_id: 274
 categories:
 - 博客大事记
 tags:
-- King
 - ru
 ---
 {% include JB/setup %}
 
-今天白天整天都出去了，所以白天都没弄博客。回来之后King已经去注册了那个要写信才能注册的000webhost.com，而且已经进入等待阶段。我也赶忙去注册个玩玩。好不容易用我那没过四级的英文加上伟大的Google写出一段煽情的文字，然后等回复。然后在十一点的时候跑去注册ru域名。居然一下成功两个？？那么神奇·接下来就是不断地找dns解析网站。却发现没有哪个空间有A记录···最后自己找了个A记录加上去。那个000webhost.com的回复不是二十分钟就回？？等到快十二点都不理我？难道是英文太烂看不懂？算了·回去睡觉先。明天再说。
+今天白天整天都出去了，所以白天都没弄博客。回来之后King已经去注册了那个要写信才能注册的000webhost.com，而且已经进入等待阶段。
+
+我也赶忙去注册个玩玩。好不容易用我那没过四级的英文加上伟大的Google写出一段煽情的文字，然后等回复。然后在十一点的时候跑去注册ru域名。居然一下成功两个？？那么神奇·接下来就是不断地找dns解析网站。却发现没有哪个空间有A记录···最后自己找了个A记录加上去。那个000webhost.com的回复不是二十分钟就回？？
+
+等到快十二点都不理我？难道是英文太烂看不懂？算了·回去睡觉先。明天再说。
 
 英文信内容：
-
-
-** I can‘t receive the confirmation letter**
-
-
-
-
-
-I'm a student and I love PHP very much.So I want to have my own blog and website.But I can't bear the fees of charge space.And i know 000webhost's space is very good.So I came to register one.But I can‘t receive the confirmation letter after I finish register.
+>
+> ** I can‘t receive the confirmation letter**
+> 
+> I'm a student and I love PHP very much.So I want to have my own blog and website.But I can't bear the fees of charge space.And i know 000webhost's space is very good.So I came to register one.But I can‘t receive the confirmation letter after I finish register.

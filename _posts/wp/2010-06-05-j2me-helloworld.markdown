@@ -17,7 +17,7 @@ tags:
 
 开始写j2me~今天写了最简单最经典的入门程序“Hello World”。分享一下！
 
-```
+```java
 import javax.microedition.midlet.*;
 import javax.microedition.lcdui.*;
 

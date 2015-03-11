@@ -20,9 +20,10 @@ tags:
 
 修改数据库
 
-在 phpMyAdmin 中选择新建的数据库，然后点击 “SQL”，并在输入以下代码：
+在 ```phpMyAdmin``` 中选择新建的数据库，然后点击 “```SQL```”，并在输入以下代码：
 
-`UPDATE wp_options SET option_value = replace(option_value,'http://yourtion.tk','http://yourtion.com') WHERE option_name ='home' OR option_name ='siteurl';
+```sql
+UPDATE wp_options SET option_value = replace(option_value,'http://yourtion.tk','http://yourtion.com') WHERE option_name ='home' OR option_name ='siteurl';
 
 UPDATE wp_posts SET post_content = replace( post_content,'http://yourtion.tk', 'http://yourtion.com');
 
@@ -37,9 +38,10 @@ UPDATE wp_posts SET guid = replace(guid,'http://yourtion.tk', 'http://yourtion.c
 
 301 永久重定向
 
-在原来域名的 .htaccess 文件上添加以下代码：
+在原来域名的 ```.htaccess``` 文件上添加以下代码：
 
-`RewriteEngine on
+```ini
+RewriteEngine on
 RewriteCond %{HTTP_HOST} ^yourtion.tk$ [OR]
 RewriteCond %{HTTP_HOST} ^www.yourtion.tk$
 RewriteRule ^/?$ "http\:\/\/yourtion\.com" [R=301,L]

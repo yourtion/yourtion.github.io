@@ -23,13 +23,15 @@ tags:
 
 我的电脑->属性->高级->环境变量->系统变量中添加以下环境变量：
 
+```ini
 JAVA_HOME=C:\j2sdk1.4.2_04
 CLASSPATH=.;C:\j2sdk1.4.2_04\lib\tools.jar;C:\j2sdk1.4.2_04\lib\dt.jar;C:\j2sdk1.4.2_04\bin;
 path=C:\j2sdk1.4.2_04\bin;
+```
 
 写一个简单的java程序来测试J2SDK是否已安装成功：
 
-```
+```java
 public class hello
 {
 	public static void main(String args[])
@@ -43,8 +45,10 @@ public class hello
 
 打开命令提示符窗口，进入到hello.java所在目录，键入下面的命令
 
+```bash
 javac hello.java
 java hello
+```
 
 此时若打印出来hello则安装成功，若没有打印出这句话，仔细检查以上配置是否正确。
 

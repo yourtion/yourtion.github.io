@@ -17,7 +17,7 @@ tags:
 
 多选框在程序中使用相当广泛~选择某些功能什么都要靠它~~
 
-```
+```java
 import javax.microedition.midlet.*;
 import javax.microedition.lcdui.*;
 

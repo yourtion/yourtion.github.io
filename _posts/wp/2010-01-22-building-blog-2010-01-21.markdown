@@ -10,8 +10,6 @@ categories:
 - 博客大事记
 tags:
 - Blog
-- King
-- Yourtion
 - 域名
 ---
 {% include JB/setup %}

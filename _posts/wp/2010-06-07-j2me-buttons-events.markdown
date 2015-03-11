@@ -19,7 +19,7 @@ tags:
 
 发现用Java很麻烦的感觉~写个东西老是要继承类啊什么的·~~对于习惯傻瓜编程的我很不习惯~~写个退出都那么麻烦··郁闷就是···
 
-```
+```java
 import javax.microedition.midlet.*;
 import javax.microedition.lcdui.*;
 

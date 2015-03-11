@@ -21,28 +21,27 @@ tags:
 我收到的回复如下：
 
 
-<blockquote>Hello,
+> Hello,
 
-I am showing that you are not using Backy LLCs nameservers. I am not sure why people do not read our company emails but this issue was emailed out to everyone twice before all this stuff happened.
+> I am showing that you are not using Backy LLCs nameservers. I am not sure why people do not read our company emails but this issue was emailed out to everyone twice before all this stuff happened.
 
-We moved servers and if you failed to use our nameservers your website would stop working as you did not get the automatic updates. Backy LLC does not warranty any domain/hosting account if you are not using our nameservers.
+> We moved servers and if you failed to use our nameservers your website would stop working as you did not get the automatic updates. Backy LLC does not warranty any domain/hosting account if you are not using our nameservers.
 
-Update to ns1.backycorp.com and ns2.backycorp.com and you will be good to go.
+> Update to ns1.backycorp.com and ns2.backycorp.com and you will be good to go.
 
-FYI the new server ip address is 74.86.183.194. In the future it is highly recommended that you use our nameservers.
+> FYI the new server ip address is 74.86.183.194. In the future it is highly recommended that you use our nameservers.
 
 
-Sincerely,
+> Sincerely,
 
-William Backy
-CEO/Owner Backy LLC
+> William Backy
+> CEO/Owner Backy LLC
 
-Ticket Details
-===================
-Ticket ID: BSU-565445
-Department: Free Hosting Support
-Priority: High
-Status: Closed</blockquote>
+> Ticket Details
+> Ticket ID: BSU-565445
+> Department: Free Hosting Support
+> Priority: High
+> Status: Closed
 
 
 大概内容是说我没有吧主DNS设置成他们提供的·~那样他们更新服务器的IP我就无法得知和及时更改~因为我之前用的是Godaddy的DNS~这次没办法就切换回他的DNS~我也建议使用BackyLLC的朋友把DNS设置过去~这样也可以反正被墙
@@ -54,19 +53,19 @@ Status: Closed</blockquote>
 我提交问题是在“2010年4月19日 上午11:05”然后在“2010年4月19日 上午11:06”收到关于问题已经被查看的信息：
 
 
-<blockquote>
-Hello,
-
-I am looking into your issue. I will have an update for you shortly.
-
-Sincerely,
-
-William Backy
-CEO/Owner Backy LLC
-
-Ticket Details
-===================
-Ticket ID: BSU-565445</blockquote>
+> Hello,
+> 
+> I am looking into your issue. I will have an update for you shortly.
+> 
+> Sincerely,
+> 
+> William Backy
+> 
+> CEO/Owner Backy LLC
+> 
+> Ticket Details
+> 
+> Ticket ID: BSU-565445
 
 
 然后在“2010年4月19日 上午11:10”就收到上面的回复~前后才5分钟不到啊···

@@ -26,10 +26,12 @@ tags:
 
 在模板的“default.hbs”的</body>之前添加多说的js代码部分（即<script type="text/javascript"></script>包含部分）[https://github.com/yourtion/Vapor/blob/yourtion/default.hbs](https://github.com/yourtion/Vapor/blob/yourtion/default.hbs)
 
-然后在“page.hbs”和“post.hbs”的“{{/post}}”标签之前添加多说的评论DIV，这个已经针对Ghost修改：
+然后在“page.hbs”和“post.hbs”的“\{\{/post}}”标签之前添加多说的评论DIV，这个已经针对Ghost修改：
 
 ```xhtml
-<div class="ds-thread" data-thread-key="{{id}}" data-title="{{title}}" data-url="{{url absolute="true"}}"></div>
+{% raw %}
+<div class="ds-thread" data-thread-key="\{\{id}}" data-title="\{\{title}}" data-url="\{\{url absolute="true"}}"></div>
+{% endraw %}
 ```
 
 参考：[https://github.com/yourtion/Vapor/blob/yourtion/post.hbs](https://github.com/yourtion/Vapor/blob/yourtion/post.hbs)

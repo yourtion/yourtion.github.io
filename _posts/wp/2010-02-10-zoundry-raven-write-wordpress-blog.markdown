@@ -10,7 +10,6 @@ categories:
 - WordPress技术
 tags:
 - WordPress
-- Zoundry Raven
 ---
 {% include JB/setup %}
 
@@ -25,7 +24,7 @@ tags:
 ![]({{ IMAGE_PATH }}2010/03/zrclip_007p21ddbd4c.png)
 
 首先去下载： [zRaven-1.0.375.exe](http://www.dbank.com/download.action?t=40&k=MzUyNzY5NDU=&pcode=LCwxMjAzODksMTIwMzg5&rnd=4)  
->
+
 
 我是直接在云端下载的，至于云端是什么？你可以 [Google](http://g.cn/) 一下或者 [百度](http://baidu.com/) 一下。我应该会写篇文章介绍一下云端这个软件。
 
@@ -77,9 +76,13 @@ tags:
 
 缩略名这个选项可以设置文章别名（亮点之一）下面还能设置日志密码。
 
-![]({{ IMAGE_PATH }}2010/03/zrclip_016p3221a408.png)![]({{ IMAGE_PATH }}2010/03/zrclip_017p53121cd.png)
+![]({{ IMAGE_PATH }}2010/03/zrclip_016p3221a408.png)
 
-可以看到，里面还有ping那些收录网站，trackback别人的文章。而且对于WordPress来说，支持![]({{ IMAGE_PATH }}2010/03/zrclip_018n2438b45.png)
+![]({{ IMAGE_PATH }}2010/03/zrclip_017p53121cd.png)
+
+可以看到，里面还有ping那些收录网站，trackback别人的文章。而且对于WordPress来说，支持
+
+![]({{ IMAGE_PATH }}2010/03/zrclip_018n2438b45.png)
 
 最后一点，Zoundry Raven支持WordPress的more标签，
 
