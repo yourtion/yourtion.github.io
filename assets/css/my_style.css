@@ -30,6 +30,7 @@
 }
 .tag-list li {
 	list-style: inherit !important;
+	line-height: 180%;
 }
 .container p img{
 	max-width: 90%;
