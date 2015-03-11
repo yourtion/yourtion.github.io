@@ -14,13 +14,13 @@ tags:
 ---
 {% include JB/setup %}
 
-之前介绍了[《天地图GeoGlobe添加经纬度-比例尺》](http://blog.yourtion.com/?p=2136)，现在继续介绍空间的功能，这次添加矢量绘图空间和图层开关。对地图的应该还是不错的，看看接下来能不能在此基础上做空间分析。
+之前介绍了[《天地图GeoGlobe添加经纬度-比例尺》](/geoglobe-latitude-longitude-scale.html)，现在继续介绍空间的功能，这次添加矢量绘图空间和图层开关。对地图的应该还是不错的，看看接下来能不能在此基础上做空间分析。
 
 跟上一次一样，还是很简单的。通过实例化GeoSurf.Control.LayerSwitcher，然加图层开关。然后添加矢量图层，然后在VLayer图层创建编辑工具栏EditingToolbar就可以了···
 
 代码如下：
 
-```
+```html
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -50,5 +50,6 @@ tags:
 </html>
 ```
 
-[![]({{ IMAGE_PATH }}2011/05/tc-560x420.jpg)]({{ IMAGE_PATH }}2011/05/tc.jpg)
+[![]({{ IMAGE_PATH }}2011/05/tc.jpg)]({{ IMAGE_PATH }}2011/05/tc.jpg)
+
 查看此示例的实际效果：[点击这里看Demo](http://demo.yourtion.com/GeoGlobe/control_2.php)

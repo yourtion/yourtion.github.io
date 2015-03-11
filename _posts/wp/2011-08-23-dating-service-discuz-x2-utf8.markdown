@@ -14,8 +14,8 @@ tags:
 ---
 {% include JB/setup %}
 
-之前看到Discuz!X的交友中心都是GBK的，因为我的Discuz是UTF-8的，所以没办法只有自己转，现在分享一下。
+之前看到Discuz!X的交友中心都是GBK的，因为我的```Discuz```是```UTF-8```的，所以没办法只有自己转，现在分享一下。
 
-[![]({{ IMAGE_PATH }}2011/08/jiaoyou-560x429.jpg)]({{ IMAGE_PATH }}2011/08/jiaoyou.jpg)
+[![]({{ IMAGE_PATH }}2011/08/jiaoyou.jpg)]({{ IMAGE_PATH }}2011/08/jiaoyou.jpg)
 
 [![【UTF8】交友中心4.0.4 for discuzX.rar (115.86K)](/wp-includes/images/dbank.jpg)](http://dl.dbank.com/c03ue5w61j)

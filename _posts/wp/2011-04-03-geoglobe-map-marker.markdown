@@ -16,13 +16,13 @@ tags:
 ---
 {% include JB/setup %}
 
-上一次我们已经在[《天地图GeoGlobe开发入门》](http://blog.yourtion.com/?p=1988)中利用GeoGlobe二维地图API创建了一个map对象，在div中显示出以嘉应学院为中心点的640*480像素大小的卫星地图，现在我们要在地图上添加地图标记，也就是Marker，用来标记出我们刚落成的“活活艺术教育中心”的位置所在。
+上一次我们已经在[《天地图GeoGlobe开发入门》](/geoglobe-development-entry.html)中利用GeoGlobe二维地图API创建了一个```map```对象，在div中显示出以嘉应学院为中心点的640*480像素大小的卫星地图，现在我们要在地图上添加地图标记，也就是Marker，用来标记出我们刚落成的“活活艺术教育中心”的位置所在。
 
-实现也是比较简单的，我们通过实例化GeoSurf.LonLat和GeoSurf.Icon两个类，再在地图上创建一个特殊的层叫做GeoSurf.Layer最后实例化GeoSurf.Marker，最终创建一个地图标记Marker（GeoGlobe地标）。
+实现也是比较简单的，我们通过实例化```GeoSurf.LonLat```和```GeoSurf.Icon```两个类，再在地图上创建一个特殊的层叫做```GeoSurf.Layer```最后实例化```GeoSurf.Marker```，最终创建一个地图标记```Marker```（GeoGlobe地标）。
 
 源代码如下：
 
-```
+```html
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -55,6 +55,8 @@ window.onload=function()
 
 您查看此示例的实际效果：[点击这里看Demo](http://demo.yourtion.com/GeoGlobe/marker.php)
 
-其中我使用的Marker图标是PS过的，加上了文字，你可以使用没有PS的Marker：[![地图Marker](http://demo.yourtion.com/GeoGlobe/marker.png)](http://demo.yourtion.com/GeoGlobe/marker.png)
+其中我使用的Marker图标是PS过的，加上了文字，你可以使用没有PS的Marker：
+
+[![地图Marker](http://demo.yourtion.com/GeoGlobe/marker.png)](http://demo.yourtion.com/GeoGlobe/marker.png)
 
 基本来说，上面的代码注释已经比较清楚，我也就不细讲，应该可以看懂得啦~

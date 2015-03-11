@@ -24,4 +24,4 @@ tags:
 
 从快滤池出来后再次进行消毒，目的是除去处理过程中引入的污染，进而进入蓄水池，最后通过变频加压泵将水送出到千家万户。在进水出水的时候还通过养有金鱼的生物观察池对水质进行生物监控。
 
-[![]({{ IMAGE_PATH }}2011/11/meizhou-xiqiao-560x362.jpg)]({{ IMAGE_PATH }}2011/11/meizhou-xiqiao.jpg)
+[![]({{ IMAGE_PATH }}2011/11/meizhou-xiqiao.jpg)]({{ IMAGE_PATH }}2011/11/meizhou-xiqiao.jpg)

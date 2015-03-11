@@ -21,15 +21,18 @@ tags:
 
 首先去opencolud把我所有的嘀咕导出成文章发到博客大巴，然后进行第二步：
 
-[![]({{ IMAGE_PATH }}2011/01/1-150x150.jpg)]({{ IMAGE_PATH }}2011/01/1.jpg)[![]({{ IMAGE_PATH }}2011/01/2-150x150.jpg)]({{ IMAGE_PATH }}2011/01/2.jpg)[![]({{ IMAGE_PATH }}2011/01/3-150x150.jpg)]({{ IMAGE_PATH }}2011/01/3.jpg)
+[![]({{ IMAGE_PATH }}2011/01/1.jpg)]({{ IMAGE_PATH }}2011/01/1.jpg)
+
+[![]({{ IMAGE_PATH }}2011/01/2.jpg)]({{ IMAGE_PATH }}2011/01/2.jpg)
+
+[![]({{ IMAGE_PATH }}2011/01/3.jpg)]({{ IMAGE_PATH }}2011/01/3.jpg)
 
 然后把导出来的数据黏贴到记事本进行初步的整理，再导入到Excel中进行SQL的批量生成，然后发现有时区问题造成的时间差，又研究了好一些SQL的解决方案，最后写出了SQL。
 
+[![]({{ IMAGE_PATH }}2011/01/4.jpg)]({{ IMAGE_PATH }}2011/01/4.jpg)
 
-[![]({{ IMAGE_PATH }}2011/01/4-560x360.jpg)]({{ IMAGE_PATH }}2011/01/4.jpg)
+然后进入数据库导入数据。因为嘀咕的数据只有微博内容没有回复什么的，最后也就只能新建个谓语叫“之前说”，至此，微博内容数据恢复完成，YourtionSay回来了。
 
+欢迎继续支持http://t.yourtion.com
 
-然后进入数据库导入数据。因为嘀咕的数据只有微博内容没有回复什么的，最后也就只能新建个谓语叫“之前说”，至此，微博内容数据恢复完成，YourtionSay回来了。欢迎继续支持http://t.yourtion.com
-
-
-[![]({{ IMAGE_PATH }}2011/01/6-560x430.jpg)]({{ IMAGE_PATH }}2011/01/6.jpg)
+[![]({{ IMAGE_PATH }}2011/01/6.jpg)]({{ IMAGE_PATH }}2011/01/6.jpg)

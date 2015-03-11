@@ -16,11 +16,11 @@ tags:
 
 之前写了不少关于天地图的教程，现在天地图的发展还在初步，需要大家多多的努力和支持，感谢“oОО砯崖Оo”开的QQ群：127651254。有兴趣的朋友可以加进来一起讨论天地图开发。
 
-今天我们讲一下添加单击事件的代码，通过单击事件可以触发你想要做的发生的function。这个代码比较简单，通过添加events.register。然后加入function就OK。
+今天我们讲一下添加单击事件的代码，通过单击事件可以触发你想要做的发生的```function```。这个代码比较简单，通过添加```events.register```。然后加入```function```就OK。
 
 代码如下：
 
-```
+```html
 <!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>

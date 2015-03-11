@@ -14,13 +14,13 @@ tags:
 ---
 {% include JB/setup %}
 
-之前已经介绍了[《天地图GeoGlobe添加单击事件》](http://blog.yourtion.com/?p=2146)和[《天地图GeoGlobe重写双击事件》](http://blog.yourtion.com/?p=2168)，单身你安装上述方法去定义右击事件的话，你就会一直看到浏览器弹出的右键菜单。研究了天地图官方的地图，发现它代码的实现是使用jquery的。所以按图索骥，依样画葫芦的写了个右击事件的教程，希望对你有帮助。
+之前已经介绍了[《天地图GeoGlobe添加单击事件》](/geoglobe-add-click-event)和[《天地图GeoGlobe重写双击事件》](/rewrite-double-clicke-geoglobe.html)，单身你安装上述方法去定义右击事件的话，你就会一直看到浏览器弹出的右键菜单。研究了天地图官方的地图，发现它代码的实现是使用```jquery```的。所以按图索骥，依样画葫芦的写了个右击事件的教程，希望对你有帮助。
 
-原理还是比较简单，利用jquery和jquery.contextmenu创建地图右击事件菜单。
+原理还是比较简单，利用```jquery```和```jquery.contextmenu```创建地图右击事件菜单。
 
 代码如下：
 
-```
+```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -93,4 +93,3 @@ tags:
 
 查看此示例的实际效果：[点击这里看Demo](http://demo.yourtion.com/GeoGlobe/rightClick.php)
 
-代码中的JS：[点此下载](http://demo.yourtion.com/GeoGlobe/rightClickJS.rar)

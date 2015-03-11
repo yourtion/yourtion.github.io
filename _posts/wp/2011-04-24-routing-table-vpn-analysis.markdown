@@ -2,9 +2,7 @@
 author: Yourtion
 comments: true
 date: 2011-04-24 00:57:51+00:00
-excerpt: '前面介绍了《用路由表让VPN内网访问正常、省流量、加速VPN》，但是我自己是在局域网，所以顺便研究一下PPTP接入VPN和Windows路由表结合加速的原理，加深对二层隧道协议的认识。
-
-  '
+excerpt: '前面介绍了《用路由表让VPN内网访问正常、省流量、加速VPN》，但是我自己是在局域网，所以顺便研究一下PPTP接入VPN和Windows路由表结合加速的原理，加深对二层隧道协议的认识。'
 layout: post
 slug: routing-table-vpn-analysis
 title: 添加路由表加速VPN和恢复内网连接原理浅析
@@ -14,13 +12,13 @@ categories:
 ---
 {% include JB/setup %}
 
-前面介绍了[《用路由表让VPN内网访问正常、省流量、加速VPN》](http://blog.yourtion.com/?p=2074)，但是我自己是在局域网，所以顺便研究一下PPTP接入VPN和Windows路由表结合加速的原理，加深对二层隧道协议的认识。
+前面介绍了[《用路由表让VPN内网访问正常、省流量、加速VPN》](/routing-table-speed-up-vpn.html)，但是我自己是在局域网，所以顺便研究一下PPTP接入VPN和Windows路由表结合加速的原理，加深对二层隧道协议的认识。
 
 首先我们先看一下连接VPN前后访问facebook的tracert结果：
 
 未连接VPN前：
 
-```
+```bash
 Tracing route to facebook.com [159.106.121.75]
 over a maximum of 30 hops:
   1    <1 ms    <1 ms    <1 ms  192.168.200.1 
@@ -37,7 +35,7 @@ over a maximum of 30 hops:
 
 连接VPN后：
 
-```
+```bash
 Tracing route to facebook.com [69.63.181.12]
 over a maximum of 30 hops:
   1   262 ms   268 ms   268 ms  172.16.1.1 
@@ -58,7 +56,7 @@ Trace complete.
 
 连接VPN前：
 
-```
+```bash
 Destination  Netmask    Gateway        Interface        Metric
 0.0.0.0      0.0.0.0    192.168.200.1  192.168.203.64	20
 ```
@@ -67,20 +65,21 @@ Destination  Netmask    Gateway        Interface        Metric
 
 连接VPN后：
 
-```
+```bash
 Destination   Netmask  Gateway     Interface   Metric
 0.0.0.0       0.0.0.0  172.16.1.3  172.16.1.3	  1
 0.0.0.0       0.0.0.0  192.168.200.1  192.168.203.64     21
 192.168.0.0   255.255.0.0 192.168.200.1  192.168.203.64  5
 ```
 
-默认路由有了两条，但是172.16.1.3的Metric比192.168.200.1的小，根据路由选择的原理，除非172.16.1.3失效，否则默认出口都为172.16.1.3。
+默认路由有了两条，但是172.16.1.3的```Metric```比192.168.200.1的小，根据路由选择的原理，除非172.16.1.3失效，否则默认出口都为172.16.1.3。
 
-但是细心的人会发现，我们添加用于加速和内网的路由的Metric是5，比起默认路由的要小，为什么连接内网会选择后面的路由呢。
+但是细心的人会发现，我们添加用于加速和内网的路由的```Metric```是5，比起默认路由的要小，为什么连接内网会选择后面的路由呢。
 
 这样又要从路由选择讲起。路由表中明细的路由（静态路由）时，就会先找明细路由，在明细中找不到路由时，就走默认的。
 
 地址掩码越小、精度越高，就匹配哪个！！！
+
 比如同样的目标地址，192.168.1.0/25就比192.168.1.0/24优先！！！
 
 我们添加的路由精度较默认路由高，所以就走我们添加的路由。

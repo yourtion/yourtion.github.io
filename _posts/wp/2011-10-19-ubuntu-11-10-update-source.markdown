@@ -2,13 +2,7 @@
 author: Yourtion
 comments: true
 date: 2011-10-19 00:48:12+00:00
-excerpt: '给大家提供更新源的地址，方便大家安装ubuntu11.10后，及时更新源地址。
-
-
-  ubuntu11.10下载地址 http://www.ubuntu.com/download/ubuntu/download
-
-
-  前面的是公网普通源，后面是教育网更新源（上海交大、北理、兰大）适合在校大学生使用。'
+excerpt: '给大家提供更新源的地址，方便大家安装ubuntu11.10后，及时更新源地址。'
 layout: post
 slug: ubuntu-11-10-update-source
 title: 国内比较快的Ubuntu 11.10更新源地址列表——更改方法及下载
@@ -49,9 +43,8 @@ sudo gedit /etc/apt/sources.list
 sudo apt-get update
 ```
 
-
-
-<blockquote>#台湾源
+```bash
+#台湾源
 
 deb http://tw.archive.ubuntu.com/ubuntu/ oneiric main universe restricted multiverse
 deb-src http://tw.archive.ubuntu.com/ubuntu/ oneiric main universe restricted multiverse
@@ -100,7 +93,6 @@ deb http://ubuntu.cn99.com/ubuntu/ oneiric-security main restricted universe mul
 deb http://ubuntu.cn99.com/ubuntu/ oneiric-backports main restricted universe multiverse
 deb http://ubuntu.cn99.com/ubuntu-cn/ oneiric main restricted universe multiverse
 
-</blockquote>
 
 
 //教育网源
@@ -165,4 +157,5 @@ deb-src http://ftp.sjtu.edu.cn/ubuntu/ oneiric main multiverse restricted univer
 deb-src http://ftp.sjtu.edu.cn/ubuntu/ oneiric-backports main multiverse restricted universe
 deb-src http://ftp.sjtu.edu.cn/ubuntu/ oneiric-proposed main multiverse restricted universe
 deb-src http://ftp.sjtu.edu.cn/ubuntu/ oneiric-security main multiverse restricted universe
-deb-src http://ftp.sjtu.edu.cn/ubuntu/ oneiric-updates main multiverse restricted universe</blockquote>
+deb-src http://ftp.sjtu.edu.cn/ubuntu/ oneiric-updates main multiverse restricted universe
+```

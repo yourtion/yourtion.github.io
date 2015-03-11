@@ -19,15 +19,15 @@ AndroidSDK在国内下载一直很慢··有时候通宵都下不了一点点，
 
 **离线安装包下载地址：[http://dl.vmall.com/c0m7f1w8rq](http://dl.vmall.com/c0m7f1w8rq)**
 
-一，首先下载SDK的安装包，android-sdk_r10-windows.zip（安装工具）解压到目录，如我的目录D:\programs\android-sdk-windows
+一，首先下载SDK的安装包，```android-sdk_r10-windows.zip```（安装工具）解压到目录，如我的目录```D:\programs\android-sdk-windows```
 
 下载地址：http://dl.google.com/android/android-sdk_r10-windows.zip（目前最新版）
 
 二，然后新建以下 几个文件夹
 
-platforms，docs，samples，usb_driver，market_licensing
+```platforms```，```docs```，```samples```，```usb_driver```，```market_licensing```
 
-三，删除tools全部内容
+三，删除```tools```全部内容
 
 这一步是可选的，因为tools内容可能已经过时，也可能仍然可用。
 
@@ -222,32 +222,27 @@ platforms，docs，samples，usb_driver，market_licensing
 </tr>
 </tbody>
 </table>
+
 **Dbank下载地址：[http://dl.vmall.com/c0m7f1w8rq](http://dl.vmall.com/c0m7f1w8rq)**
 
 如果是Linux平台的朋友，请把windows统一改为linux即可，mac平台的朋友改为macosx即可。
 
-需要说明的是，文档和样例都是同样的地址docs-2.2_r01-linux.zip,samples-2.2_r01-linux.zip,samples-2.1_r01-linux.zip。
+需要说明的是，文档和样例都是同样的地址```docs-2.2_r01-linux.zip```,```samples-2.2_r01-linux.zip```,```samples-2.1_r01-linux.zip```。
 
 五，解压文档到指定目录
 
-把android开头的文件解压到platforms目录下
-
-把goole_apis开头的文件解压到add-ons目录下
-
-把market_licensing-r01.zip解压到market_licensing目录下
-
-把tools_r07-windows.zip解压到tools目录下（前面清空了该文件夹）
-
-把docs-2.2_r01-linux.zip解压到docs
-
-把samples-2.2_r01-linux.zip和samples-2.1_r01-linux.zip解压到samples目录下
-
-把usb_driver_r03-windows.zip解压到usb_driver目录下。
+1. 把```android```开头的文件解压到```platforms```目录下
+2. 把```goole_apis```开头的文件解压到```add-ons```目录下
+3. 把```market_licensing-r01.zip```解压到```market_licensing```目录下
+4. 把```tools_r07-windows.zip```解压到```tools```目录下（前面清空了该文件夹）
+5. 把```docs-2.2_r01-linux.zip```解压到```docs```
+6. 把```samples-2.2_r01-linux.zip```和```samples-2.1_r01-linux.zip```解压到```samples```目录下
+8. 把```usb_driver_r03-windows.zip```解压到```usb_driver```目录下。
 
 基本上安装工作就完成了。
 
-再打开SDK Setup.ext发现，它会找到我们已经安装的内容。
+再打开SDK ```Setup.ext```发现，它会找到我们已经安装的内容。
 
 不过，可以也会有内容要更新或者安装，因为你看到该文章时，有可能已经有了更新的内容。
 
-然后，将你的安装目录/tools加到系统环境变量，把安装目录加到Android_Home。就完成了整个安装。
+然后，将你的安装目录```/tools```加到系统环境变量，把安装目录加到```Android_Home```。就完成了整个安装。

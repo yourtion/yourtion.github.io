@@ -19,7 +19,7 @@ tags:
 
 分享一下：
 
-```
+```php
 function jsformat($str)
 {
     $str = trim($str);
@@ -35,4 +35,4 @@ function jsformat($str)
 }
 ```
 
-使用就不用说了··就是直接调用jsformat($str)
+使用就不用说了··就是直接调用```jsformat($str)```

@@ -15,15 +15,15 @@ tags:
 ---
 {% include JB/setup %}
 
-自己的微博http://t.yourtion.com已经荒废好一段时间了，前段时间把Pagecookery升级到0.9.8，支持了新浪微博的同步导入和发布，但是一直没有去弄，趁着有时间，稍微测试和改进了一下他的新浪微博同步部分，只同步原创微博部分，和大家交流一下，大家可以举一反三自己测试，更加熟悉新浪微博的API。
+自己的微博 http://t.yourtion.com 已经荒废好一段时间了，前段时间把Pagecookery升级到0.9.8，支持了新浪微博的同步导入和发布，但是一直没有去弄，趁着有时间，稍微测试和改进了一下他的新浪微博同步部分，只同步原创微博部分，和大家交流一下，大家可以举一反三自己测试，更加熟悉新浪微博的API。
 
-Pagecookery的微博同步是通过Oauth认证，之后使用json进行数据的抓取，对于抓取用户微博使用user_timeline的接口，也就是https://api.weibo.com/2/statuses/user_timeline.json。我看来一下接口文档，请求参数里面有一个：feature，是用来过滤请求的类型（过滤类型ID，0：全部、1：原创、2：图片、3：视频、4：音乐，默认为0。）由于默认是0，所以会抓取全部微博。
+Pagecookery的微博同步是通过```Oauth```认证，之后使用```json```进行数据的抓取，对于抓取用户微博使用```user_timeline```的接口，也就是 https://api.weibo.com/2/statuses/user_timeline.json 。我看来一下接口文档，请求参数里面有一个：```feature```，是用来过滤请求的类型（过滤类型ID，0：全部、1：原创、2：图片、3：视频、4：音乐，默认为0。）由于默认是0，所以会抓取全部微博。
 
-改造方法，在请求json的时候带上feature参数，可以使用https://api.weibo.com/2/statuses/user_timeline.json?feature=1。但是我这样改造没有成功，因为他的抓取依赖oauth->get的类，我在类中加入参数$param['feature']=1;这样抓取时就可以过滤掉非原创的成分。
+改造方法，在请求```json```的时候带上```feature```参数，可以使用 https://api.weibo.com/2/statuses/user_timeline.json?feature=1 。但是我这样改造没有成功，因为他的抓取依赖oauth->get的类，我在类中加入参数```$param['feature']=1;```这样抓取时就可以过滤掉非原创的成分。
 
 关于新浪API的研究还是皮毛阶段，希望各位不要见笑，大家多多交流，共同进步。
 
-对于Oauth还有疑问的可以看看我之前的：[《新浪微博OAuth认证详解及验证数据储存》](http://blog.yourtion.com/sina-oauth-verification-storage.html)、[《新浪微博API使用OAuth认证发布微博实例》](http://blog.yourtion.com/sina-api-oauth-released-microblog.html)
+对于Oauth还有疑问的可以看看我之前的：[《新浪微博OAuth认证详解及验证数据储存》](/sina-oauth-verification-storage.html)、[《新浪微博API使用OAuth认证发布微博实例》](/sina-api-oauth-released-microblog.html)
 
 关于user_timeline请求参数如下表：
 <table cellpadding="0" width="100%" cellspacing="0" border="1" >

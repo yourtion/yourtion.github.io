@@ -14,13 +14,13 @@ tags:
 ---
 {% include JB/setup %}
 
-前面我们已经介绍了如何在天地图中添加地图标记Marker，详见[《天地图GeoGlobe创建地图标记Marker》](http://blog.yourtion.com/?p=1992)，现在我们在地图标记的基础上添加Popup弹出框，弹出地图标记的相应信息。这次还是以刚落成的“活活艺术教育中心”为例，弹出“活活艺术教育中心”落成剪彩的现场图片。
+前面我们已经介绍了如何在天地图中添加地图标记Marker，详见[《天地图GeoGlobe创建地图标记Marker》](/geoglobe-map-marker.html)，现在我们在地图标记的基础上添加Popup弹出框，弹出地图标记的相应信息。这次还是以刚落成的“活活艺术教育中心”为例，弹出“活活艺术教育中心”落成剪彩的现场图片。
 
-实现过程是先通过marker.events.register在Marker上创建一个mousedown事件，然后实例化GeoSurf.Popup，最后在图层上addPopup。
+实现过程是先通过```marker.events.register```在```Marker```上创建一个```mousedown```事件，然后实例化```GeoSurf.Popup```，最后在图层上```addPopup```。
 
 源代码如下：
 
-```
+```html
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -59,7 +59,7 @@ window.onload=function()
 
 您查看此示例的实际效果：[点击这里看Demo](http://demo.yourtion.com/GeoGlobe/popup.php)
 
-其中。GeoSurf.Size(330,220)就是弹出框的大小，
+其中。```GeoSurf.Size(330,220)```就是弹出框的大小，
 
 关于Popup的详细功能和设置将会在后面的文章陆续介绍····
 

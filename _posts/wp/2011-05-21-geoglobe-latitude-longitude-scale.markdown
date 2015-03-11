@@ -14,13 +14,13 @@ tags:
 ---
 {% include JB/setup %}
 
-之前已经介绍了[《天地图GeoGlobe添加Popup弹出框》](http://blog.yourtion.com/?p=2014)和[《天地图GeoGlobe创建地图标记Marker》](http://blog.yourtion.com/?p=1992)，现在介绍一下在矢量地图上加上当前鼠标经纬度和当前地图比例尺的控件。
+之前已经介绍了[《天地图GeoGlobe添加Popup弹出框》](/geoglobe-add-popup-box.html)和[《天地图GeoGlobe创建地图标记Marker》](/geoglobe-map-marker.html)，现在介绍一下在矢量地图上加上当前鼠标经纬度和当前地图比例尺的控件。
 
-通过实例化Control下的MousePosition()、Scale和ScaleLine，然后添加到地图或者DIV中实现。
+通过实例化```Control```下的```MousePosition()```、```Scale```和```ScaleLine```，然后添加到地图或者DIV中实现。
 
 代码如下：
 
-```
+```html
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -48,7 +48,7 @@ tags:
 </html>
 ```
 
-[![]({{ IMAGE_PATH }}2011/05/GeoGlobe_Control-560x443.jpg)]({{ IMAGE_PATH }}2011/05/GeoGlobe_Control.jpg)
+[![]({{ IMAGE_PATH }}2011/05/GeoGlobe_Control.jpg)]({{ IMAGE_PATH }}2011/05/GeoGlobe_Control.jpg)
 
 您查看此示例的实际效果：[点击这里看Demo](http://demo.yourtion.com/GeoGlobe/control_1.php)
 

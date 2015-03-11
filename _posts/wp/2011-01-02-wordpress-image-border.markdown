@@ -21,17 +21,43 @@ tags:
 
 先在你博客主题的CSS中找到img和a img的样式，没有就自己建立，然后使用一下代码：
 
-
-<blockquote>img {padding:10px;border:1px solid #000;-moz-box-shadow:3px 3px 4px #000;-webkit-box-shadow:3px 3px 4px #000;box-shadow:3px 3px 4px #000;background:#fff;filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#000000');}
-a img{padding:10px;border:1px solid #000;-moz-box-shadow:3px 3px 4px #000;-webkit-box-shadow:3px 3px 4px #000;box-shadow:3px 3px 4px #000;background:#fff;filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#000000');}</blockquote>
-
-
+```css
+img 
+{
+	padding:10px;
+	border:1px solid #000;
+	-moz-box-shadow:3px 3px 4px #000;
+	-webkit-box-shadow:3px 3px 4px #000;
+	box-shadow:3px 3px 4px #000;
+	background:#fff;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#000000');
+}
+a img
+{
+	padding:10px;
+	border:1px solid #000;
+	-moz-box-shadow:3px 3px 4px #000;
+	-webkit-box-shadow:3px 3px 4px #000;
+	box-shadow:3px 3px 4px #000;
+	background:#fff;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#000000');
+}
+```
 这样就可以了，最后在你觉得没有必要边距那么大的地方应用以下样式，如：
 
-
-<blockquote>.attachment-post-thumbnail{margin:2px;padding:0;border:0}
-
-.avatar{margin:0;padding:0;border:0}</blockquote>
-
+```css
+.attachment-post-thumbnail
+{
+	margin:2px;
+	padding:0;
+	border:0;
+}
+.avatar
+{
+	margin:0;
+	padding:0;
+	border:0;
+}
+```
 
 大功告成~~~

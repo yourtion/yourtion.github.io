@@ -24,35 +24,45 @@ tags:
 
 页面列表代码：
 
-```
-<?php wp_list_pages('depth=1&sort_column=menu_order&title_li=' . __('') . '' ); ?>
+```php
+<?php 
+wp_list_pages('depth=1&sort_column=menu_order&title_li=' . __('') . '' ); 
+?>
 ```
 
 分类目录代码：
 
-```
-<?php wp_list_categories('depth=1&title_li=0&orderby=id&show_count=0'); ?>
+```php
+<?php
+wp_list_categories('depth=1&title_li=0&orderby=id&show_count=0'); 
+?>
 ```
 
 操作步骤：
 
-登陆博客后台，点击左侧外观选项卡中的“编辑”功能，在右侧的文件中点击“header.php”（主题顶部，WordPress主题文件相关说明），找到页面列表代码：
+登陆博客后台，点击左侧外观选项卡中的“```编辑```”功能，在右侧的文件中点击“```header.php```”（主题顶部，WordPress主题文件相关说明），找到页面列表代码：
 
-```
-<?php wp_list_pages('depth=1&sort_column=menu_order&title_li=' . __('') . '' ); ?>
+```php
+<?php 
+wp_list_pages('depth=1&sort_column=menu_order&title_li=' . __('') . '' ); 
+?>
 ```
 
 用分类目录代码
 
-```
-<?php wp_list_categories('depth=1&title_li=0&orderby=id&show_count=0'); ?>
+```php
+<?php
+wp_list_categories('depth=1&title_li=0&orderby=id&show_count=0'); 
+?>
 ```
 
 替换掉页面列表代码，然后点击“更新文件”按钮，完成！
 提醒：有些页面列表或分类目录代码不相同，如有的主题的分类目录代表是
 
-```
-<?php wp_list_categories('orderby=id&hide_empty=0&title_li=');?>
+```php
+<?php 
+wp_list_categories('orderby=id&hide_empty=0&title_li=');
+?>
 ```
 
-这种情况下，可以把找到wp_list_pages且更换为wp_list_categories即可。
+这种情况下，可以把找到```wp_list_pages```且更换为```wp_list_categories```即可。

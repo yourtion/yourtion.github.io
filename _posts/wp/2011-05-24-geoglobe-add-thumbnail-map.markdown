@@ -14,13 +14,13 @@ tags:
 ---
 {% include JB/setup %}
 
-之前在技术群里就聊起怎么创建地图缩略图，感谢群主“oОО砯崖Оo”分享代码，现在我稍微修改注释然后和大家分享一下，事实上有一些函数我也不太明白，今天有博友问起GeoSurf.PortalMap的问题，希望这个实例对你有帮助。
+之前在技术群里就聊起怎么创建地图缩略图，感谢群主“oОО砯崖Оo”分享代码，现在我稍微修改注释然后和大家分享一下，事实上有一些函数我也不太明白，今天有博友问起```GeoSurf.PortalMap```的问题，希望这个实例对你有帮助。
 
-事实上天地图的开发文档说得不清不楚，只是说了GeoSurf.Control.OverviewMap，但是如果单纯初始化是不能显示出缩略图的，要自己用WMS初始化地图，最近再研究有没有简单的方法。
+事实上天地图的开发文档说得不清不楚，只是说了```GeoSurf.Control.OverviewMap```，但是如果单纯初始化是不能显示出缩略图的，要自己用WMS初始化地图，最近再研究有没有简单的方法。
 
 代码如下：
 
-```
+```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -67,7 +67,7 @@ tags:
 </html>
 ```
 
-[![]({{ IMAGE_PATH }}2011/05/GeoGlobeOverView-560x420.jpg)]({{ IMAGE_PATH }}2011/05/GeoGlobeOverView.jpg)
+[![]({{ IMAGE_PATH }}2011/05/GeoGlobeOverView.jpg)]({{ IMAGE_PATH }}2011/05/GeoGlobeOverView.jpg)
 
 您查看此示例的实际效果：[点击这里看Demo](http://demo.yourtion.com/GeoGlobe/overView.php)
 

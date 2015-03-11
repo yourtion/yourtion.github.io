@@ -22,4 +22,4 @@ tags:
 
 最后污水来到出水口进入二沉池，混合污泥的污水在辐流式沉淀池中下部四周的穿孔墙进入，经过重力沉降后经过出水堰进入最后的消毒阶段。污水紫外线消毒杀菌后排入程江。
 
-[![]({{ IMAGE_PATH }}2011/11/meizhou-xincheng-560x427.jpg)]({{ IMAGE_PATH }}2011/11/meizhou-xincheng.jpg)
+[![]({{ IMAGE_PATH }}2011/11/meizhou-xincheng.jpg)]({{ IMAGE_PATH }}2011/11/meizhou-xincheng.jpg)

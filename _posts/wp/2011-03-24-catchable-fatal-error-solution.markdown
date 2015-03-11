@@ -20,17 +20,15 @@ tags:
 
 最近在弄Wordpress的sina登陆··但是在登陆之后老是会出现：
 
-
-<blockquote>Catchable fatal error:Object of class WP_Error could not be converted to string in formatting.php on line 2818</blockquote>
-
+>Catchable fatal error:Object of class WP_Error could not be converted to string in formatting.php on line 2818
 
 研究了很久终于找到解决方法。
 
-这是由于 object转换成 string 時才会发生这个严重错误(fatal error)。
+这是由于 ```object```转换成 ```string``` 時才会发生这个严重错误(fatal error)。
 
-若要解决这个问题，只要你將原本类定义的地方加上 __toString() 方法即可。例如，我发生错误的是WP_Error的类位于/wp-includes/class-wp-error.php。便在类定义一开始加入：
+若要解决这个问题，只要你將原本类定义的地方加上 ```__toString()``` 方法即可。例如，我发生错误的是```WP_Error```的类位于```/wp-includes/class-wp-error.php```。便在类定义一开始加入：
 
-```
+```php
 function __toString()
 {
     return "";

@@ -21,4 +21,6 @@ tags:
 
 [![]({{ IMAGE_PATH }}2011/10/baidu_zz-560x492.jpg)]({{ IMAGE_PATH }}2011/10/baidu_zz.jpg)
 
-我的申请邮件如下，希望对大家有帮助：[![]({{ IMAGE_PATH }}2011/10/baidu_email.jpg)]({{ IMAGE_PATH }}2011/10/baidu_email.jpg)
+我的申请邮件如下，希望对大家有帮助：
+
+[![]({{ IMAGE_PATH }}2011/10/baidu_email.jpg)]({{ IMAGE_PATH }}2011/10/baidu_email.jpg)

@@ -14,9 +14,9 @@ tags:
 ---
 {% include JB/setup %}
 
-最近想做个调用CMD命令并取得结果的程序··找了一下··共享代码
+最近想做个调用```CMD```命令并取得结果的程序··找了一下··共享代码
 
-```
+```delphi
 procedure CheckResult(b: Boolean);
 begin
   if not b then
@@ -80,4 +80,4 @@ begin
 end;
 ```
 
-使用方法也很简单···就是调用Function；
+使用方法也很简单···就是调用```Function```；

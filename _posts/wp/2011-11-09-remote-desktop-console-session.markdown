@@ -18,11 +18,11 @@ tags:
 
 键入：
 
+```bash
+mstsc/v:server/console
+```
 
-<blockquote>mstsc/v:server/console</blockquote>
-
-
-Server：要连接到的服务器的 DNS 名称或 IP 地址
+```Server```：要连接到的服务器的 DNS 名称或 IP 地址
 
 **注意**
 
@@ -34,7 +34,4 @@ Server：要连接到的服务器的 DNS 名称或 IP 地址
 
 当连接到运行 Windows XP 的远程计算机的控制台会话时，将不会应用某些客户端选项设置。例如，如果客户端已指定某个程序在连接到远程计算机时启动，则当连接到远程计算机的控制台会话时，该程序不会启动。而是显示默认桌面。如果连接到的是控制台会话之外的其他会话，则指定的程序会正常启动。控制台会话是 Windows XP Professional 上唯一可用于远程桌面的会话，所以建立连接时总会出现默认桌面，即使客户端指定了其他程序。
 
-要查看该命令的完整语法，请在命令提示符下键入：
-
-
-<blockquote>mstsc /?</blockquote>
+要查看该命令的完整语法，请在命令提示符下键入：```mstsc /?```

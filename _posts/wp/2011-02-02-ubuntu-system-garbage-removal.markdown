@@ -13,7 +13,9 @@ tags:
 ---
 {% include JB/setup %}
 
+```bash
 sudo apt-get autoclean清理旧版本的软件缓存
 sudo apt-get clean清理所有软件缓存
 sudo apt-get autoremove删除系统不再使用的孤立软件
 sudo dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P 清除已删除包的残馀配置文件
+```

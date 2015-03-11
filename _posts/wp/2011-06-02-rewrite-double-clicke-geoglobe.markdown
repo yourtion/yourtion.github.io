@@ -14,13 +14,13 @@ tags:
 ---
 {% include JB/setup %}
 
-之前已经介绍了[《天地图GeoGlobe添加单击事件》](http://blog.yourtion.com/?p=2146)，但是如果你依样画葫芦想定义双击事件，你就会发现并不可行，双击后依然还是放大地图，感谢“oОО砯崖Оo”的研究，重写双击事件得到解决。拿出了分享一下。
+之前已经介绍了[《天地图GeoGlobe添加单击事件》](/geoglobe-add-click-event.html)，但是如果你依样画葫芦想定义双击事件，你就会发现并不可行，双击后依然还是放大地图，感谢“oОО砯崖Оo”的研究，重写双击事件得到解决。拿出了分享一下。
 
 要定义双击事件就要重新定义地图导航控件，然后重新定义控件的双击方法。具体实现方法也比较麻烦，但是代码还是很简洁，很多东西在API文档没有，所以要自己理解咯···
 
 代码如下：
 
-```
+```html
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

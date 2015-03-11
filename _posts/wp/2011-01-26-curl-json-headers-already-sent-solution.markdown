@@ -18,30 +18,31 @@ tags:
 
 今天心血来潮研究新浪跟微博通的API发布，用的是Curl+json数据。但是数据虽然可以正常地到达微博通还有新浪，但是发布页面会出现：
 
-Warning: Cannot modify header information - headers already sent by (output started at /home/jcom/public_html/yourtion/t/index.php:418
+> Warning: Cannot modify header information - headers already sent by (output started at /home/jcom/public_html/yourtion/t/index.php:418
 
-研究了很久，很多人说只要把curl_setopt($ch,CURLOPT_HEADER,false)就行了。
+研究了很久，很多人说只要把```curl_setopt($ch,CURLOPT_HEADER,false)```就行了。
 
 但是改了之后一样会出现headers already sent的问题。
 
-所以应该是curl后返回值输出引起的，仔细研读phpmanual之后，发现curl有一个变量是CURLOPT_RETURNTRANSFER，作用是将curl_exec()获取的信息以文件流的形式返回，而不是直接输出。
+所以应该是curl后返回值输出引起的，仔细研读```phpmanual```之后，发现curl有一个变量是```CURLOPT_RETURNTRANSFER```，作用是将```curl_exec()```获取的信息以文件流的形式返回，而不是直接输出。
 
 灵机一动想到江curl输出储存到变量然后不输出就不会引起headers already sent。
 
 问题最终解决。顺便分享一下"Cannot modify header information"的解决方法：
-1. Blank lines (空白行):检查有<?php ... ?> 后面没有空白行，特别是include或者require的文件。不少问题是这些空白行导致的。
 
-2. Use exit statement (用exit来解决):Use exit after header statement seems to help some people在header后加上exit();
+1.Blank lines (空白行):检查有<?php ... ?> 后面没有空白行，特别是include或者require的文件。不少问题是这些空白行导致的。
 
-```
+2.Use exit statement (用exit来解决):Use exit after header statement seems to help some people在header后加上exit();
+
+```php
 header ("Location: xxx");
 exit();
 ```
 
-3. PHP has this annoying problem, if your HTML goes before any PHP code or any header modification before redirecting to certain page, it'll said "Warning: Cannot modify header information - headers already sent by ...." Basically anytime you output to browser, the header is set and cannot be modified.  So two ways to get around the problem:
+3.PHP has this annoying problem, if your HTML goes before any PHP code or any header modification before redirecting to certain page, it'll said "Warning: Cannot modify header information - headers already sent by ...." Basically anytime you output to browser, the header is set and cannot be modified.  So two ways to get around the problem:
 3a. Use Javascript (用Javascript来解决):
 
-```
+```php
 <? echo "<script> self.location(\"file.php\");</script>"; ?>
 
 ```
@@ -52,7 +53,7 @@ Since it's a script, it won't modify the header until execution of Javascript.�
 
 3b. Use output buffering (用输出缓存来解决):
 
-```
+```php
 <?php ob_start(); ?>
 ... HTML codes ...
 <?php
