@@ -31,6 +31,9 @@
 .tag-list li {
 	list-style: inherit !important;
 }
+.container p img{
+	max-width: 90%;
+}
 @media (max-width: 768px)
 {
 	.h1,h1{font-size:20px}
