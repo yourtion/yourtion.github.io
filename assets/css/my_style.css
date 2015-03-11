@@ -32,6 +32,9 @@
 	list-style: inherit !important;
 	line-height: 180%;
 }
+.container p {
+	overflow: hidden;
+}
 .container p img{
 	max-width: 90%;
 }
