@@ -1,5 +1,5 @@
 ---
-author: Yourtion
+author: admin
 comments: true
 date: 2015-03-02 12:39:14+00:00
 excerpt: 使用Mongodb数据库，需要为各个数据库增加用户权限出现问题解决方法
@@ -13,10 +13,11 @@ categories:
 tags:
 - MongoDB
 ---
+{% include JB/setup %}
 
 使用Mongodb数据库，需要为各个数据库增加用户权限，查了一下发现下面代码：
 
-```javascript
+```javascript 
 use test2
 db.addUser( { user: "test",
               pwd: "admin",
@@ -27,17 +28,19 @@ db.addUser( { user: "test",
 
 执行后发现：
 
-```bash
+```bash 
 $ mongo 192.168.1.111/test2 -u test -p admin
 MyMongo:PRIMARY>
 
 ```
 
-<blockquote>Error: 18 { ok: 0.0, errmsg: "auth failed", code: 18 } at src/mongo/shell/db.js:228</blockquote>
+
+>Error: 18 { ok: 0.0, errmsg: "auth failed", code: 18 } at src/mongo/shell/db.js:228
+
 
 ### 检测版本发现
 
-```bash
+```bash 
 $mongo --help
 MongoDB shell version: 2.4.9
 
@@ -45,9 +48,10 @@ MongoDB shell version: 2.4.9
 
 我使用的Mongodb是2.6版本，但是Shell是2.4.9的，感觉是这出现了文问题，所以采用下面方案：
 
+
 ### 删除旧版本的Client
 
-```bash
+```bash 
 sudo apt-get remove mongodb-clients
 sudo apt-get autoremove
 sudo apt-get autoclean
@@ -56,7 +60,7 @@ sudo apt-get autoclean
 
 ### 安装新的Shell
 
-```bash
+```bash 
 sudo apt-get install mongodb-org-shell=2.6.1
 $mongo --help
 MongoDB shell version: 2.6.1
@@ -65,8 +69,9 @@ MongoDB shell version: 2.6.1
 
 使用新的（Mongodb 2.6的代码）添加用户
 
-```javascript
-db test2
+
+```javascript 
+use test2
 db.createUser(
    {
      user: "test",
@@ -80,7 +85,7 @@ db.createUser(
 
 ```
 
-```bash
+```bash 
 $mongo 192.168.1.111/test2 -u test -p admin
 MyMongo:PRIMARY>
 
