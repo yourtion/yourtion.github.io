@@ -14,7 +14,7 @@ categories:
 
 Apk签名首先要有一个```keystore```的签名用的文件。
 
-```keystore```是由jdk自带的工具```keytool```生成的.
+其中```keystore```是由jdk自带的工具```keytool```生成的.
 ```开始```->```运行```->```cmd```->cd 到JDK目录```D:\Java\jdk1.7.0_01\bin```
 （当然你也可以将```jdk bin path```添加到环境变量中，这样在任何地方都可以使用keytool了）
 然后输入：

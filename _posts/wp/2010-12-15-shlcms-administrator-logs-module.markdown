@@ -41,7 +41,7 @@ PRIMARY KEY (id)
 **注意引号换为半角
 注意把web_log中的web_前缀改为你的数据表前缀。然后执行**
 
-```http://你的CMS目录/inc/models/```
+其中```http://你的CMS目录/inc/models/```
 
 生成```log```数据表的```models```类。
 

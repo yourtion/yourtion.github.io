@@ -42,7 +42,7 @@ sudo easy_install pymongo
 
 附错误信息：
 
-```default
+```
 /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python /Users/yourtion/Codes/python/knowme/server.py
 Traceback (most recent call last):
   File "/Users/yourtion/Codes/python/knowme/server.py", line 5, in <module>

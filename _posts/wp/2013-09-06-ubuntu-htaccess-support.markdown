@@ -24,7 +24,7 @@ sudo a2enmod
 
 程序提示可供激活的模块名称，输入：
 
-```rewrite```
+其中```rewrite```
 
 2. 修改```/etc/apache2/sites-enabled/000-default``` (该链接指向的是站点配置文件)
 

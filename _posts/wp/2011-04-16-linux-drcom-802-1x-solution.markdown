@@ -14,7 +14,7 @@ tags:
 ---
 {% include JB/setup %}
 
-```802.1x```下的```Dr.com```在Linux拨号一直是大家头痛并难以解决的问题，以前在Ubantu下研究安装Dr.com的客户端但是都因为```802.1x```的端口认证问题而失败告终，现在终于搞定了完美解决的方法。现在与大家分享，一起交流。
+在```802.1x```下的```Dr.com```在Linux拨号一直是大家头痛并难以解决的问题，以前在Ubantu下研究安装Dr.com的客户端但是都因为```802.1x```的端口认证问题而失败告终，现在终于搞定了完美解决的方法。现在与大家分享，一起交流。
 
 这次使用的是第三方开发的```MentoHUST```，因为官方的锐捷Linux版久无更新，使用官方程序很多同学无法通过认证，有些能通过但容易掉线。虽然网上第三方Linux版锐捷客户端不少，但都大同小异，不能通过锐捷的客户端校验。而MentoHUST提供一个Linux下与锐捷兼容性很好的认证客户端，方便使用Linux和锐捷的同学使用校园网。
 
@@ -39,8 +39,8 @@ $sudo gedit /etc/mentohust.conf
 
 让人烦恼的```802.1x```认证就这样搞定了`````
 
-开始上网冲浪吧```
+开始上网冲浪吧
 
-```MentoHUST```的下载和其他Linux版本的编译请看[http://code.google.com/p/mentohust/](http://code.google.com/p/mentohust/)
+其中```MentoHUST```的下载和其他Linux版本的编译请看[http://code.google.com/p/mentohust/](http://code.google.com/p/mentohust/)
 
 

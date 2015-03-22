@@ -2,7 +2,7 @@
 layout: nil
 title : Atom Feed
 ---
-<?xml version="1.0" encoding="utf-8"?>
+
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.title }}</title>
   <link href="{{ site.production_url }}{{ site.JB.atom_path }}" rel="self"/>
@@ -20,7 +20,7 @@ title : Atom Feed
     <link href="{{ site.production_url }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.production_url }}{{ post.id }}</id>
-    <content type="html">{{ post.content | strip_html | truncate:300 | xml_escape }}</content>
+    <content type="html">{{ post.content }}</content>
   </entry>
 {% endfor %}
 

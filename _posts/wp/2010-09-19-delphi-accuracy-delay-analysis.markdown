@@ -25,13 +25,13 @@ TTtimer控件的实质是调用Windows API定时函数```SetTimer```和```KillTi
 
 2）```Sleep```函数
 
-```Sleep```函数用来使程序的执行延时给定的时间值。```Sleep```的调用形式为```Sleep(milliseconds)```，暂停当前的进程```milliseconds```毫秒。```Sleep```的实现方法其实也是调用Windows API的```Sleep```函数。例如：
+其中```Sleep```函数用来使程序的执行延时给定的时间值。```Sleep```的调用形式为```Sleep(milliseconds)```，暂停当前的进程```milliseconds```毫秒。```Sleep```的实现方法其实也是调用Windows API的```Sleep```函数。例如：
 
 ```delphi
 sleep(1000); //延迟1000毫秒
 ```
 
-```Sleep```会引起程序停滞，如果你延迟的时间较长的话，你的程序将不能够响应延时期间的发生的其他消息，所以程序看起来好像暂时死机。
+而```Sleep```会引起程序停滞，如果你延迟的时间较长的话，你的程序将不能够响应延时期间的发生的其他消息，所以程序看起来好像暂时死机。
 
 3）```GetTickCount```函数
 

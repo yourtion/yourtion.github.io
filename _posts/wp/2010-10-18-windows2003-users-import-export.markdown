@@ -22,9 +22,7 @@ A, 备份账号
 
 命令：```c:\addusers.exe /d:u Account.bak``` //名字不能改，必须是Account.bak;
 
-B, 备份账号密码：
-
-```copypwd.exe```
+B, 备份账号密码：```copypwd.exe```
 
 命令：```c:\copypwd.exe dump > copypwd.txt``` //同样，名字不能改，```copypwd.exe```只认```copypwd.txt```
 
@@ -36,9 +34,7 @@ B, 备份账号密码：
 
 命令：```c:\addusers.exe /p:L /c Account.bak```
 
-导入密码：
-
-```c:\copypwd.exe set``` //备份的密码文文件要在同一个目录下。
+导入密码：```c:\copypwd.exe set``` //备份的密码文文件要在同一个目录下。
 
 试了一下，比一个一个的添加方便多了，只是使用时要注意几点：
 

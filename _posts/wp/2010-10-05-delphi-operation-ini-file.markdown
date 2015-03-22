@@ -42,7 +42,10 @@ myinifile:Tinifile;
 然后，就可以对变量myinifile进行创建、打开、读取、写入等操作了。
 
 **三、打开INI文件**
+
+```delphi
 myinifile:=Tinifile.create('program.ini');
+```
 
 --- 上面这一行语句将会为变量myinifile与具体的文件 program.ini建立联系，然后，就可以通过变量myinifile，来读写program.ini文件中的关键字的值了。
 
@@ -79,13 +82,13 @@ myinifile:=Tinifile.Create(filename);
 
 ---- 除了可用写入方法增加一个关键字，Tinifile类还提供了一个删除关键字的对象方法：
 
-```myinifile.DeleteKey('小节名','关键字');```
+```delphi
+myinifile.DeleteKey('小节名','关键字');
+```
 
 **七、小节操作**
 
---- 增加一个小节可用写入的方法来完成，删除一个小节可用下面的对象方法：
-
-```myinifile.EraseSection('小节名');```
+--- 增加一个小节可用写入的方法来完成，删除一个小节可用下面的对象方法：```myinifile.EraseSection('小节名');```
 
 --- 另外Tinifile类还提供了三种对象方法来对小节进行操作：
 
@@ -97,9 +100,7 @@ myinifile:=Tinifile.Create(filename);
 
 **八、释放**
 
-在适当的位置用下面的语句释放myinifile：
-
-```myinifile.distory;```
+在适当的位置用下面的语句释放myinifile：```myinifile.distory;```
 
 **九、一个实例**
 

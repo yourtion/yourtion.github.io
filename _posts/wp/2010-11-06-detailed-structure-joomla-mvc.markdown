@@ -15,9 +15,9 @@ tags:
 ---
 {% include JB/setup %}
 
-```index.php?option=组件名&view=视图名&controller=控制器名&layout=视图分页名```
+Joomla```index.php?option=组件名&view=视图名&controller=控制器名&layout=视图分页名```
 
-```index.php?option=com_test模板和组件com_test的展示 index2.php?option=com_test```
+Joomla```index.php?option=com_test模板和组件com_test的展示 index2.php?option=com_test```
 
 仅组件```com_test```的展示
 

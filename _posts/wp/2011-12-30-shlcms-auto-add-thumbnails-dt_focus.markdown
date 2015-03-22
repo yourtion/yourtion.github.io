@@ -70,7 +70,7 @@ $sql='delete from '.TB_PREFIX.'flash where id='.$request['n'];
 $db->query($sql);
 ```
 
-```$request['p']==35```等就是你要自动添加图片的频道ID；而```{$pic}',4,'{$n}```中的“```4```”就是你要增加的焦点图对应的```group_id```
+其中```$request['p']==35```等就是你要自动添加图片的频道ID；而```{$pic}',4,'{$n}```中的“```4```”就是你要增加的焦点图对应的```group_id```
 这样对```list.php```的更改就完成了，还有就是改一下调用代码的部分，
 
 在SHLCMS的```content\index```下的```focus.php```将

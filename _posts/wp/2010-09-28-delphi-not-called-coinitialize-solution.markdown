@@ -17,9 +17,9 @@ tags:
 
 之前写过[《Delphi线程简单创建、挂起、激活与终止》](/delphi-thread-create-suspend-activation-termination.html)，但是在运行的时候会出现没有调用```CoInitialize```的错误~查找了一下~随便分享解决方法~
 
-```CoInitialize(LPVOID)```，它将以特定参数调用```CoInitializeEx```，为当前单元初始化COM库，并标记协同模式为单线程模式。参数必须为```NULL```。这是关于```OLE```和```COM```的问题。
+在```CoInitialize(LPVOID)```，它将以特定参数调用```CoInitializeEx```，为当前单元初始化COM库，并标记协同模式为单线程模式。参数必须为```NULL```。这是关于```OLE```和```COM```的问题。
 
-```CoInitializeEx(LPVOID)```，新版本，可以用参数指定协同模式，如多线程模式，但注意单元的协同模式是不能改的，如果在已经初始化为多线程的单元里初始化```OLE```将失败并返回```RPC_E_CHANGED_MODE```。
+在```CoInitializeEx(LPVOID)```，新版本，可以用参数指定协同模式，如多线程模式，但注意单元的协同模式是不能改的，如果在已经初始化为多线程的单元里初始化```OLE```将失败并返回```RPC_E_CHANGED_MODE```。
 
 每个线程只要调用一次初始化就够了，同一线程中的后续调用也将通过，但会返回S_FALSE。后面解除初始化调用要与本调用一一对应，返回```S_FALSE```的```CoInitialize```调用也计算在内。应用程序的第一个线程将调用```CoInitializeEx```(```COINIT_APARTMENTTHREADED```或0)，必须是最后一个解除初始化的。如果不按上面的顺序进行初始化/解除函数调用，在该单线程单元(```STA```)里后续的初始化调用将失败，应用程序将无法工作。由于无法控制本地服务器的载入/御载顺序，在```DLLMain```里调用初始化/解除函数是不安全的。
 
@@ -65,17 +65,14 @@ Delphi中 ```CoInitialize```和 ```OleInitialize```有什么区别
 * ```CoInitialize```------------- COM对象
 * ```OleInitialize``` ----------- OLE对象
 
-```COM```库：```CoInitialize```{Ex}、```CoUnitialize```
-
-```OLE```系统：```OleInitialize```、```OleUnitialize```
-
-```COM```对象和```OLE```对象有什么不同呢?是不是COM是OLE的子集?
-
-```OLE```是```COM```的前身，```MS```现在已经全部转道```COM```上了，应该现在不发展```OLE```
+- ```COM```库：```CoInitialize```{Ex}、```CoUnitialize```
+- ```OLE```系统：```OleInitialize```、```OleUnitialize```
+- ```COM```对象和```OLE```对象有什么不同呢?是不是COM是OLE的子集?
+- ```OLE```是```COM```的前身，```MS```现在已经全部转道```COM```上了，应该现在不发展```OLE```
 
 如果是使用多线程的话那就在
 
-```Execute```事件的开头加上```CoInitialize（nil）```
+那么```Execute```事件的开头加上```CoInitialize（nil）```
 
 
 结尾加上```CoUninitialize()```

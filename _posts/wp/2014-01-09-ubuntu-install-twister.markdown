@@ -44,7 +44,7 @@ sudo apt-get install libdb++-dev
 
 接着安装```libtorrent```：
 
-```bahs
+```bash
 $ git clone https://github.com/miguelfreitas/twister-core twister
 $ cd twister/libtorrent
 $ ./bootstrap.sh

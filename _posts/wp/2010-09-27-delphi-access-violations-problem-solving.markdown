@@ -19,7 +19,7 @@ Windows用户可能经常会看到类似于错误提示：“```Error：Accessvi
 
 究竟什么是“```AccessViolation```”？如何在设计期避免它的出现？
 
-```AccessViolation```（非法访问），```GeneralProtectionFault```（一般保护性错误）或者```InvalidPageFault```（无效页面错误），虽然说法不一样，但本质上总是由同一种错误引起的。```AccessViolation```常常在计算机用户运行的程序试图存取未被指定使用的存储区时遇到。
+其中```AccessViolation```（非法访问），```GeneralProtectionFault```（一般保护性错误）或者```InvalidPageFault```（无效页面错误），虽然说法不一样，但本质上总是由同一种错误引起的。```AccessViolation```常常在计算机用户运行的程序试图存取未被指定使用的存储区时遇到。
 
 * Accessviolationataddress<十六进制值>
 * inmodule<应用程序名>
@@ -74,7 +74,7 @@ Delphi常见的运行期```AccessViolation```错误有哪些？如何防止？
 
 包含debug信息和镜像文件（Project|Options|Linker）选项的产品只有在{$D+}编译指令下才会完成行信息。
 
-```Accessviolation```通常只在程序的某一个方面表现出来。当问题第一次出现时，考虑一下用户进行了什么操作是很重要的，然后从这里寻找突破口。从用户的角度来看，你的程序中止了他们的工作，由他们来告诉你出现的问题似乎让你延期解决这个问题了。然而，与用户交流是你发现问题和改善程序的惟一有效方法。
+其中```Accessviolation```通常只在程序的某一个方面表现出来。当问题第一次出现时，考虑一下用户进行了什么操作是很重要的，然后从这里寻找突破口。从用户的角度来看，你的程序中止了他们的工作，由他们来告诉你出现的问题似乎让你延期解决这个问题了。然而，与用户交流是你发现问题和改善程序的惟一有效方法。
 
 现在你将可以知道在只给你冲突地址的情况下，如何轻松发现准确路径、源代码文件、发生```Accessviolation```错误的行：```“Search-Find Error…”。```
 

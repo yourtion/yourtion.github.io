@@ -92,7 +92,7 @@ Chrome插件最基本的三个文件为：
 
 在```popup.html```中定义的JavaScript变量会在```popup.html```页面关闭时被释放，如何保存全局变量呢？这时可以使用```background.html```。
 
-```background.html```页面中定义的javascript变量会在Chrome浏览器生命期中一直存在，因此把全局变量放在这里是最合适的了。
+其中```background.html```页面中定义的javascript变量会在Chrome浏览器生命期中一直存在，因此把全局变量放在这里是最合适的了。
 
 ```javascript
 //Background.html中定义变量

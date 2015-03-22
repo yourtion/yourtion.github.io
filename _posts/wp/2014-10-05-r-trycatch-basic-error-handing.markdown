@@ -16,7 +16,7 @@ tags:
 
 最近在看《机器学习：实用案例解析》，做邮件过滤器的时候，参考书中的代码读取邮件文件进行分类器训练，在读取过程中会出现下面的错误：
 
-```default
+```
 seq.default(which(text == "")[1] + 1, length(text), 1)
 : 'from' cannot be NA, NaN or infinite
 ```

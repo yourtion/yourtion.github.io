@@ -20,7 +20,7 @@ tags:
 
 调用该函数后，函数会将系统频率记数器的震荡频率（每毫秒）保存到一个```LargeInteger```中。不过利用该函数在几台机器上做过试验，结果都是1193180。读者朋友可以在自己的机器上试一下
 
-```QueryPerformanceCounter```函数获得系统频率记数器的震荡次数，结果也保存到一个```Largenteger```中。
+而```QueryPerformanceCounter```函数获得系统频率记数器的震荡次数，结果也保存到一个```Largenteger```中。
 
 很显然，如果在计时中首先使用```QueryPerformanceFrequency```获得高性能频率记数器每毫秒的震荡次数，然后在计时开始时使用```QueryPerformanceCounter```函数获得当前系统频率记数器的震荡次数。
 

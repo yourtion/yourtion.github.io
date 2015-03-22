@@ -2,11 +2,7 @@
 author: Yourtion
 comments: true
 date: 2010-08-18 08:31:43+00:00
-excerpt: '.htaccess文件相信大家都不陌生吧，不过网上关于.htaccess编写方法的教程很有限，也没有几个完全是博主自己写的。
-
-  我在这里就搜了几个常用规则，总结一下rewrite规则的用法。当然这只是.htaccess功能的一小部分，但是相当实用。
-
-  如果熟练掌握rewrite规则的编写，能够加强对网站URL的控制，对用户体验、SEO都十分有利。'
+excerpt: '.htaccess文件相信大家都不陌生吧，不过网上关于.htaccess编写方法的教程很有限，也没有几个完全是博主自己写的。我在这里就搜了几个常用规则，总结一下rewrite规则的用法。当然这只是.htaccess功能的一小部分，但是相当实用。如果熟练掌握rewrite规则的编写，能够加强对网站URL的控制，对用户体验、SEO都十分有利。'
 layout: post
 slug: htaccess-rewrite-rule-instance
 title: .htaccess的rewrite实例
@@ -18,7 +14,7 @@ tags:
 ---
 {% include JB/setup %}
 
-```.htaccess```文件相信大家都不陌生吧，不过网上关于```.htaccess```编写方法的教程很有限，也没有几个完全是博主自己写的。
+关于```.htaccess```文件相信大家都不陌生吧，不过网上关于```.htaccess```编写方法的教程很有限，也没有几个完全是博主自己写的。
 
 我在这里就搜了几个常用规则，总结一下rewrite规则的用法。当然这只是```.htaccess```功能的一小部分，但是相当实用。
 
@@ -45,12 +41,12 @@ RewriteRule .*\.(jpe?g|gif|bmp|png)$ /images/nohotlink.jpg [L]
 在此再这里总结一下几个常用参数：
 
 
-```RewriteCond```下：
+在```RewriteCond```下：
 
 * ```[NC]```  不分字母大小写
 * ```[OR]```  用于连接下一条规则
 
-RewriteRule下：
+在```RewriteRule```下：
 
 * ```[R]``` 强制重定向，[R=code] code默认为302
 * ```[F]``` 禁用URL，返回HTTP 403 错误
@@ -130,8 +126,8 @@ RewriteRule ^feed/?([_0-9a-z-]+)?/?$ http://feeds2.feedburner.com/yourname [R=30
 
 在线```.htaccess```生成器：htaccessEditor
 
-```在线正则表达式```检查器：http://www.sman.cn/Blog/attachments/month_0711/320071117123354.html
+在线正则表达式检查器：http://www.sman.cn/Blog/attachments/month_0711/320071117123354.html
 
-```mod_rewrite```模块中文参考手册：http://man.chinaunix.net/newsoft/Apache2.2_chinese_manual/mod/mod_rewrite.html
+关于```mod_rewrite```模块中文参考手册：http://man.chinaunix.net/newsoft/Apache2.2_chinese_manual/mod/mod_rewrite.html
 
 其实```rewrite```也只是```APACHE```一个模块而已，做到边查边写足矣，实在不行直接去搜一个规则也未尝不可。不过其中的正则表达式还是非常实用的，值得深入学习。

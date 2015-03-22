@@ -2,9 +2,7 @@
 author: Yourtion
 comments: true
 date: 2011-10-01 13:04:54+00:00
-excerpt: '最近在弄iPad2，一开始好好的AppSrore居然出现Error 1004，请稍后再试
-
-  网上找了一下帖子很多了，不赘述。就说解决方案。。。'
+excerpt: '最近在弄iPad2，一开始好好的AppSrore居然出现Error 1004，请稍后再试网上找了一下帖子很多了，不赘述。就说解决方案。。。'
 layout: post
 slug: appstore-error-1004-error-solution
 title: 终极解决AppStore error 1004错误
@@ -26,7 +24,7 @@ tags:
 
 **正解是**
 
-```设置```——```safari```——```清除历史记录```，```清除cookie```，```清除缓存```！！！！
+在```设置```——```safari```——```清除历史记录```，```清除cookie```，```清除缓存```！！！！
 
 搞定！
 

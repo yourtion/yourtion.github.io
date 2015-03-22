@@ -25,7 +25,7 @@ AndroidSDK在国内下载一直很慢··有时候通宵都下不了一点点，
 
 二，然后新建以下 几个文件夹
 
-```platforms```，```docs```，```samples```，```usb_driver```，```market_licensing```
+包括```platforms```，```docs```，```samples```，```usb_driver```，```market_licensing```
 
 三，删除```tools```全部内容
 

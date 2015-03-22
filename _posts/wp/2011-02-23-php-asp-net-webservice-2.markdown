@@ -20,7 +20,7 @@ tags:
 
 其中有个web method像这样的：
 
-```cs
+```c
 [WebMethod]
 public string HelloWorld()
 {
