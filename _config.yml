@@ -14,7 +14,7 @@ author :
 
 # Build settings
 safe: false
-markdown: rdiscount
+markdown: redcarpet
 redcarpet:
   extensions:
     - fenced_code_blocks
