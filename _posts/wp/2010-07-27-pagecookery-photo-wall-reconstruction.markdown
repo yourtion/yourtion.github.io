@@ -43,7 +43,7 @@ tags:
 
 </ul>
 <div style="clear:left"></div>
-</div></blockquote>
+</div>
 ```
 
 替换为：
@@ -69,9 +69,9 @@ tags:
 
 最后在```head.html```中的```<head>```中加入
 
-
-<blockquote><link rel="stylesheet" href="imageflow/imageflow.packed.css" type="text/css" /></blockquote>
-
+```html
+<link rel="stylesheet" href="imageflow/imageflow.packed.css" type="text/css" />
+```
 
 这样就大功告成了，剩下的是一些微调的工作。
 
