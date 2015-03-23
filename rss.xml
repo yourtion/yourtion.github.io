@@ -2,26 +2,28 @@
 layout: nil
 title : RSS Feed
 ---
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-  <title>{{ site.title }}</title>
-  <description>{{ site.title }} - {{ site.tagline }}</description>
-  <atom:link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="self" type="application/rss+xml"/>
-  <link>{{ site.production_url }}</link>
-  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-  <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-  <ttl>1800</ttl>
+  <channel>
+    <title>{{ site.title }} - {{ site.tagline }}</title>
+    <description>{{ site.title }} - {{ site.tagline }}</description>
+    <link>{{ site.production_url }}{{ site.JB.rss_path }}</link>
+    <atom:link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="self" type="application/rss+xml" />
+    <description>{{ site.title }}</description>
+    <language>zh-CN</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
-{% for post in site.posts %}
-  <item>
-    <title>{{ post.title }}</title>
-    <description>{{ post.content}}</description>
-    <link>{{ site.production_url }}{{ post.url }}</link>
-    <guid>{{ site.production_url }}{{ post.id }}</guid>
-    <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-  </item>
-{% endfor %}
+    {% for post in site.posts limit:30 %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>{{ site.production_url }}{{ post.url }}</link>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <author>{{ site.author.email }} (site.author.name)</author>
+      <guid>{{ site.production_url }}{{ post.id }}</guid>
+      <description>{{ post.content }}</description>
+    </item>
+    {% endfor %}
 
-</channel>
+  </channel> 
 </rss>
