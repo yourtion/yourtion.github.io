@@ -34,10 +34,10 @@ AndroidSDK在国内下载一直很慢··有时候通宵都下不了一点点，
 四，打开下载工具（迅雷，电驴等等），下载以下内容
 
 谷歌api的安装包
-<table cellpadding="0" cellspacing="0" border="1" >
-<tbody >
-<tr >
 
+<table cellpadding="0" cellspacing="0" border="1" >
+<tbody>
+<tr>
 <td width="401" >Android SDK Tools, revision 10
 </td>
 
