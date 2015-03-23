@@ -8,10 +8,9 @@ slug: shlcms-generation-sitemap
 title: SHLCMS实现sitemap.xml生成
 wordpress_id: 1766
 categories:
-- SHLCMS
-tags:
 - PHP
-- 深喉咙CMS
+tags:
+- SHLCMS
 ---
 {% include JB/setup %}
 

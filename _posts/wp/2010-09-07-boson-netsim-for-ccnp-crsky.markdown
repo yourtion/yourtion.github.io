@@ -8,10 +8,7 @@ slug: boson-netsim-for-ccnp-crsky
 title: Boson NetSim for CCNP 破解
 wordpress_id: 1509
 categories:
-- Cisco
-tags:
-- Boson
-- Cisco
+- 电脑技巧
 ---
 {% include JB/setup %}
 

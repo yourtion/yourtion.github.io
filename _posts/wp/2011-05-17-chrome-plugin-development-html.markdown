@@ -10,7 +10,6 @@ wordpress_id: 2128
 categories:
 - HTML
 tags:
-- Chrome插件
 - HTML
 ---
 {% include JB/setup %}

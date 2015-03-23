@@ -10,7 +10,6 @@ wordpress_id: 1837
 categories:
 - PHP
 tags:
-- OAuth
 - PHP
 ---
 {% include JB/setup %}

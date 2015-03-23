@@ -10,7 +10,7 @@ wordpress_id: 4002
 categories:
 - iOS
 tags:
-- QRCode
+- CIFilter
 ---
 {% include JB/setup %}
 

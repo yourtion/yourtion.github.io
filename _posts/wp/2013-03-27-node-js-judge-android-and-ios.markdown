@@ -13,7 +13,6 @@ tags:
 - Android
 - iOS
 - Node.js
-- 浏览器
 ---
 {% include JB/setup %}
 

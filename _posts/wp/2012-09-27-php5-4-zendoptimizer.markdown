@@ -12,7 +12,6 @@ categories:
 - 服务器
 tags:
 - PHP
-- Zend
 ---
 {% include JB/setup %}
 

@@ -11,7 +11,6 @@ categories:
 tags:
 - Javascript
 - jQuery
-- RESTful
 ---
 {% include JB/setup %}
 

@@ -8,7 +8,7 @@ slug: shlcms-integrated-ueditor
 title: SHLCMS(深喉咙CMS)集成Ueditor教程
 wordpress_id: 3603
 categories:
-- SHLCMS
+- PHP
 tags:
 - SHLCMS
 - Ueditor

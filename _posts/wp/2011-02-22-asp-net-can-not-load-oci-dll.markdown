@@ -8,7 +8,7 @@ slug: asp-net-can-not-load-oci-dll
 title: ASP.net无法加载oci.dll解决新法
 wordpress_id: 1928
 categories:
-- ASP.NET
+- 电脑技巧
 tags:
 - 解决问题
 ---

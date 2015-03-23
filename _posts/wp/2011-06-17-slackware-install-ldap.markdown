@@ -10,7 +10,6 @@ wordpress_id: 2181
 categories:
 - 服务器
 tags:
-- LDAP
 - Linux
 ---
 {% include JB/setup %}

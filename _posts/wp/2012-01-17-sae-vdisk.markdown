@@ -8,6 +8,8 @@ slug: sae-vdisk
 title: SAE推出微盘开放接口
 wordpress_id: 3553
 categories:
+- 云服务
+tags :
 - 新浪SAE
 ---
 {% include JB/setup %}

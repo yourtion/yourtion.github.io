@@ -8,10 +8,10 @@ slug: made-directly-to-wordpress-page-link
 title: 把WordPress页面直接做成链接
 wordpress_id: 1276
 categories:
-- PHP
 - WordPress技术
 tags:
 - WordPress
+- PHP
 ---
 {% include JB/setup %}
 

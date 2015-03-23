@@ -9,8 +9,6 @@ title: g++编译opencv程序
 wordpress_id: 3816
 categories:
 - OpenCV
-tags:
-- 编译
 ---
 {% include JB/setup %}
 

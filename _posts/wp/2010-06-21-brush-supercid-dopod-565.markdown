@@ -8,9 +8,7 @@ slug: brush-supercid-dopod-565
 title: 多普达565解锁刷机SuperCID教程及相关软件下载
 wordpress_id: 1222
 categories:
-- 收集
-tags:
-- 手机刷机
+- 电脑技巧
 ---
 {% include JB/setup %}
 

@@ -8,11 +8,9 @@ slug: php-asp-net-webservice-2
 title: PHP调用ASP.NET的WebService
 wordpress_id: 1931
 categories:
-- ASP.NET
 - PHP
 tags:
 - PHP
-- WebService
 ---
 {% include JB/setup %}
 

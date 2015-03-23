@@ -12,7 +12,6 @@ categories:
 - WordPress技术
 tags:
 - WordPress
-- 技巧
 ---
 {% include JB/setup %}
 

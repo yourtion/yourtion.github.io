@@ -2,12 +2,10 @@
 author: Yourtion
 comments: true
 date: 2011-01-08 14:59:07+00:00
-excerpt: '使用Wordpress的过程中，您可能会遇到这样的错误提示：Fatal error: Allowed memory size of 33554432 bytes exhausted (tried to allocate
-  xxx bytes)'
+excerpt: '使用Wordpress的过程中，您可能会遇到这样的错误提示：Fatal error: Allowed memory size of 33554432 bytes exhausted (tried to allocate xxx bytes)'
 layout: post
 slug: fix-error-allowed-memory-size
-title: '修复Fatal error: Allowed memory size of 33554432 bytes exhausted (tried to allocate
-  xxx bytes)'
+title: '修复Fatal error: Allowed memory size of 33554432 bytes exhausted (tried to allocate xxx bytes)'
 wordpress_id: 1750
 categories:
 - WordPress技术

@@ -9,7 +9,7 @@ wordpress_id: 275
 categories:
 - 博客大事记
 tags:
-- ru
+- Blog
 ---
 {% include JB/setup %}
 

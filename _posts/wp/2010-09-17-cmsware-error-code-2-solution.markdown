@@ -11,7 +11,6 @@ wordpress_id: 1512
 categories:
 - PHP
 tags:
-- CMSware
 - 解决问题
 ---
 {% include JB/setup %}

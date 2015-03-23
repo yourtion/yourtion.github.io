@@ -7,10 +7,7 @@ slug: sitemap-submit-major-search-engines
 title: 各大搜索引擎sitemap提交地址
 wordpress_id: 373
 categories:
-- SEO
-tags:
-- sitemap
-- 搜索引擎
+- 电脑技巧
 ---
 {% include JB/setup %}
 

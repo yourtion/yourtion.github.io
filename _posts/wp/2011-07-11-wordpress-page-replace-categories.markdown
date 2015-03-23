@@ -2,9 +2,7 @@
 author: Yourtion
 comments: true
 date: 2011-07-11 02:45:27+00:00
-excerpt: '可能由于使用习惯的不同，国外网页设计者设计的WordPress博客主题的顶部导航是WordPress博客的页面，而国人开发的WordPress博客主题的顶部导航则是WordPress博客的分类目录，国人的使用习惯偏向后者。
-
-  那么，使用以页面为导航的国外主题就要通过替换相关代码变更为以分类目录作为导航目录。'
+excerpt: '可能由于使用习惯的不同，国外网页设计者设计的WordPress博客主题的顶部导航是WordPress博客的页面，而国人开发的WordPress博客主题的顶部导航则是WordPress博客的分类目录，国人的使用习惯偏向后者。 那么，使用以页面为导航的国外主题就要通过替换相关代码变更为以分类目录作为导航目录。'
 layout: post
 slug: wordpress-page-replace-categories
 title: WordPress 页面导航更换为分类目录导航

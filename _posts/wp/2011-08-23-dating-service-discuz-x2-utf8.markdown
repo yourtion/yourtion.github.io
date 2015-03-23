@@ -9,8 +9,6 @@ title: 交友中心4.0.4 for discuz! X2【UTF8】
 wordpress_id: 2521
 categories:
 - 康盛
-tags:
-- DiscuzX
 ---
 {% include JB/setup %}
 

@@ -2,10 +2,7 @@
 author: Yourtion
 comments: true
 date: 2010-07-16 13:57:37+00:00
-excerpt: '之前用过Eclipse，NetBean还有其他的很多PHP开发环境～像Eclispse和Nenbean都是需要JDK环境·运行起来感觉就挺慢，想Zend的话我又嫌它太庞大～而Notepad++我又嫌他功能不够，特别是调试的方面～今天找到了phpDesigner就符合我的胃口，不敢独享！
-
-
-  最近又刚还在研究CI框架！发现他的注释提示功能很有用～所以CI开发也是利器啊！ '
+excerpt: '之前用过Eclipse，NetBean还有其他的很多PHP开发环境～像Eclispse和Nenbean都是需要JDK环境·运行起来感觉就挺慢，想Zend的话我又嫌它太庞大～而Notepad++我又嫌他功能不够，特别是调试的方面～今天找到了phpDesigner就符合我的胃口，不敢独享！最近又刚还在研究CI框架！发现他的注释提示功能很有用～所以CI开发也是利器啊！ '
 layout: post
 slug: php-development-tool-phpdesigner
 title: 介绍个PHP开发利器-phpDesigner
@@ -14,7 +11,6 @@ categories:
 - PHP
 tags:
 - CodeIgniter
-- IDE
 - PHP
 ---
 {% include JB/setup %}

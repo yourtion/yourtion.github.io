@@ -12,6 +12,7 @@ categories:
 tags:
 - jQuery
 - PHP
+- 移动开发
 ---
 {% include JB/setup %}
 

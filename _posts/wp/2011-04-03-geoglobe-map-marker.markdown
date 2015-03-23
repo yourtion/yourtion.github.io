@@ -11,7 +11,6 @@ categories:
 - 天地图二次开发
 tags:
 - GeoGlobe
-- GIS
 - 天地图
 ---
 {% include JB/setup %}

@@ -8,10 +8,9 @@ slug: bae-deployment-nodejs-404-solutions
 title: BAE部署Nodejs应用404解决方法
 wordpress_id: 3787
 categories:
-- Node.js
-- 百度BAE
+- 云服务
 tags:
-- BAE
+- 百度云
 ---
 {% include JB/setup %}
 

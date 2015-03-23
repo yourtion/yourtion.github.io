@@ -8,9 +8,9 @@ slug: sae-chinese-word-segmentation-trial
 title: SAE中文分词服务试用
 wordpress_id: 3597
 categories:
+- 云服务
+tags :
 - 新浪SAE
-tags:
-- SAE
 ---
 {% include JB/setup %}
 

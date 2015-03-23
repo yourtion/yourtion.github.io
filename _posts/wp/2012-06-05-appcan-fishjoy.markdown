@@ -9,6 +9,8 @@ title: 用APPCAN开发捕鱼达人全平台版
 wordpress_id: 3667
 categories:
 - AppCan
+tags :
+- 移动开发
 ---
 {% include JB/setup %}
 

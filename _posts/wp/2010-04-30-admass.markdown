@@ -8,8 +8,7 @@ slug: admass
 title: Admass
 wordpress_id: 1072
 categories:
-- 感动时刻
-- 生活
+- 大学生活
 ---
 {% include JB/setup %}
 

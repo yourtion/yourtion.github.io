@@ -11,7 +11,6 @@ wordpress_id: 3745
 categories:
 - PHP
 tags:
-- GD
 - PHP
 ---
 {% include JB/setup %}

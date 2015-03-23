@@ -9,7 +9,6 @@ wordpress_id: 295
 categories:
 - WordPress技术
 tags:
-- WAP
 - WordPress
 ---
 {% include JB/setup %}

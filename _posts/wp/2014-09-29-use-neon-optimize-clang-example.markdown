@@ -10,9 +10,7 @@ wordpress_id: 4041
 categories:
 - iOS
 tags:
-- ARM
 - Neon
-- 加速
 ---
 {% include JB/setup %}
 

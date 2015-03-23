@@ -8,10 +8,9 @@ slug: shlcms-automatically-add-thumbnails
 title: SHLCMS添加文章自动增加缩略图到Flash
 wordpress_id: 1951
 categories:
-- SHLCMS
-tags:
 - PHP
-- 深喉咙CMS
+tags:
+- SHLCMS
 ---
 {% include JB/setup %}
 

@@ -11,7 +11,6 @@ categories:
 - 服务器
 tags:
 - Apache
-- xampp
 - 解决问题
 ---
 {% include JB/setup %}

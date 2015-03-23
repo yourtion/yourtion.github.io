@@ -8,10 +8,10 @@ slug: sina-sae-connection-mysql
 title: 新浪SAE中MySQL的连接
 wordpress_id: 1588
 categories:
-- 新浪SAE
+- 云服务
 tags:
 - MySql
-- SAE
+- 新浪SAE
 ---
 {% include JB/setup %}
 

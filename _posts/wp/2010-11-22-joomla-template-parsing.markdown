@@ -7,10 +7,9 @@ slug: joomla-template-parsing
 title: Joomla模板解析
 wordpress_id: 1584
 categories:
-- Joomla
+- PHP
 tags:
 - Joomla
-- PHP
 ---
 {% include JB/setup %}
 

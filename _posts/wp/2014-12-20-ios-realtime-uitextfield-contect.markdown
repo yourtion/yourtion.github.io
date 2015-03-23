@@ -9,8 +9,6 @@ title: iOS实时检测UITextField内容
 wordpress_id: 4061
 categories:
 - iOS
-post_format:
-- 日志
 ---
 
 想在用户输入内容的时候同时检测```UITextField```的输入并根据用户的输入内容响应页面上的事件，在这个例子中是实时检测用户输入的手机号码，当手机号码的位数达到11位同时满足手机号码的格式时，确定按钮变为可用状态。

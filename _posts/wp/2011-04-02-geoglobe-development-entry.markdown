@@ -10,6 +10,7 @@ wordpress_id: 1988
 categories:
 - 天地图二次开发
 tags:
+- GeoGlobe
 - 天地图
 ---
 {% include JB/setup %}

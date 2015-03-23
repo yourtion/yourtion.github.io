@@ -8,10 +8,9 @@ slug: shlcms-administrator-logs-module
 title: 为shl（深喉咙）CMS创建管理员日志模块
 wordpress_id: 1633
 categories:
-- SHLCMS
-tags:
 - PHP
-- 深喉咙CMS
+tags:
+- SHLCMS
 ---
 {% include JB/setup %}
 

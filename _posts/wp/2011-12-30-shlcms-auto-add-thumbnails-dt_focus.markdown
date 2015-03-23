@@ -8,6 +8,8 @@ slug: shlcms-auto-add-thumbnails-dt_focus
 title: SHLCMS自动增加缩略图到首页展示改造2——dt_focus版
 wordpress_id: 3534
 categories:
+- PHP
+tags :
 - SHLCMS
 ---
 {% include JB/setup %}

@@ -11,7 +11,6 @@ categories:
 - Android
 tags:
 - Android
-- App
 ---
 {% include JB/setup %}
 

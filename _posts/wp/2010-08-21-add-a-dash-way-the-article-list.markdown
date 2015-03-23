@@ -9,7 +9,6 @@ title: 文章列表添加虚线方法
 wordpress_id: 1481
 categories:
 - CSS+DIV
-- 杂杂的
 tags:
 - CSS
 ---

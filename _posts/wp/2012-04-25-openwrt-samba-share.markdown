@@ -2,9 +2,7 @@
 author: Yourtion
 comments: true
 date: 2012-04-25 05:48:15+00:00
-excerpt: 'openwrt下samba设置起作用的机制是这样的：
-
-  openwrt在/etc/config/下面有一个samba的设置，注意：这个设置不符合samba软件本身的设置文件规范。openwr启动时，会用这个设置去替换掉相应的模板里的字段，生成一个符合samba设置文件规范的文件放到/tmp目录下'
+excerpt: 'openwrt下samba设置起作用的机制是这样的：openwrt在/etc/config/下面有一个samba的设置，注意：这个设置不符合samba软件本身的设置文件规范。openwr启动时，会用这个设置去替换掉相应的模板里的字段，生成一个符合samba设置文件规范的文件放到/tmp目录下'
 layout: post
 slug: openwrt-samba-share
 title: OpenWrt下Samba共享设置和Win7共享

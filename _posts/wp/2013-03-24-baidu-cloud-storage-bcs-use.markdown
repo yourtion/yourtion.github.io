@@ -8,11 +8,9 @@ slug: baidu-cloud-storage-bcs-use
 title: 小试百度云存储BCS
 wordpress_id: 3751
 categories:
-- 百度BAE
+- 云服务
 tags:
-- BAE
-- BCS
-- 云存储
+- 百度云
 ---
 {% include JB/setup %}
 

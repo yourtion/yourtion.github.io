@@ -9,7 +9,6 @@ wordpress_id: 461
 categories:
 - WordPress技术
 tags:
-- gravatar
 - WordPress
 ---
 {% include JB/setup %}

@@ -9,6 +9,8 @@ title: 从本博更换域名看各个搜索引擎收录~
 wordpress_id: 1181
 categories:
 - 博客大事记
+tags :
+- 域名
 ---
 {% include JB/setup %}
 

@@ -11,7 +11,6 @@ categories:
 - 服务器
 tags:
 - Linux
-- rsync
 ---
 {% include JB/setup %}
 

@@ -9,9 +9,6 @@ title: 新浪微博API使用user_timeline获取用户原创微博
 wordpress_id: 3522
 categories:
 - PHP
-tags:
-- OAuth
-- sina
 ---
 {% include JB/setup %}
 

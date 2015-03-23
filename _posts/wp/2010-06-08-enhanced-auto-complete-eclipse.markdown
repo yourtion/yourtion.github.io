@@ -9,9 +9,6 @@ title: 增强Eclipse自动补全
 wordpress_id: 1167
 categories:
 - 电脑技巧
-tags:
-- Eclipse
-- Java
 ---
 {% include JB/setup %}
 

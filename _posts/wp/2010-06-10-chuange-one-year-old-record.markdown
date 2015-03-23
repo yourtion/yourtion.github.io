@@ -7,10 +7,8 @@ slug: chuange-one-year-old-record
 title: 创E一周岁记…
 wordpress_id: 1176
 categories:
-- 创E
 - 大学生活
 tags:
-- 创E
 ---
 {% include JB/setup %}
 

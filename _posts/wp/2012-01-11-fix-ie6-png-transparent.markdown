@@ -9,8 +9,6 @@ title: 修复IE6下PNG透明问题的官方解决方法
 wordpress_id: 3545
 categories:
 - HTML
-tags:
-- IE6
 ---
 {% include JB/setup %}
 

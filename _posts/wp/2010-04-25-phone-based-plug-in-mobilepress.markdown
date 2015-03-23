@@ -10,9 +10,7 @@ wordpress_id: 1062
 categories:
 - WordPress插件
 tags:
-- WAP
 - WordPress
-- Yourtion
 ---
 {% include JB/setup %}
 

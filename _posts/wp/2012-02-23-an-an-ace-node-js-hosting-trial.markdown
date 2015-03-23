@@ -8,10 +8,9 @@ slug: an-an-ace-node-js-hosting-trial
 title: ACE阿里云引擎Node.js服务托管试用
 wordpress_id: 3588
 categories:
-- 阿里云ACE
-tags:
+- 云服务
+tags :
 - 阿里云
-- 阿里云ACE
 ---
 {% include JB/setup %}
 

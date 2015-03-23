@@ -8,7 +8,7 @@ slug: baidu-domain-on-the-google
 title: 关于Google的Baidu域名~~
 wordpress_id: 1110
 categories:
-- 事件看法
+- 杂杂的
 tags:
 - 域名
 ---

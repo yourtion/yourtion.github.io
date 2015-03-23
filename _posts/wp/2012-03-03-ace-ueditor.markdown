@@ -8,10 +8,10 @@ slug: ace-ueditor
 title: 阿里云ACE中使用Ueditor——支持图片上传
 wordpress_id: 3613
 categories:
-- 阿里云ACE
+- 云服务
 tags:
 - Ueditor
-- 阿里云ACE
+- 阿里云
 ---
 {% include JB/setup %}
 

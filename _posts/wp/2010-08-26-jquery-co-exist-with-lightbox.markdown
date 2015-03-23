@@ -11,7 +11,6 @@ categories:
 - CSS+DIV
 tags:
 - jQuery
-- LightBox
 ---
 {% include JB/setup %}
 

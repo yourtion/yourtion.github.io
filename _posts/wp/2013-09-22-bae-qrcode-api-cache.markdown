@@ -8,10 +8,9 @@ slug: bae-qrcode-api-cache
 title: 利用BAE实现二维码生成API
 wordpress_id: 3905
 categories:
-- 百度BAE
+- 云服务
 tags:
-- API
-- BAE
+- 百度云
 ---
 {% include JB/setup %}
 

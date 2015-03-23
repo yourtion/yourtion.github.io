@@ -12,7 +12,6 @@ categories:
 tags:
 - PHP
 - WordPress
-- 命令
 ---
 {% include JB/setup %}
 

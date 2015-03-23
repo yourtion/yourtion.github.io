@@ -10,7 +10,6 @@ wordpress_id: 1576
 categories:
 - WordPress技术
 tags:
-- WAP
 - WordPress
 - 解决问题
 ---

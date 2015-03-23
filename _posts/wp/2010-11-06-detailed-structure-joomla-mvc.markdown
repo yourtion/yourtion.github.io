@@ -7,11 +7,9 @@ slug: detailed-structure-joomla-mvc
 title: JoomlaMVC结构详解
 wordpress_id: 1578
 categories:
-- Joomla
+- PHP
 tags:
 - Joomla
-- MVC
-- PHP
 ---
 {% include JB/setup %}
 

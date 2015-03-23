@@ -6,11 +6,10 @@ layout: post
 slug: joomla-common-functions-resolve
 title: Joomla常用功能解析
 wordpress_id: 1582
-categories:
-- Joomla
-tags:
-- Joomla
+categories: 
 - PHP
+tags: 
+- Joomla
 ---
 {% include JB/setup %}
 

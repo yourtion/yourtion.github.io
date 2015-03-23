@@ -9,7 +9,6 @@ title: WordPress调用PageCookery的方法
 wordpress_id: 1229
 categories:
 - PageCookery
-- WordPress技术
 tags:
 - PageCookery
 - WordPress

@@ -11,7 +11,6 @@ categories:
 - WordPress技术
 tags:
 - WordPress
-- YuPooAlbum
 ---
 {% include JB/setup %}
 

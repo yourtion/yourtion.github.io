@@ -10,8 +10,6 @@ categories:
 - WordPress技术
 tags:
 - WordPress
-- YuPooAlbum
-- 出错
 ---
 {% include JB/setup %}
 

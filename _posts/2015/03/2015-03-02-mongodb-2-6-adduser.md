@@ -8,7 +8,6 @@ title: MongoDB2.6添加用户权限方法
 wordpress_id: 4078
 categories:
 - Node.js
-- 服务器
 tags:
 - MongoDB
 ---

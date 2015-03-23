@@ -8,7 +8,6 @@ slug: use-url-redirects-low-pr
 title: 运用网址重定向，减少低PR站点对自己站点的影响
 wordpress_id: 1274
 categories:
-- SEO
 - WordPress技术
 tags:
 - SEO

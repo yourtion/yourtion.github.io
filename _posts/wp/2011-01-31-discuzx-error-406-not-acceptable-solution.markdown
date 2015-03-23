@@ -9,8 +9,6 @@ title: Discuz X保存时406 Not Acceptable错误解决方法
 wordpress_id: 1887
 categories:
 - 康盛
-tags:
-- Discuz!X1.5
 ---
 {% include JB/setup %}
 

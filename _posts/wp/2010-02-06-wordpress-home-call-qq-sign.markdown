@@ -10,7 +10,6 @@ categories:
 - WordPress技术
 tags:
 - WordPress
-- 签名
 ---
 {% include JB/setup %}
 

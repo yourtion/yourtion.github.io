@@ -10,6 +10,7 @@ categories:
 - j2me
 tags:
 - j2me
+- Java
 ---
 {% include JB/setup %}
 

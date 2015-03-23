@@ -11,7 +11,6 @@ categories:
 - WordPress技术
 tags:
 - WordPress
-- 解决问题
 ---
 {% include JB/setup %}
 

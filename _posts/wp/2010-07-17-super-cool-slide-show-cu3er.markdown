@@ -8,7 +8,7 @@ slug: super-cool-slide-show-cu3er
 title: 一个超酷的幻灯片：CU3ER
 wordpress_id: 1303
 categories:
-- 杂杂的
+- 特效
 tags:
 - 插件
 ---

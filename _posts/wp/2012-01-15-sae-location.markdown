@@ -8,6 +8,8 @@ slug: sae-location
 title: SAE推出地理信息服务——SAE Location
 wordpress_id: 3547
 categories:
+- 云服务
+tags :
 - 新浪SAE
 ---
 {% include JB/setup %}

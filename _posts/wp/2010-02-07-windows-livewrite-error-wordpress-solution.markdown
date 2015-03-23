@@ -9,9 +9,7 @@ wordpress_id: 503
 categories:
 - WordPress技术
 tags:
-- Windows live writer
 - WordPress
-- 出错
 ---
 {% include JB/setup %}
 

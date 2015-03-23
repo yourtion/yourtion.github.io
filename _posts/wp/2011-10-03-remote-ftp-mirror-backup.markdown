@@ -10,7 +10,6 @@ wordpress_id: 2576
 categories:
 - 服务器
 tags:
-- FTP
 - Linux
 ---
 {% include JB/setup %}

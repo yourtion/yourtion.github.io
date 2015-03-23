@@ -8,7 +8,7 @@ slug: powereasy-upload-image-error-solution
 title: 解决动易中批量上传图片出现错误的方法
 wordpress_id: 946
 categories:
-- 网站建设
+- 电脑技巧
 tags:
 - 服务器
 ---

@@ -10,8 +10,7 @@ wordpress_id: 3831
 categories:
 - 云服务
 tags:
-- JAE
-- 京东
+- 京东云
 ---
 {% include JB/setup %}
 

@@ -10,6 +10,7 @@ categories:
 - 博客大事记
 tags:
 - Blog
+- 域名
 ---
 {% include JB/setup %}
 

@@ -7,9 +7,9 @@ slug: successful-applicants-sina-sae
 title: 成功申请新浪SAE
 wordpress_id: 1586
 categories:
-- 新浪SAE
+- 云服务
 tags:
-- SAE
+- 新浪SAE
 ---
 {% include JB/setup %}
 

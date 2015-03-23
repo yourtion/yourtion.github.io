@@ -10,7 +10,6 @@ wordpress_id: 3864
 categories:
 - 服务器
 tags:
-- Backup
 - Linux
 ---
 {% include JB/setup %}

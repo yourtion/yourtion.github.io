@@ -10,7 +10,6 @@ categories:
 - WordPress技术
 tags:
 - WordPress
-- 留言板
 ---
 {% include JB/setup %}
 

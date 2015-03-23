@@ -11,7 +11,6 @@ categories:
 - Delphi
 tags:
 - Delphi
-- ping
 ---
 {% include JB/setup %}
 

@@ -11,8 +11,6 @@ categories:
 - 康盛
 tags:
 - MySql
-- SupeSite
-- 解决问题
 ---
 {% include JB/setup %}
 

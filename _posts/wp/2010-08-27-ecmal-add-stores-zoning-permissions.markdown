@@ -10,7 +10,6 @@ wordpress_id: 1502
 categories:
 - 康盛
 tags:
-- Ecmall
 - SQL
 ---
 {% include JB/setup %}

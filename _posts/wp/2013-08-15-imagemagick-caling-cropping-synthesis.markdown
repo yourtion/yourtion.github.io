@@ -9,8 +9,6 @@ title: 使用ImageMagick进行图片缩放、合成与裁剪
 wordpress_id: 3867
 categories:
 - Node.js
-tags:
-- ImageMagick
 ---
 {% include JB/setup %}
 

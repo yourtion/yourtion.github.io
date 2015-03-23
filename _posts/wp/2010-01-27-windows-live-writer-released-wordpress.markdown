@@ -9,7 +9,6 @@ wordpress_id: 338
 categories:
 - WordPress技术
 tags:
-- live writer
 - WordPress
 ---
 {% include JB/setup %}

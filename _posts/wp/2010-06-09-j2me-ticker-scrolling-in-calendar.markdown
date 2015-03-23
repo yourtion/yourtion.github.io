@@ -11,7 +11,7 @@ categories:
 - j2me
 tags:
 - j2me
-- 手机开发
+- 移动开发
 ---
 {% include JB/setup %}
 

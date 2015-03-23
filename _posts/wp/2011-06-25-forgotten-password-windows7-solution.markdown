@@ -10,7 +10,6 @@ wordpress_id: 2198
 categories:
 - 电脑技巧
 tags:
-- Windows
 - 解决问题
 ---
 {% include JB/setup %}

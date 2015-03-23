@@ -9,10 +9,6 @@ title: 关于网络管理的一点体会～
 wordpress_id: 1354
 categories:
 - 网络工程
-tags:
-- 总结
-- 网工
-- 网管
 ---
 {% include JB/setup %}
 

@@ -8,6 +8,8 @@ slug: shlcms-beautify-paging
 title: SHLCMS美化分页显示代码
 wordpress_id: 3627
 categories:
+- PHP
+tags :
 - SHLCMS
 ---
 {% include JB/setup %}

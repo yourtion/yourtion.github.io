@@ -8,10 +8,9 @@ slug: shlcms-direct-download
 title: SHLCMS下载频道直接下载文件
 wordpress_id: 1948
 categories:
-- SHLCMS
-tags:
 - PHP
-- 深喉咙CMS
+tags:
+- SHLCMS
 ---
 {% include JB/setup %}
 
