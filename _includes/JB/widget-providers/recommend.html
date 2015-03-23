@@ -1,29 +1,28 @@
 {% if recommend == 'load' %}
 <script>
 $(function(){
-    $.getJSON('{{ ASSET_PATH }}data/recommend.json').done(function(data){
-        var tags = data.tags
-        var cats = data.categories
-        $.each(tags,function(intIndex,obj){
-      		$('#recommend').append(
-            $('<li><a href="/tags.html#'+ obj +'-ref">'+obj+'</a></li>')
-      		)
-        });
-        $.each(cats,function(intIndex,obj){
-      		$('#recommend').append(
-            $('<li><a href="/categories.html#'+ obj +'-ref">'+obj+'</a></li>')
-      		)
-        });
-    });
+		$.getJSON('{{ ASSET_PATH }}data/recommend.json').done(function(data){
+				var tags = data.tags
+				var cats = data.categories
+				$.each(tags,function(intIndex,obj){
+					$('#recommend').append(
+						$('<li><a href="/tags.html#'+ obj +'">'+obj+'</a></li>')
+					)
+				});
+				$.each(cats,function(intIndex,obj){
+					$('#recommend').append(
+						$('<li><a href="/categories.html#'+ obj +'">'+obj+'</a></li>')
+					)
+				});
+		});
 });
 </script>
 {% else %}
 <div class="well">
-  <h4>推荐内容</h4>
-  <div class="row">
-      <ul class="tag-box inline" id="recommend">
-
-      </ul>
-    </div>
+	<h4>推荐内容</h4>
+	<div class="row">
+			<ul class="tag-box inline" id="recommend">
+			</ul>
+		</div>
 </div>
 {% endif %}

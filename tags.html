@@ -13,7 +13,7 @@ comments: false
 </ul>
 
 {% for tag in site.tags %}
-<h4 id="{{ tag[0] }}-ref"><i class="fa fa-tag"> </i> {{ tag[0] }}</h4>
+<h4 id="{{ tag[0] }}"><i class="fa fa-tag"> </i> {{ tag[0] }}</h4>
 <ul class="tag-list">
   {% assign pages_list = tag[1] %}
   {% include JB/pages_list %}
