@@ -1,6 +1,5 @@
 ---
-author: admin
-comments: true
+author: Yourtion
 date: 2015-03-02 12:39:14+00:00
 excerpt: 使用Mongodb数据库，需要为各个数据库增加用户权限出现问题解决方法
 layout: post
