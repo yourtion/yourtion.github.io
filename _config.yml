@@ -24,6 +24,8 @@ redcarpet:
     - tables
 syntax-highlighting:
   enabled : false
+gems:
+  - jekyll-sitemap
 
 # permalink
 permalink: /:title.html
@@ -50,8 +52,8 @@ JB :
       top_threads_range : monthly
 
   analytics :
-    provider : google
+    provider : google_baidu
     baidu :
-      tracking_id : '1'
+      tracking_id : 'c172b7087a2b6b62acb6057bb733a8ea'
     google :
-      tracking_id : '2'
+      tracking_id : 'UA-12599330-12'

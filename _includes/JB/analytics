@@ -5,6 +5,9 @@
   {% include JB/analytics-providers/baidu.html %}
 {% when "google" %}
   {% include JB/analytics-providers/google.html %}
+{% when "google_baidu" %}
+  {% include JB/analytics-providers/google.html %}
+  {% include JB/analytics-providers/baidu.html %}
 {% when "custom" %}
   {% include custom/analytics %}
 {% endcase %}
