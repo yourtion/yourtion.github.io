@@ -1,5 +1,5 @@
 ---
-author: admin
+author: Yourtion
 comments: true
 date: 2011-04-20 12:43:24+00:00
 layout: page

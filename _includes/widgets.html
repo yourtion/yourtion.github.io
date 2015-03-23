@@ -1,6 +1,5 @@
 <!-- Blog Sidebar Widgets Column -->
 <div class="col-md-4">
-
     <!-- Blog Search Well -->
     <div class="well">
         <div class="input-group">
@@ -13,18 +12,14 @@
         </div>
         <!-- /.input-group -->
     </div>
-
     <!-- Side Widget Well -->
     <div class="well">
         <h4>欢迎来到郭宇翔的博客</h4>
         <p>打酱油专业户，喜欢各种折腾！</p>
         <iframe width="300" height="25" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=300&height=24&uid=1691023294&style=3&btn=light&dpc=1"></iframe>
     </div>
-
-    {% if site.JB.comments.provider == 'duoshuo' %}
-      {% include JB/widget-providers/duoshuo_recent_comments.html %}
-    {% endif %}
-
-    {% include JB/widget-providers/recommend.html %}
-
+{% if site.JB.comments.provider == 'duoshuo' %}
+{% include JB/widget-providers/duoshuo_recent_comments.html %}
+{% endif %}
+{% include JB/widget-providers/recommend.html %}
 </div>

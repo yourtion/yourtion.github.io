@@ -17,6 +17,7 @@ safe: false
 markdown: redcarpet
 redcarpet:
   extensions:
+    - smart
     - fenced_code_blocks
     - no_intra_emphasis
     - strikethrough
