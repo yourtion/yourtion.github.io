@@ -12,7 +12,6 @@
       {% assign BASE_PATH = nil %}
       {% assign HOME_PATH = "/" %}
     {% endif %}
-
     {% if site.JB.ASSET_PATH %}
       {% assign ASSET_PATH = site.JB.ASSET_PATH %}
     {% elsif site.safe %}
@@ -20,7 +19,6 @@
     {% else %}
       {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/{% endcapture %}
     {% endif %}
-
     {% if site.JB.IMAGE_PATH %}
       {% assign IMAGE_PATH = site.JB.IMAGE_PATH %}
     {% elsif site.safe %}

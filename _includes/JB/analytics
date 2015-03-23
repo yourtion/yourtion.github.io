@@ -1,15 +1,13 @@
 {% if site.safe and site.JB.analytics.provider and page.JB.analytics != false %}
-
-{% case site.JB.analytics.provider %}
-{% when "baidu" %}
-  {% include JB/analytics-providers/baidu.html %}
-{% when "google" %}
-  {% include JB/analytics-providers/google.html %}
-{% when "google_baidu" %}
-  {% include JB/analytics-providers/google.html %}
-  {% include JB/analytics-providers/baidu.html %}
-{% when "custom" %}
-  {% include custom/analytics %}
-{% endcase %}
-
+	{% case site.JB.analytics.provider %}
+	{% when "baidu" %}
+	  {% include JB/analytics-providers/baidu.html %}
+	{% when "google" %}
+	  {% include JB/analytics-providers/google.html %}
+	{% when "google_baidu" %}
+	  {% include JB/analytics-providers/google.html %}
+	  {% include JB/analytics-providers/baidu.html %}
+	{% when "custom" %}
+	  {% include custom/analytics %}
+	{% endcase %}
 {% endif %}
