@@ -15,7 +15,7 @@ title : Atom Feed
     <email>{{ site.author.email }}</email>
   </author>
 
-  {% for post in site.posts %}
+  {% for post in site.posts limit:25 %}
   <entry>
     <id>{{ site.production_url }}{{ post.id }}</id>
     <link type="text/html" rel="alternate" href="{{ site.production_url }}{{ post.url }}"/>
@@ -27,7 +27,7 @@ title : Atom Feed
       <uri>{{ site.production_url }}</uri>
       <email>{{ site.author.email }}</email>
     </author>
-    <content type="html">{{ post.content | truncate:300 }}</content>
+    <content type="html">{{ post.content | xml_escape  }}</content>
   </entry>
   {% endfor %}
  

@@ -14,14 +14,14 @@ title : RSS Feed
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
-    {% for post in site.posts limit:30 %}
+    {% for post in site.posts limit:25 %}
     <item>
       <title>{{ post.title }}</title>
       <link>{{ site.production_url }}{{ post.url }}</link>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <author>{{ site.author.email }} (site.author.name)</author>
       <guid>{{ site.production_url }}{{ post.id }}</guid>
-      <description>{{ post.content }}</description>
+      <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
 
