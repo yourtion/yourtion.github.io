@@ -73,6 +73,7 @@ task :post do
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
+  sh "open /Applications/MacDown.app #{filename}"
 end # task :post
 
 # Usage: rake page name="about.html"
