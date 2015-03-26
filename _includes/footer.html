@@ -13,30 +13,6 @@
 
 </div>
 <!-- /.container -->
-
-<!-- jQuery -->
-<script src="{{ ASSET_PATH }}js/jquery.js"></script>
-<script type="text/javascript">
-var $root = $('html, body');
-$(function(){
-    var url = window.location.toString();
-    var id = url.split("#")[1];
-    if(id){
-        var t = $("#"+id).offset().top  - 100;
-        $root.animate({ scrollTop: t }, 500); 
-        return false;
-    }		   
-});
-$('.tag-box li a').click(function() {
-    var href = $.attr(this, 'href');
-    $root.animate({
-        scrollTop: $(href).offset().top - 100
-    }, 800, function () {
-        window.location.hash = href;
-    });
-    return false;
-});
-</script>
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ ASSET_PATH }}js/bootstrap.min.js"></script>
 {% if site.JB.comments.provider == 'duoshuo' %}
