@@ -35,193 +35,31 @@ AndroidSDK在国内下载一直很慢··有时候通宵都下不了一点点，
 
 谷歌api的安装包
 
-<table cellpadding="0" cellspacing="0" border="1" >
-<tbody>
-<tr>
-<td width="401" >Android SDK Tools, revision 10
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/tools_r10-windows.zip](http://dl-ssl.google.com/android/repository/tools_r10-windows.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Platform-tools, revision 3
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/platform-tools_r03-windows.zip](http://dl-ssl.google.com/android/repository/platform-tools_r03-windows.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Docs for Android API 11, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/docs-3.0_r01-linux.zip](http://dl-ssl.google.com/android/repository/docs-3.0_r01-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Platform 3.0, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/android-3.0_r01-linux.zip](http://dl-ssl.google.com/android/repository/android-3.0_r01-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Platform 2.3.3._r1 Revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/android-2.3.3_r01-linux.zip](http://dl-ssl.google.com/android/repository/android-2.3.3_r01-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Platform 2.3.1_r2 Revision 2 (Obsolete)
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/android-2.3.1_r02-linux.zip](http://dl-ssl.google.com/android/repository/android-2.3.1_r02-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Platform 2.2_r1 Revision 2
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/android-2.2_r02-windows.zip](http://dl-ssl.google.com/android/repository/android-2.2_r02-windows.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Platform 2.1_r2 Revision 2
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/android-2.1_r02-windows.zip](http://dl-ssl.google.com/android/repository/android-2.1_r02-windows.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Platform 1.6_r2 Revision 3
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/android-1.6_r03-windows.zip](http://dl-ssl.google.com/android/repository/android-1.6_r03-windows.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Platform 1.5_r3 Revision 4
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/android-1.5_r04-windows.zip](http://dl-ssl.google.com/android/repository/android-1.5_r04-windows.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Samples for Android API 11, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/samples-3.0_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-3.0_r01-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Samples for Android API 10, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/samples-2.3.3_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-2.3.3_r01-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Samples for Android API 9, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/samples-2.3_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-2.3_r01-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Samples for Android API 8, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/samples-2.2_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-2.2_r01-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android SDK Samples for Android API 7, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/samples-2.1_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-2.1_r01-linux.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android + Google APIs, API 11, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/google_apis-11_r01.zip](http://dl-ssl.google.com/android/repository/google_apis-11_r01.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android + Google APIs, API 10, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/google_apis-10_r01.zip](http://dl-ssl.google.com/android/repository/google_apis-10_r01.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android + Google APIs, API 9, revision 2
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/google_apis-9_r02.zip](http://dl-ssl.google.com/android/repository/google_apis-9_r02.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android + Google APIs, API 8, revision 2
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/google_apis-8_r02.zip](http://dl-ssl.google.com/android/repository/google_apis-8_r02.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android + Google APIs, API 7, revision 1
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/google_apis-7_r01.zip](http://dl-ssl.google.com/android/repository/google_apis-7_r01.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android + Google APIs, API 4, revision 2
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/google_apis-4_r02.zip](http://dl-ssl.google.com/android/repository/google_apis-4_r02.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Android + Google APIs, API 3, revision 3
-</td>
-
-<td width="542" >[http://dl-ssl.google.com/android/repository/google_apis-3-r03.zip](http://dl-ssl.google.com/android/repository/google_apis-3-r03.zip)
-</td>
-</tr>
-<tr >
-
-<td width="401" >Google USB Driver package, revision 4
-</td>
-
-<td width="542" >[https://dl-ssl.google.com/android/repository/usb_driver_r04-windows.zip](https://dl-ssl.google.com/android/repository/usb_driver_r04-windows.zip)
-</td>
-</tr>
-</tbody>
-</table>
+| 文件	| 下载地址  |
+| ----	| :------- |
+| Android SDK Tools, revision 10 |	[http://dl-ssl.google.com/android/repository/tools_r10-windows.zip](http://dl-ssl.google.com/android/repository/tools_r10-windows.zip) |
+|Android SDK Platform-tools, revision 3	| [http://dl-ssl.google.com/android/repository/platform-tools_r03-windows.zip](http://dl-ssl.google.com/android/repository/platform-tools_r03-windows.zip) |
+|Android SDK Docs for Android API 11, revision 1 |	[http://dl-ssl.google.com/android/repository/docs-3.0_r01-linux.zip](http://dl-ssl.google.com/android/repository/docs-3.0_r01-linux.zip)|
+|Android SDK Platform 3.0, revision 1	|[http://dl-ssl.google.com/android/repository/android-3.0_r01-linux.zip](http://dl-ssl.google.com/android/repository/android-3.0_r01-linux.zip)|
+|Android SDK Platform 2.3.3._r1 Revision 1|	[http://dl-ssl.google.com/android/repository/android-2.3.3_r01-linux.zip](http://dl-ssl.google.com/android/repository/android-2.3.3_r01-linux.zip)|
+|Android SDK Platform 2.3.1_r2 Revision 2 (Obsolete)|	[http://dl-ssl.google.com/android/repository/android-2.3.1_r02-linux.zip](http://dl-ssl.google.com/android/repository/android-2.3.1_r02-linux.zip)|
+|Android SDK Platform 2.2_r1 Revision 2	|[http://dl-ssl.google.com/android/repository/android-2.2_r02-windows.zip](http://dl-ssl.google.com/android/repository/android-2.2_r02-windows.zip)|
+|Android SDK Platform 2.1_r2 Revision 2	|[http://dl-ssl.google.com/android/repository/android-2.1_r02-windows.zip](http://dl-ssl.google.com/android/repository/android-2.1_r02-windows.zip)|
+|Android SDK Platform 1.6_r2 Revision 3	|[http://dl-ssl.google.com/android/repository/android-1.6_r03-windows.zip](http://dl-ssl.google.com/android/repository/android-1.6_r03-windows.zip)
+|Android SDK Platform 1.5_r3 Revision 4	|[http://dl-ssl.google.com/android/repository/android-1.5_r04-windows.zip](http://dl-ssl.google.com/android/repository/android-1.5_r04-windows.zip)|
+|Android SDK Samples for Android API 11, revision 1|	[http://dl-ssl.google.com/android/repository/samples-3.0_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-3.0_r01-linux.zip)|
+|Android SDK Samples for Android API 10, revision 1|	[http://dl-ssl.google.com/android/repository/samples-2.3.3_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-2.3.3_r01-linux.zip)|
+|Android SDK Samples for Android API 9, revision 1|	[http://dl-ssl.google.com/android/repository/samples-2.3_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-2.3_r01-linux.zip)|
+|Android SDK Samples for Android API 8, revision 1|	[http://dl-ssl.google.com/android/repository/samples-2.2_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-2.2_r01-linux.zip)|
+|Android SDK Samples for Android API 7, revision 1|	[http://dl-ssl.google.com/android/repository/samples-2.1_r01-linux.zip](http://dl-ssl.google.com/android/repository/samples-2.1_r01-linux.zip)|
+|Android + Google APIs, API 11, revision 1|	[http://dl-ssl.google.com/android/repository/google_apis-11_r01.zip](http://dl-ssl.google.com/android/repository/google_apis-11_r01.zip)|
+|Android + Google APIs, API 10, revision 1|	[http://dl-ssl.google.com/android/repository/google_apis-10_r01.zip](http://dl-ssl.google.com/android/repository/google_apis-10_r01.zip)|
+|Android + Google APIs, API 9, revision 2|	[http://dl-ssl.google.com/android/repository/google_apis-9_r02.zip](http://dl-ssl.google.com/android/repository/google_apis-9_r02.zip)|
+|Android + Google APIs, API 8, revision 2|	[http://dl-ssl.google.com/android/repository/google_apis-8_r02.zip](http://dl-ssl.google.com/android/repository/google_apis-8_r02.zip)|
+|Android + Google APIs, API 7, revision 1|	[http://dl-ssl.google.com/android/repository/google_apis-7_r01.zip](http://dl-ssl.google.com/android/repository/google_apis-7_r01.zip)|
+|Android + Google APIs, API 4, revision 2|	[http://dl-ssl.google.com/android/repository/google_apis-4_r02.zip](http://dl-ssl.google.com/android/repository/google_apis-4_r02.zip)|
+|Android + Google APIs, API 3, revision 3|	[http://dl-ssl.google.com/android/repository/google_apis-3-r03.zip](http://dl-ssl.google.com/android/repository/google_apis-3-r03.zip)
+Google USB Driver package, revision 4|	[https://dl-ssl.google.com/android/repository/usb_driver_r04-windows.zip](https://dl-ssl.google.com/android/repository/usb_driver_r04-windows.zip)|
 
 **Dbank下载地址：[http://dl.vmall.com/c0m7f1w8rq](http://dl.vmall.com/c0m7f1w8rq)**
 
