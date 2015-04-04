@@ -17,7 +17,7 @@ tags:
 
 AndroidSDK在国内下载一直很慢··有时候通宵都下不了一点点，最后只有选择离线安装，现在发出离线安装地址和方法，希望对大家有帮助！
 
-**离线安装包下载地址：[http://dl.vmall.com/c0m7f1w8rq](http://dl.vmall.com/c0m7f1w8rq)**
+### 离线安装包下载地址：[http://dl.vmall.com/c0m7f1w8rq](http://dl.vmall.com/c0m7f1w8rq)
 
 一，首先下载SDK的安装包，```android-sdk_r10-windows.zip```（安装工具）解压到目录，如我的目录```D:\programs\android-sdk-windows```
 
