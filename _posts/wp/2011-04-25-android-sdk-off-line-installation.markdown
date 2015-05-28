@@ -31,9 +31,37 @@ AndroidSDK在国内下载一直很慢··有时候通宵都下不了一点点，
 
 这一步是可选的，因为tools内容可能已经过时，也可能仍然可用。
 
-四，打开下载工具（迅雷，电驴等等），下载以下内容
+四，解压文档到指定目录
 
-谷歌api的安装包
+1. 把```android```开头的文件解压到```platforms```目录下
+2. 把```goole_apis```开头的文件解压到```add-ons```目录下
+3. 把```market_licensing-r01.zip```解压到```market_licensing```目录下
+4. 把```tools_r07-windows.zip```解压到```tools```目录下（前面清空了该文件夹）
+5. 把```docs-2.2_r01-linux.zip```解压到```docs```
+6. 把```samples-2.2_r01-linux.zip```和```samples-2.1_r01-linux.zip```解压到```samples```目录下
+8. 把```usb_driver_r03-windows.zip```解压到```usb_driver```目录下。
+
+基本上安装工作就完成了。
+
+再打开SDK ```Setup.ext```发现，它会找到我们已经安装的内容。
+
+不过，可以也会有内容要更新或者安装，因为你看到该文章时，有可能已经有了更新的内容。
+
+然后，将你的安装目录```/tools```加到系统环境变量，把安装目录加到```Android_Home```。就完成了整个安装。
+
+五、配置SDK环境变量
+
+以我安装的路径为例（```D:\programs\android-sdk-windows```）。
+
+在设置系统环境变量的地方新建ANDROID_HOME（右键点击我的电脑–>属性–>高级–>环境变量–>系统变量–>新建，注意是“系统变量”而不是“Administrator的用户变量”）
+
+1）```ANDROID_HOME=D:\programs\android-sdk-windows```（android sdk所在目录）；
+
+2）在 path 中加入 ```%ANDROID_HOME%\tools```，注意不要改变其他文件路径，只需在分号后面加入。
+
+### 附：SDK原始下载地点
+
+打开下载工具（迅雷，电驴等等），下载以下内容。谷歌api的安装包
 
 | 文件	| 下载地址  |
 | ----	| :------- |
@@ -66,21 +94,3 @@ Google USB Driver package, revision 4|	[https://dl-ssl.google.com/android/reposi
 如果是Linux平台的朋友，请把windows统一改为linux即可，mac平台的朋友改为macosx即可。
 
 需要说明的是，文档和样例都是同样的地址```docs-2.2_r01-linux.zip```,```samples-2.2_r01-linux.zip```,```samples-2.1_r01-linux.zip```。
-
-五，解压文档到指定目录
-
-1. 把```android```开头的文件解压到```platforms```目录下
-2. 把```goole_apis```开头的文件解压到```add-ons```目录下
-3. 把```market_licensing-r01.zip```解压到```market_licensing```目录下
-4. 把```tools_r07-windows.zip```解压到```tools```目录下（前面清空了该文件夹）
-5. 把```docs-2.2_r01-linux.zip```解压到```docs```
-6. 把```samples-2.2_r01-linux.zip```和```samples-2.1_r01-linux.zip```解压到```samples```目录下
-8. 把```usb_driver_r03-windows.zip```解压到```usb_driver```目录下。
-
-基本上安装工作就完成了。
-
-再打开SDK ```Setup.ext```发现，它会找到我们已经安装的内容。
-
-不过，可以也会有内容要更新或者安装，因为你看到该文章时，有可能已经有了更新的内容。
-
-然后，将你的安装目录```/tools```加到系统环境变量，把安装目录加到```Android_Home```。就完成了整个安装。
