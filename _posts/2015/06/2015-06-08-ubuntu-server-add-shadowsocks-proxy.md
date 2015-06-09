@@ -13,7 +13,7 @@ tags: ["Ubuntu"]
 
 最近遇到一个问题，需要在服务器上配置科学上网，因为自己一直都是用ShadowSocks，所以打算在服务器上也直接上SS，研究了一下，感觉还是蛮简单的。
 
-### 安装shadowsocks客户端
+## 安装ShadowSocks客户端
 
 ```bash
 sudo apt-get install python-pip
@@ -59,13 +59,32 @@ INFO: loading config from /etc/shadowsocks.json
 2015-02-17 00:00:22 INFO starting local at 127.0.0.1:1080
 ```
 
-### 使用代理进行wget
+## 将ShadowSocks转换成HTTP代理
 
-最简单的只是使用wget请求代理，就是```export```一个变量即可
+先启动了ShadowSocks后，安装polipo，并把ShadowSocks设置为polipo的后端
 
 ```bash
-export http_proxy="http://127.0.0.1:1080"
-wget http://xxx.com/yyy.zip
+apt-get install polipo
+service polipo stop
+polipo socksParentProxy=localhost:1080
+```
+
+### 简单使用代理
+
+最简单的只是使用请求代理
+
+```bash
+http_proxy=http://localhost:8123 apt-get update
+
+http_proxy=http://localhost:8123 curl www.google.com
+
+http_proxy=http://localhost:8123 wget www.google.com
+
+git config --global http.proxy 127.0.0.1:8123
+git clone https://github.com/xxx/xxx.git
+git xxx
+git xxx
+git config --global --unset-all http.proxy
 ```
 
 ### 配置全局代理服务
@@ -79,13 +98,13 @@ vim /etc/environment
 添加以下内容：
 
 ```ini
-http_proxy="http://127.0.0.1:1080/"
-https_proxy="http://127.0.0.1:1080/"
-ftp_proxy="http://127.0.0.1:1080/"
+http_proxy="http://127.0.0.1:8123/"
+https_proxy="http://127.0.0.1:8123/"
+ftp_proxy="http://127.0.0.1:8123/"
 no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-HTTP_PROXY="http://127.0.0.1:1080/"
-HTTPS_PROXY="http://127.0.0.1:1080/"
-FTP_PROXY="http://127.0.0.1:1080/"
+HTTP_PROXY="http://127.0.0.1:8123/"
+HTTPS_PROXY="http://127.0.0.1:8123/"
+FTP_PROXY="http://127.0.0.1:8123/"
 NO_PROXY="localhost,127.0.0.1,localaddress,.localdomain.com"
 ```
 
@@ -102,10 +121,12 @@ vim /etc/apt/apt.conf.d/95proxies
 添加以下内容：
 
 ```ini
-Acquire::http::proxy "http://127.0.0.1:1080/";
-Acquire::ftp::proxy "ftp://127.0.0.1:1080/";
-Acquire::https::proxy "https://127.0.0.1:1080/";
+Acquire::http::proxy "http://127.0.0.1:8123/";
+Acquire::ftp::proxy "ftp://127.0.0.1:8123/";
+Acquire::https::proxy "https://127.0.0.1:8123/";
 ```
+
+## 自动启动代理服务
 
 ### 使用Supervisor运行Shadowsocks
 
@@ -137,4 +158,19 @@ user=nobody
 ```bash
 service supervisor start
 supervisorctl reload
+```
+
+### 配置polipo
+
+编辑```/etc/polipo/config ```，添加以下内容：
+
+```ini
+socksParentProxy = "localhost:1080"
+socksProxyType = socks5
+```
+
+启动polipo服务就大功告成了：
+
+```bash
+service polipo start
 ```
