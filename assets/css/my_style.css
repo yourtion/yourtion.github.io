@@ -39,6 +39,10 @@
 .container p img{
 	max-width: 90%;
 }
+blockquote {
+  font-size: 14px;
+  color: #777;
+}
 @media (max-width: 768px)
 {
 	.h1,h1{font-size:20px}
