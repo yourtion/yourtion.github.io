@@ -30,7 +30,7 @@ hljs.initHighlightingOnLoad();
 
 var domain_root = document.location.protocol+'//'+document.location.host;
 var cdn_url = "{{ site.cdn_url }}";
-var all_links = $('#content a').each(function(index,element){
+var all_links = $('#page-content a').each(function(index,element){
   if(element.href.substr(0,domain_root.length) !== domain_root)
   {
     element.target = '_blank';
