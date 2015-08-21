@@ -6,8 +6,8 @@ title: "C++将vector写入文件并重新读取"
 author: Yourtion
 keywords: ["cpp","verctor","file","read","write"]
 description: ""
-category: ""
-tags: [""]
+category: "node.js"
+tags: ["Node.js"]
 ---
 {% include JB/setup %}
 
