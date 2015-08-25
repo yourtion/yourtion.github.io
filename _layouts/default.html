@@ -7,5 +7,23 @@
     {% include widgets.html %}
     {% include footer.html %}
   </body>
+  <script src="{{ ASSET_PATH }}js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="{{ ASSET_PATH }}js/bootstrap.min.js"></script>
+  {% if site.JB.comments.provider == 'duoshuo' %}
+    {% assign duoshuo = 'jsonly' %}
+    {% include JB/comments-providers/duoshuo.html %}
+  {% endif %}
+  {% assign recommend = 'load' %}
+  {% include JB/widget-providers/recommend.html %}
+
+  {% case page.type %}
+  {% when "tag" %}
+    {% include part/tag.html %}
+  {% when "post" %}
+    {% include part/post.html %}
+  {% endcase %}
+
   {% include JB/analytics %}
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 </html>
