@@ -13,8 +13,9 @@ $(function() {
 });
 $('.tag-box li a').click(function() {
   var href = $.attr(this, 'href');
+  var id = href.split("#")[1];
   $root.animate({
-    scrollTop: $(href).offset().top - 100
+    scrollTop: $('[id="'+id+'"]').offset().top - 100
   }, 800, function() {
     window.location.hash = href;
   });
