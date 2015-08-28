@@ -4,10 +4,8 @@
   {% endif %}
   {% assign recommend = 'load' %}
   {% include JB/widget-providers/recommend.html %}
-<script src="{{ ASSET_PATH }}js/highlight.pack.js"></script>
+<script src="{{ ASSET_PATH }}js/highlight.pack.js" onload="hljs.initHighlightingOnLoad();" async></script>
 <script>
-hljs.initHighlightingOnLoad();
-
 var domain_root = document.location.protocol+'//'+document.location.host;
 var cdn_url = "{{ site.cdn_url }}";
 var all_links = $('#page-content a').each(function(index,element){

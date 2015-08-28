@@ -1,5 +1,5 @@
 {% if recommend == 'load' %}
-<script>
+<script async>
 $(function(){
 		$.getJSON('{{ ASSET_PATH }}data/recommend.json').done(function(data){
 				var tags = data.tags
