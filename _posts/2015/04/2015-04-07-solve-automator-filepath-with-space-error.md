@@ -5,7 +5,7 @@ slug: solve-automator-filepath-with-space-error
 title: "解决Automator输入文件路径存在空格出错"
 author: Yourtion
 keywords: ["automator", "space", "error"]
-description: ""
+description: "解决Automator输入文件路径存在空格出错"
 category: "mac"
 tags: ["解决问题"]
 ---

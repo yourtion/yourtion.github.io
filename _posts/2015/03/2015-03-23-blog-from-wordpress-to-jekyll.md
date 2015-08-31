@@ -5,7 +5,7 @@ slug: blog-from-wordpress-to-jekyll
 title: "博客正式从Wordpress迁移到Jekyll"
 author: Yourtion
 keywords: ["wordpress","jekyll"]
-description: ""
+description: "从Wordpress迁移到Jekyll方法"
 category: "博客大事记"
 tags: ["Jekyll"]
 ---

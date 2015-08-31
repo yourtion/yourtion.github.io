@@ -5,9 +5,9 @@ slug: solve-xcode7-build-failed
 title: "解决Xocde7编译失败问题"
 author: Yourtion
 keywords: ["xcode7", "build failed", "bitcode"]
-description: ""
+description: "解决升级Xcode7后提示You must rebuild it with bitcode enabled问题"
 category: "iOS"
-tags: ["Xcode"]
+tags: ["Xcode", "解决问题"]
 ---
 {% include JB/setup %}
 

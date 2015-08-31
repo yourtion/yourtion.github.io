@@ -5,7 +5,7 @@ slug: cpp-write-vector-to-file-and-read
 title: "C++将vector写入文件并重新读取"
 author: Yourtion
 keywords: ["cpp","verctor","file","read","write"]
-description: ""
+description: "最近在写node的addon，涉及到将vector写入文件并重新读取，包括字符串和自定义struct构成的vector"
 category: "node.js"
 tags: ["Node.js"]
 ---
