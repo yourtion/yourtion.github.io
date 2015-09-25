@@ -69,12 +69,12 @@ vector<list_item> lists;
 list_item item1;
 item1.id = 0;
 item1.score = 90;
-lists.push_back("item1");
+lists.push_back(item1);
 
 list_item item2;
 item2.id = 1;
 item2.score = 80;
-lists.push_back("item2");
+lists.push_back(item2);
 
 // 写入
 ofstream os ("item_list.db", ios::binary);
