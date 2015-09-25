@@ -7,7 +7,7 @@ author: Yourtion
 keywords: ["wordpress","Jekyll"]
 description: ""
 category: "Jekyll"
-tags: ["wordpress"]
+tags: ["WordPress","Jekyll"]
 ---
 {% include JB/setup %}
 
