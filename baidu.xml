@@ -1,0 +1,23 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
+        <lastmod>{{ post.date | date_to_rfc822 }}</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+        <data>
+            <display>
+                <title>{{ post.title | xml_escape }}</title>
+                <content>{{ post.content | xml_escape }}</content>
+                {% for tag in post.tags %} <tag>{{ tag | xml_escape }}</tag> {% endfor %}
+                {% for cat in post.categories %} <tag>{{ cat | xml_escape }}</tag> {% endfor %}
+                <pubTime>{{ post.date | date_to_rfc822 }}</pubTime>
+            </display>
+        </data>
+    </url>
+    {% endfor %}
+</urlset>
