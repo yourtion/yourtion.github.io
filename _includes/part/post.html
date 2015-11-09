@@ -13,6 +13,7 @@ var has_image = false;
 var all_links = $('#page-content a').each(function(index,element){
   if(element.href.substr(0,domain_root.length) !== domain_root) {
     element.target = '_blank';
+    $(element).attr('rel', 'nofollow');
   }
   if(element.href.substr(0,cdn_url.length) === cdn_url || element.href.substr(0, domain_root.length + 8) === domain_root + "/images/"){
     if(element.firstChild.tagName === "IMG"){
