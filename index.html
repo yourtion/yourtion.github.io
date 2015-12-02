@@ -13,15 +13,15 @@ layout: default
     <span class="col-md-2 col-xs-6"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> {{ post.categories[0] }}</span>
     <span class="col-md-3 col-xs-6"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ post.date | date: "%b %d %Y" }}</span>
     <span class="col-md-3 col-xs-6">
-      <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
       {% if site.JB.comments.provider == 'duoshuo' %}
+      <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
         <a href="{{ post.url }}#ds-thread" title="查看此文章的评论"><span class="ds-thread-count" data-thread-key="{% if post.wordpress_id %}{{ post.wordpress_id }}{% else %}{{ post.title }} {% endif %}" data-count-type="comments"></span></a>
       {% endif %}
     </span>
   </p>
   <hr>
   <p>{{ post.content | strip_html | truncate:200 }}</p>
-  <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl }}">阅读更多 <span class="glyphicon glyphicon-chevron-right"></span></a>
+  <a class="btn btn-info" href="{{ post.url | prepend: site.baseurl }}">阅读更多 <span class="glyphicon glyphicon-chevron-right"></span></a>
   <hr>
 {% endfor %}
 </div>
