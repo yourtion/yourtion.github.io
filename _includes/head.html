@@ -6,9 +6,6 @@
   {% if page.keywords %}<meta name="keywords" content=" {{ page.keywords | join: ', ' }}" />{% endif %}
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author.name }}">
-  {% if site.safe %}
-    <script src="{{ ASSET_PATH }}js/apm.min.js"></script>
-  {% endif %}
   <link href="{{ site.production_url }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
   <link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="alternate" type="application/rss+xml" title="RSS Feed" />
   <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}——{{ site.subtitle }}{% endif %}</title>
