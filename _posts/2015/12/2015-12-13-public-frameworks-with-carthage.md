@@ -63,7 +63,7 @@ Carthage 通过搜索发布到仓库中的 `tag` 来决定 `framework` 的哪个
 
 如果想声明你的项目支持 Carthage，可用添加一个兼容性的 badge 到 README文件，只需简单插入如下 Markdown：
 
-```markdown
+```
 ![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ```
 
