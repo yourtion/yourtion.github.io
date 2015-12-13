@@ -33,9 +33,6 @@
 	list-style: inherit !important;
 	line-height: 180%;
 }
-.container p {
-	overflow: hidden;
-}
 .container p img{
 	max-width: 90%;
 }
@@ -43,6 +40,20 @@ blockquote {
   font-size: 14px;
   color: #777;
 }
+#page-content p {
+	overflow: hidden;
+	line-height: 170%;
+	margin: 0 0 15px;
+}
+#page-content h2, 
+#page-content h3, 
+#page-content h4 {
+  margin-top: 1.6em;
+  margin-bottom: 1em;
+}
+#page-content h2{font-size:26px}
+#page-content h3{font-size:20px}
+#page-content h4{font-size:16px}
 @media (max-width: 768px)
 {
 	.h1,h1{font-size:20px}
