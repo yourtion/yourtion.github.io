@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-12-12 13:39:35
+date: 2015-12-14 13:39:35
 slug: use-plantuml-on-mac
 title: "在 Mac 上使用 PlantUML 高效画图"
 author: Yourtion
