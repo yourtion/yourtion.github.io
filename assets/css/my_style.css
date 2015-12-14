@@ -44,6 +44,17 @@ blockquote {
 	overflow: hidden;
 	line-height: 170%;
 	margin: 0 0 15px;
+	word-break: break-all;
+}
+#page-content blockquote p {
+	margin-bottom: 0;
+}
+
+#page-content ol li {
+	line-height: 200%;
+}
+#page-content ul li {
+	line-height: 150%;
 }
 #page-content h2, 
 #page-content h3, 
