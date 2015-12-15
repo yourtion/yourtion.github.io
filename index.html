@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<div class="col-md-8">
+<div class="col-md-8" id="page-content">
   <h1 class="page-header">最新文章</h1>
   {% for post in site.posts limit:10 %}
   <!-- Blog Post -->
   <h2>
     <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </h2>
-  <p  class="row">
+  <p class="row">
     <span class="col-md-2 col-xs-6"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ post.author }}</span>
     <span class="col-md-2 col-xs-6"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> {{ post.categories[0] }}</span>
     <span class="col-md-3 col-xs-6"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ post.date | date: "%b %d %Y" }}</span>
