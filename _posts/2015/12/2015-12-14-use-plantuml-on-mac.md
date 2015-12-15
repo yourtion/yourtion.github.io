@@ -68,7 +68,7 @@ stop
 
 `Java` 和 `Sublime Text` 就不用说了，大家都知道怎么安装了（或者本来系统就有的），主要说一下 `Graphviz` 这个开源的图片渲染库。我是执行 `brew install graphviz` 直接安装的。
 
->如果不知道 Homebrew 已经怎么安装 `brew` 请参考[brew.sh](brew.sh)
+>如果不知道 Homebrew 已经怎么安装 `brew` 请参考[brew.sh](http://brew.sh)
 
 ## Sublime Text 配置
 
