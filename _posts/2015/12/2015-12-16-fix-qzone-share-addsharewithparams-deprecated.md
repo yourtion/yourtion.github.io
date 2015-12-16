@@ -5,9 +5,9 @@ slug: fix-qzone-share-addsharewithparams-deprecated
 title: "解决addShareWithParams接口弃用问题"
 author: Yourtion
 keywords: ["Mob", "Qzone","shareSDK","addShareWithParams"]
-description: ""
-category: ""
-tags: [""]
+description: "近因为需要把项目升级到 Xcode7 和 iOS9，所以旧版本的 ShareSDK 需要升级，下载了最新的 v2.12.1 替换后，发现原有使用的QQ空间分享接口 addShareWithParams 找不到了。研究了一下，终于把原有的项目调试通过，分享之"
+category: "ios"
+tags: ["解决问题"]
 ---
 {% include JB/setup %}
 
