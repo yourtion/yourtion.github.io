@@ -5,9 +5,9 @@ slug: ns_enum_to_nsstring
 title: "快速将 NS_ENUM 转换成 NSString"
 author: Yourtion
 keywords: ["NS_ENUM","转换","NSString"]
-description: ""
-category: ""
-tags: [""]
+description: "快速将 NS_ENUM 转换成 NSString"
+category: "ios"
+tags: ["移动开发"]
 ---
 {% include JB/setup %}
 
