@@ -1,5 +1,5 @@
 {% if duoshuo != 'jsonly' %}
-<div id="ds-thread" class="ds-thread" data-url="{{ site.production_url }}{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{% if page.wordpress_id %}{{ page.wordpress_id }}{% else %}{{ page.title }} {% endif %}"></div>
+<div id="ds-thread" class="ds-thread" data-url="{{ site.production_url }}{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{% if page.wordpress_id %}{{ page.wordpress_id }}{% else %}{{ page.slug }} {% endif %}"></div>
 {% else %}
 <script type="text/javascript">
 var duoshuoQuery = {short_name: '{{ site.JB.comments.duoshuo.short_name }}'};
