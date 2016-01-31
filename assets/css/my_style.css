@@ -78,3 +78,82 @@ blockquote {
 	.h6,h6{font-size:10px}
 	.lead{font-size:14px;}
 }
+.tagcloud a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10px;
+  color: #fff;
+  height: 18px;
+  line-height: 18px;
+  float: left;
+  padding: 0 5px 0px 10px;
+  position: relative;
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  margin: 5px 9px 5px 8px;
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+}
+.tagcloud a:hover {
+  opacity: 0.8;
+}
+.tagcloud a:before {
+  content: " ";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: -18px;
+  border: 9px solid transparent;
+}
+.tagcloud a:after {
+  content: " ";
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+  position: absolute;
+  top: 7px;
+  left: 2px;
+}
+.tagcloud a.color1 {
+  background: #ff945c;
+}
+.tagcloud a.color1:before {
+  border-right-color: #ff945c;
+}
+.tagcloud a.color2 {
+  background: #f5c7b7;
+}
+.tagcloud a.color2:before {
+  border-right-color: #f5c7b7;
+}
+.tagcloud a.color3 {
+  background: #ba8f6c;
+}
+.tagcloud a.color3:before {
+  border-right-color: #ba8f6c;
+}
+.tagcloud a.color4 {
+  background: #cfb7c4;
+}
+.tagcloud a.color4:before {
+  border-right-color: #cfb7c4;
+}
+.tagcloud a.color5 {
+  background: #7b5d5f;
+}
+.tagcloud a.color5:before {
+  border-right-color: #7b5d5f;
+}
+.tagcloud a:hover {
+  background-color: #9c9;
+  border-color: #9c9;
+}
+.tagcloud a:hover::before {
+  border-right-color: #9c9;
+}
+
