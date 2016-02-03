@@ -12,17 +12,17 @@ categories:
 ---
 {% include JB/setup %}
 
-最近在做一个富媒体项目，希望将原有的PDF文件直接生成HTML数据流，方便进行排版编辑，研究了一下大家的解决方案，决定采用基于xpdf的Poppler进行处理。因为服务器端使用的是Node.js，没有现成的调用源码，所以使用express实现了上传转换输出。与大家共享！
+最近在做一个富媒体项目，希望将原有的PDF文件直接生成HTML数据流，方便进行排版编辑，研究了一下大家的解决方案，决定采用基于 `xpdf` 的 `Poppler` 进行处理。因为服务器端使用的是 `Node.js`，没有现成的调用源码，所以使用 `express` 实现了上传转换输出。与大家共享！
 
-首先安装Poppler，我使用的上MacOS，Linux平台也大同小异，就是下载Poppler的源码进行编译，或者直接使用Mac下的Ports进行安装。
+首先安装 `Poppler`，我使用的上 MacOS，Linux 平台也大同小异，就是下载 `Poppler` 的源码进行编译，或者直接使用 Mac 下的 `Ports` 进行安装。
 
 Poppler：http://poppler.freedesktop.org/
 
-安装完成后在终端运行“pdftohtml”可以看到下面的提示：
+安装完成后在终端运行 “pdftohtml” 可以看到下面的提示：
 
-[![pdftohtml]({{ IMAGE_PATH }}2013/07/pdftohtml-560x383.png)]({{ IMAGE_PATH }}2013/07/pdftohtml.png)
+[![pdftohtml]({{ IMAGE_PATH }}2013/07/pdftohtml.png)]({{ IMAGE_PATH }}2013/07/pdftohtml.png)
 
-这样就能在Node.js中利用子线程调用转换了，不多说，实现代码如下：
+这样就能在 `Node.js` 中利用子线程调用转换了，不多说，实现代码如下：
 
 ```javascript
 function getData(file,callback){
@@ -77,5 +77,6 @@ app.post('/upload', function (req, res) {
 });
 ```
 
+Demo地址： [https://github.com/yourtion/Demo_PDFtoHTML](https://github.com/yourtion/Demo_PDFtoHTML)
 
 功能的实现大致就是这样，要什么问题欢迎大家一起交流！
