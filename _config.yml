@@ -14,8 +14,6 @@ author :
 
 # Build settings
 safe: false
-syntax-highlighting:
-  enabled : false
 markdown: kramdown
 gems:
   - jekyll-sitemap
