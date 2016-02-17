@@ -1,1 +1,1 @@
-Sitemap: http://liberize.me/sitemap.txt
+Sitemap: http://blog.yourtion.com/sitemap.txt
