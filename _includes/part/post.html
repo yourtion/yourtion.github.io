@@ -1,9 +1,3 @@
-{% if site.JB.comments.provider == 'duoshuo' %}
-  {% assign duoshuo = 'jsonly' %}
-    {% include JB/comments-providers/duoshuo.html %}
-  {% endif %}
-  {% assign recommend = 'load' %}
-  {% include JB/widget-providers/recommend.html %}
 <script src="{{ ASSET_PATH }}js/highlight.pack.js" onload="hljs.initHighlightingOnLoad();" async></script>
 <script>
 var domain_root = document.location.protocol+'//'+document.location.host;
@@ -16,14 +10,15 @@ var all_links = $('#page-content a').each(function(index,element){
     $(element).attr('rel', 'nofollow');
   }
   if(element.href.substr(0,cdn_url.length) === cdn_url || element.href.substr(0, domain_root.length + 8) === domain_root + "/images/"){
-    if(element.firstChild.tagName === "IMG"){
-      var name = element.firstChild.alt || "";
-        $(element).attr("data-lightbox","image"+index);
-        $(element).attr("data-title",name);
-        has_image = true;
-      }
+  if(element.firstChild.tagName === "IMG"){
+    var name = element.firstChild.alt || "";
+      $(element).attr("data-lightbox","image"+index);
+      $(element).attr("data-title",name);
+      has_image = true;
     }
+  }
 });
+
 $('table').addClass( "table table-hover" );
 
 if (has_image){
@@ -43,9 +38,9 @@ if (has_image){
       addheadfile.href=URL;
     }
     oHead.appendChild( addheadfile);
- }
- addFile("{{ ASSET_PATH }}css/lightbox.css","css");
- addFile("{{ ASSET_PATH }}js/lightbox.min.js","js");
+  }
+  addFile("{{ ASSET_PATH }}css/lightbox.css","css");
+  addFile("{{ ASSET_PATH }}js/lightbox.min.js","js");
 }
 
 </script>
