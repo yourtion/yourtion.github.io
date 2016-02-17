@@ -14,17 +14,9 @@ author :
 
 # Build settings
 safe: false
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - smart
-    - fenced_code_blocks
-    - no_intra_emphasis
-    - strikethrough
-    - autolink
-    - tables
 syntax-highlighting:
   enabled : false
+markdown: kramdown
 gems:
   - jekyll-sitemap
 
