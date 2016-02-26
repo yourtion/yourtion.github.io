@@ -26,7 +26,7 @@ NSLog(@"currentlanguage = %@",currentLanguage);
 
 ```obj-c
 if ([currentLanguage isEqualToString:@"zh-Hans"]) {
-	NSLog("zh-Hans");
+	NSLog(@"zh-Hans");
 }
 ```
 
@@ -36,17 +36,23 @@ iOS升级后 `zh-Hans` 变成了 `zh-Hans-CN` ，估计是按照 “RFC 4646” 
 
 ```obj-c
 if ([currentLanguage containsString:@"zh-Hans"]) {
-	NSLog("zh-Hans");
+	NSLog(@"zh-Hans");
 }
 ```
 
 同理，繁体中文的变成：
 
 ```obj-c
-if ([currentLanguage isEqualToString:@"zh-Hant"]) {
-	NSLog("zh-Hant");
+if ([currentLanguage containsString:@"zh-Hant"]) {
+	NSLog(@"zh-Hant");
 }
 ```
+
+## 后记
+
+一开始以为 `zh-Hans-CN` 是个奇怪的写法，不明白为什么苹果要做这样的改动，后来发现原来在 “通用” -> “语言与地区” 里面修改 “区域格式” 中的 “地区” ，例如从 “中国” 修改为 “美国” ，那么相应的数值就会从 `zh-Hans-CN` 变成  `zh-Hans-US`。
+
+所以要让程序仅仅根据语言判断，需要严格按照上面的方法使用 `containsString` 来，否则就可能出现用户切换区域后语言显示不正确的情况。
 
 ## 中文相关标签 
 
