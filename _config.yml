@@ -3,7 +3,7 @@ title: 钇钛网
 subtitle: 郭宇翔的博客
 description: Yourtion's Blog
 production_url : http://blog.yourtion.com
-cdn_url : http://yblog.b0.upaiyun.com
+# cdn_url : http://yblog.b0.upaiyun.com
 encoding: utf-8
 
 author :
@@ -13,7 +13,7 @@ author :
   twitter : yourtion
 
 # Build settings
-safe: false
+safe: true
 markdown: kramdown
 gems:
   - jekyll-sitemap
