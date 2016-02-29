@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-02-29 12:27:17
-slug: use-static-code-analysis-ios-using-oclint
+slug: static-code-analysis-ios-using-oclint
 title: "使用OClint进行iOS项目的静态代码扫描"
 author: Yourtion
 keywords: ["OClint","static code analysis"]
