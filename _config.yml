@@ -14,6 +14,7 @@ author :
 
 # Build settings
 safe: true
+timezone: Asia/Shanghai
 markdown: kramdown
 gems:
   - jekyll-sitemap
