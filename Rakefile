@@ -62,7 +62,7 @@ task :post do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
-    post.puts "date: #{dt}"
+    post.puts "date: #{dt} +08:00"
     post.puts "slug: #{slug}"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts "author: Yourtion"
