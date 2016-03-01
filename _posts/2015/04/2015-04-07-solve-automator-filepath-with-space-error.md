@@ -6,7 +6,7 @@ title: "解决Automator输入文件路径存在空格出错"
 author: Yourtion
 keywords: ["automator", "space", "error"]
 description: "解决Automator输入文件路径存在空格出错"
-category: "mac"
+category: "Mac"
 tags: ["解决问题"]
 ---
 {% include JB/setup %}

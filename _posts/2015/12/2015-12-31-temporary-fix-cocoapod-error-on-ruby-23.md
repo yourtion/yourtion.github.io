@@ -6,7 +6,7 @@ title: "临时解决 Ruby2.3 上 CocoaPods 出错问题"
 author: Yourtion
 keywords: ["undefined method to_ary","NoMethodError","CocoaPods"]
 description: "升级了 Ruby 发布了 2.3 ，安装 cocoapods 之后，`pod install` 和 `pod update`，都会报错 `NoMethodError - undefined method 'to_ary'`"
-category: "mac"
+category: "Mac"
 tags: ["解决问题"]
 ---
 {% include JB/setup %}

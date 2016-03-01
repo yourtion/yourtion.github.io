@@ -6,7 +6,7 @@ title: "使用Ramdisk加速你的Mac"
 author: Yourtion
 keywords: ["mac", "ramdisk"]
 description: "使用Ramdisk加速你的Mac"
-category: "mac"
+category: "Mac"
 tags: ["Mac"]
 ---
 {% include JB/setup %}
