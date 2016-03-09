@@ -22,7 +22,7 @@ tags: ["代码质量"]
 ### XCtool
 
 ```bash
-brew install xctools
+brew install xctool
 ```
 
 ### OClint 
@@ -52,7 +52,7 @@ cd SuperLoggerDemo
 rm -f compile_commands.json
 xctool -project SuperLoggerDemo.xcodeproj -scheme SuperLoggerDemo clean
 
-# Build Project
+# Build Project
 xctool build \
 	-project SuperLoggerDemo.xcodeproj -scheme SuperLoggerDemo \
 	-reporter json-compilation-database:compile_commands.json
