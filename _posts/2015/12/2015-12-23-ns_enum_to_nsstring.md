@@ -6,7 +6,7 @@ title: "快速将 NS_ENUM 转换成 NSString"
 author: Yourtion
 keywords: ["NS_ENUM","转换","NSString"]
 description: "快速将 NS_ENUM 转换成 NSString"
-category: "ios"
+category: "iOS"
 tags: ["移动开发"]
 ---
 {% include JB/setup %}

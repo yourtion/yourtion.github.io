@@ -6,7 +6,7 @@ title: "解决iOS9下blocked cleartext HTTP"
 author: Yourtion
 keywords: ["NSAppTransportSecurity", "NSAllowsArbitraryLoads", "ios blocked cleartext"]
 description: "解决Xcode7编写iOS9应用时提示blocked a cleartext HTTP问题，"
-category: "ios"
+category: "iOS"
 tags: ["解决问题"]
 ---
 {% include JB/setup %}

@@ -6,7 +6,7 @@ title: "解决静态库 missing required architecture x86_64问题"
 author: Yourtion
 keywords: ["library","architecture","x86_64"]
 description: "最近在使用自己编译的静态库做项目之后发现一个问题，没办法在本机的iPhone6等模拟器上运行项目，提示“missing required architecture x86_64”，在iPhone5的模拟器上是正常的，研究了一下，原来跟我生成静态库的工程有关。解决了问题，分享之。"
-category: "ios"
+category: "iOS"
 tags: ["解决问题"]
 ---
 {% include JB/setup %}

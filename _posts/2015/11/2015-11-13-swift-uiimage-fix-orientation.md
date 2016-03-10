@@ -6,7 +6,7 @@ title: "Swift修正UIImage图像方向"
 author: Yourtion
 keywords: ["UIImage", "orientation", "Swift"]
 description: "在 iOS 或者 Mac 的开发中，会发现使用 `UIImagePicker` 调用手机相机拍照或者图库中的照片，到了 `UIImage` 中显示都是横七竖八的，这样导致显示到 View 或者上传到服务器的图片跟实际的不一样。"
-category: "ios"
+category: "iOS"
 tags: ["Swift"]
 ---
 {% include JB/setup %}
