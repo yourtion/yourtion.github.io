@@ -13,7 +13,7 @@ author :
   twitter : yourtion
 
 # Build settings
-safe: true
+safe: false
 timezone: Asia/Shanghai
 markdown: kramdown
 gems:

@@ -9,7 +9,6 @@ title : RSS Feed
     <description>{{ site.title }} - {{ site.tagline }}</description>
     <link>{{ site.production_url }}{{ site.JB.rss_path }}</link>
     <atom:link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="self" type="application/rss+xml" />
-    <description>{{ site.title }}</description>
     <language>zh-CN</language>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>

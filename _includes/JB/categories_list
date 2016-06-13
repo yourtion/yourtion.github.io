@@ -1,4 +1,5 @@
-{% comment %}<!--
+{% comment %}
+<!--
 The categories_list include is a listing helper for categories.
 Usage:
   1) assign the 'categories_list' variable to a valid array of tags.
@@ -15,7 +16,8 @@ Usage:
     site.categories is a Hash while page.categories is an array.
     
   This helper can be seen in use at: ../_layouts/default.html
--->{% endcomment %}
+-->
+{% endcomment %}
 {% if site.JB.categories_list.provider == "custom" %}
   {% include custom/categories_list %}
 {% else %}
