@@ -1,4 +1,4 @@
-{% if site.JB.comments.provider and page.comments != false %}
+{% if site.JB.comments.provider and layout.comments != false %}
 
 {% case site.JB.comments.provider %}
 {% when "duoshuo" %}
