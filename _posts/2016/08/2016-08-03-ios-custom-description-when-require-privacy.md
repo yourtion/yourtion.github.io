@@ -25,12 +25,12 @@ tags: ["移动开发", "解决问题"]
 
 ```xml
 <key>NSCameraUsageDescription</key>
-<string>Yourtion need to access your camrea</string>
+<string>Yourtion need to access your camera</string>
 ```
 
 ## 效果
 
-定义获取摄像头权限的描述为 ： “Yourtion need to access your camrea”
+定义获取摄像头权限的描述为 ： “Yourtion need to access your camera”
 
 [![]({{ IMAGE_PATH }}2016/08/privacy1.png)]({{ IMAGE_PATH }}2016/08/privacy1.png)
 
