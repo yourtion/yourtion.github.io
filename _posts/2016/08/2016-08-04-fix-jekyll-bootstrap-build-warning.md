@@ -6,8 +6,8 @@ title: "解决 JekyllBootstrap 中 theme.name 出错问题"
 author: Yourtion
 keywords: ["jekyll","bootstrap","build","page.theme.name","layout.theme.name"]
 description: "fix jekyll bootstrap build warning page.theme.name to layout.theme.name"
-category: ""
-tags: [""]
+category: "解决问题"
+tags: ["Jekyll"]
 ---
 {% include JB/setup %}
 
@@ -32,6 +32,7 @@ tags: [""]
 上面的邮件让我感到很疑惑，因为我在原有的 `_includes/JB/setup` 甚至整个项目就根本没有找到 `page.theme.name` 甚至相关的配置，原来的配置如下：
 
 ```ruby
+{% raw %}
 {% capture jbcache %}
   {% if site.JB.setup.provider == "custom" %}
     {% include custom/setup %}
@@ -59,6 +60,7 @@ tags: [""]
     {% endif %}
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}
+{% endraw %}
 ```
 
 可以看到根本没有相关的配置，找了很多资料，最后终于找到了解决的方法。
@@ -70,11 +72,13 @@ tags: [""]
 其中可以看到，原来的 `site.JB.ASSET_PATH` 中的 `else` 部分加入了下面代码：
 
 ```ruby
+{% raw %}
 {% if layout.theme.name %}
   {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ layout.theme.name }}{% endcapture %}
 {% else %}
   {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ page.theme.name }}{% endcapture %}
 {% end %}
+{% endraw %}
 ```
 
 根据上面修改我的配置后，GitHub 就没有给我发 warning 邮件了。修改记录： [update setup](https://github.com/yourtion/yourtion.github.io/commit/4b5ddb61fbf852c91eeada399792517472d0a779)
