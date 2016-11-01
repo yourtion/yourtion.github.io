@@ -103,8 +103,8 @@ task :page do
 end # task :page
 
 desc "Launch preview environment"
-task :p do
-  system "jekyll server"
+task :run do
+  system "jekyll server --incremental"
 end # task :preview
 
 def ask(message, valid_options)
