@@ -37,7 +37,7 @@ JB :
   rss_path : /rss.xml
 
   comments :
-    provider : duoshuo
+    provider : false
     duoshuo :
       short_name : yourtion
       top_threads_num : 5
