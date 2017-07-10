@@ -43,7 +43,7 @@ tags: ["iOS", "Android", "CI"]
 
 [![]({{ IMAGE_PATH }}2017/07/flowci-fir-2.png)]({{ IMAGE_PATH }}2017/07/flowci-fir-2.png) 
 
-官方文档给出更好的版本：`export CHANGE_LOG=$(git log --pretty=format:"%s" -1 $describe)`，这也就只有文字内容了
+官方文档给出更好的版本：`export FLOW_FIR_CHANGELOG=$(git log --pretty=format:"%s" -1 $describe)`，这也就只有文字内容了
 
 ## 效果
 
