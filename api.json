@@ -1,0 +1,4 @@
+{
+    "tags": { {% for tag in site.tags %} "{{ tag[0] }}":"{{ tag[1].size }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %} },
+    "categories": { {% for categorie in site.categories %} "{{ categorie[0] }}":"{{ categorie[1].size }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %} }
+}
