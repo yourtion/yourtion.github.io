@@ -23,20 +23,37 @@ tags: ["Node.js"]
 - 密码：dGVzdA== 
 
 ```console
-# telnet smtp.163.com 25 // 登录 smtp.163.com 端口号为 25
+// 登录 smtp.163.com 端口号为 25
+# telnet smtp.163.com 25
 Trying 202.108.44.205...
 Connected to smtp.163.com (202.108.44.205).
 Escape character is '^]'.
 220 163.com Anti-spam GT for Coremail System (163com[20141201])
-HELO localhost // 与服务器打招呼，并告知客户端使用的机器名字
-250 OK 
-AUTH LOGIN     // 使用身份认证登陆指令
+// 与服务器打招呼，并告知客户端使用的机器名字
+HELO localhost
+250 OK
+// 使用身份认证登录指令
+AUTH LOGIN  
 334 dXNlcm5hbWU6
-cmVkc29zMw== // 输入已经 base64_encode() 过的用户名.
+// 输入已经 base64_encode() 过的用户名.
+cmVkc29zMw== 
 334 UGFzc3dvcmQ6
-dGVzdA== // 输入已经 base64_encode() 过的密码
+// 输入已经 base64_encode() 过的密码
+dGVzdA==
 235 Authentication successful
 ```
+
+## 原理
+
+从上面 Telnet 的例子就可以看出，SMTP协议的实现是比较简单的，建立连接后通过特定的操作符并提交响应的参数，就会返回相应的结果，这里我们只是需要进行简单的身份验证，就不去多讲邮件发送相关的操作，有兴趣的同学可以自己去看 [RF281](https://tools.ietf.org/html/rfc821) 或者相关语言实现的库。
+
+对于进行身份验证来说，主要执行三个操作：
+
+1. 发送  `HELO localhost`
+2. 发送 `AUTH LOGIN`
+3. 发送用户名和密码（使用 base64 编码）
+
+最后校验返回的结果是不是 “235 Authentication successful”。
 
 ## Node.js 实现
 
@@ -82,7 +99,9 @@ QUIT
 
 ### node-smtp-auth
 
-经过封装的代码放在： https://github.com/yourtion/node-smtp-auth 项目，并发布到 NPM：smtp-auth
+经过封装的代码放在：[https://github.com/yourtion/node-smtp-auth]( https://github.com/yourtion/node-smtp-auth) 项目，并发布到 NPM：[smtp-auth](http://npmjs.org/package/smtp-auth) 。
+
+通过：`npm install smtp-auth --save` 安装即可。
 
 使用方法：
 
@@ -93,9 +112,13 @@ const client = new SMTPAuth({
   port: 25,
 });
 
-client.auth("test@extmail.org", "test").then(console.log).catch(console.log);
-// Authentication successful
+client.auth("test@extmail.org", "test").then(() => {
+    console.log("login success")
+}).catch((err) => {
+    console.log("login fail: ", err)
+});
 ```
 
-返回成功的信息就是验证通过。
+返回成功的信息就是验证通过，就是这样简单。有什么问题或者意见建议欢迎给我提 [issues](https://github.com/yourtion/node-smtp-auth/issues/new)
+
 
