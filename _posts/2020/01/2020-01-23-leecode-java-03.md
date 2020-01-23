@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2020-01-19 22:12:28 +08:00
-slug: leecode-java-01
-title: "LeetCode 手记 01"
+slug: leecode-java-03
+title: "LeetCode 手记 03"
 author: Yourtion
 keywords: ["leetcode", "java"]
 description: "需要熟悉双指针类型的解法；加强做题耐心与技巧，仔细发现规律；需要加强对于树这种数据结构的学习"
