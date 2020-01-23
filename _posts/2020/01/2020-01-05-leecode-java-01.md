@@ -29,7 +29,7 @@ tags: ["leetcode", "java"]
 
 做题的时候就是想到最简单的暴力穷举的方法，通过两层循环不断测试与目标答案是否符合，最终写出了解决方法。
 
-[https://leetcode-cn.com/submissions/detail/41919022/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/submissions/detail/41919022/](https://leetcode-cn.com/submissions/detail/41919022/)
 
 #### 反思
 
@@ -39,7 +39,7 @@ tags: ["leetcode", "java"]
 
 ### 7. 整数反转
 
-[https://leetcode-cn.com/problems/reverse-integer/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/problems/reverse-integer/](https://leetcode-cn.com/problems/reverse-integer/)
 
 #### 思路
 
@@ -48,7 +48,7 @@ tags: ["leetcode", "java"]
 
 但是第一次提交答案没有通过，因为`int`溢出了，所以通过简单地加个`trycatch`解决了。
 
-[https://leetcode-cn.com/submissions/detail/41919035/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/submissions/detail/41919035/](https://leetcode-cn.com/submissions/detail/41919035/)
 
 #### 反思
 
@@ -60,13 +60,13 @@ tags: ["leetcode", "java"]
 
 ### 9. 回文数
 
-[https://leetcode-cn.com/problems/palindrome-number/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/problems/palindrome-number/](https://leetcode-cn.com/problems/palindrome-number/)
 
 #### 思路
 
 一上来解决思路很简单，就是转换成字符串，然后循环进行头尾数字对比，但是做题过程很粗心，最简单的边界条件也没有整好，测试也没有好好跑就去提交答案，还错了三次。
 
-[https://leetcode-cn.com/submissions/detail/41956263/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/submissions/detail/41956263/](https://leetcode-cn.com/submissions/detail/41956263/)
 
 #### 反思
 
@@ -78,13 +78,13 @@ tags: ["leetcode", "java"]
 
 ### 13. 罗马数字转整数
 
-[https://leetcode-cn.com/problems/roman-to-integer/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/problems/roman-to-integer/](https://leetcode-cn.com/problems/roman-to-integer/)
 
 #### 思路
 
 先通过特殊类型的字典，计算六种特殊类型的组合，然后在拆开字符串通过字典查找进行加和，最终返回结果。
 
-[https://leetcode-cn.com/submissions/detail/42078580/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/submissions/detail/42078580/](https://leetcode-cn.com/submissions/detail/42078580/)
 
 #### 反思
 
@@ -96,13 +96,13 @@ tags: ["leetcode", "java"]
 
 ### 14. 最长公共前缀
 
-[https://leetcode-cn.com/problems/longest-common-prefix](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/problems/longest-common-prefix](https://leetcode-cn.com/problems/longest-common-prefix)
 
 #### 思路
 
 解题一开始思路比较直接，通过找出最短的长度，然后每个单词去遍历，直到发现不不同。但是解决过程非常粗心，忽略了非常多的边界条件，结果错误了五次，结果性能看起来还是比较不错的。
 
-[https://leetcode-cn.com/submissions/detail/42194822/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/submissions/detail/42194822/](https://leetcode-cn.com/submissions/detail/42194822/)
 
 #### 反思
 
@@ -113,13 +113,13 @@ tags: ["leetcode", "java"]
 
 ### 20. 有效的括号
 
-[https://leetcode-cn.com/problems/valid-parentheses](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/problems/valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses)
 
 #### 思路
 
 最开始想到的解法就是使用栈来进行，看到左括号入栈，看到右括号比对并出栈，不匹配直接返回。一开始使用String，后面使用Character，但是都还是用了Java自带的Stack，总体实现过程还是有些粗心，一些边界情况没有考虑。
 
-[https://leetcode-cn.com/submissions/detail/42223358/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/submissions/detail/42223358/](https://leetcode-cn.com/submissions/detail/42223358/)
 
 #### 反思
 
@@ -127,13 +127,13 @@ tags: ["leetcode", "java"]
 
 ### 21. 合并两个有序链表
 
-[https://leetcode-cn.com/problems/merge-two-sorted-lists](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/problems/merge-two-sorted-lists](https://leetcode-cn.com/problems/merge-two-sorted-lists)
 
 #### 思路
 
 一开始的想法就是遍历两个有序链表，根据当前值不断插入到新的链表上，但是一开始解决的思路有点偏，写了非常多的判断和临时变量，后来重新构思并重构了代码整体逻辑还是比较清楚的。
 
-[https://leetcode-cn.com/submissions/detail/42265463/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/submissions/detail/42265463/](https://leetcode-cn.com/submissions/detail/42265463/)
 
 #### 反思
 
@@ -147,13 +147,13 @@ tags: ["leetcode", "java"]
 
 ### 26. 删除排序数组中的重复项
 
-[https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array//)
 
 #### 思路
 
 思路还是比较简单的，因为是一个有序数组，直接从第一个开始，只要跟前面的不同，就把它放到数组里面游标当前位置，同时游标加一，最后返回游标即为不同元素的数量。
 
-[https://leetcode-cn.com/submissions/detail/42328969/](https://leetcode-cn.com/problems/two-sum/)
+[https://leetcode-cn.com/submissions/detail/42328969/](https://leetcode-cn.com/submissions/detail/42328969/)
 
 #### 反思
 
