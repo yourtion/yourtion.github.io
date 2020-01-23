@@ -16,11 +16,16 @@ author :
 safe: false
 timezone: Asia/Shanghai
 markdown: kramdown
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-paginate
+
+paginate_path: "page:num"
+paginate: 5
 
 # permalink
 permalink: /:title.html
+
 
 JB :
   version : 0.3.0
