@@ -20,7 +20,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
-paginate_path: "page:num"
+paginate_path: "page/:num"
 paginate: 5
 
 # permalink
