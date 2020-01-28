@@ -20,7 +20,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
-paginate_path: "page:num"
+paginate_path: "page/:num"
 paginate: 5
 
 # permalink
@@ -51,6 +51,6 @@ JB :
   analytics :
     provider : google_baidu
     baidu :
-      tracking_id : 'c172b7087a2b6b62acb6057bb733a8ea'
+      tracking_id : '46fcc15011207e116bc3aa85d8a3811e'
     google :
       tracking_id : 'UA-12599330-12'
