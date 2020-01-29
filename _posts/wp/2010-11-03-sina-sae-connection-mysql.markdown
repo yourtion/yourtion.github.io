@@ -10,7 +10,7 @@ wordpress_id: 1588
 categories:
 - 云服务
 tags:
-- MySql
+- MySQL
 - 新浪SAE
 ---
 {% include JB/setup %}

@@ -10,7 +10,7 @@ wordpress_id: 1788
 categories:
 - PageCookery
 tags:
-- MySql
+- MySQL
 - PageCookery
 ---
 {% include JB/setup %}

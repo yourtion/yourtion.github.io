@@ -7,7 +7,7 @@ author: Yourtion
 keywords: ["leetcode", "java"]
 description: "使用charAt()进行字符串遍历与操作；减少额外内存占用；使用“双指针”简化代码；考虑如何使用额外的空间极大降低代码时间复杂度；对解题方法要举一反三；多注意溢出等边界条件与问题"
 category: "学习"
-tags: ["leetcode", "java"]
+tags: ["LeetCode", "Java"]
 ---
 {% include JB/setup %}
 

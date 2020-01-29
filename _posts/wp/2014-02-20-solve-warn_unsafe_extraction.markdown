@@ -9,7 +9,7 @@ wordpress_id: 3981
 categories:
 - 电脑技巧
 tags:
-- python
+- Python
 ---
 {% include JB/setup %}
 

@@ -10,7 +10,7 @@ wordpress_id: 1244
 categories:
 - 康盛
 tags:
-- MySql
+- MySQL
 ---
 {% include JB/setup %}
 

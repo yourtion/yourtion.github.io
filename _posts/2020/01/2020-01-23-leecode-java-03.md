@@ -7,7 +7,7 @@ author: Yourtion
 keywords: ["leetcode", "java"]
 description: "需要熟悉双指针类型的解法；加强做题耐心与技巧，仔细发现规律；需要加强对于树这种数据结构的学习"
 category: "学习"
-tags: ["leetcode", "java"]
+tags: ["LeetCode", "Java"]
 ---
 {% include JB/setup %}
 

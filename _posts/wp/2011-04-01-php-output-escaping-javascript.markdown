@@ -10,7 +10,7 @@ wordpress_id: 1983
 categories:
 - PHP
 tags:
-- Javascript
+- JavaScript
 - PHP
 ---
 {% include JB/setup %}

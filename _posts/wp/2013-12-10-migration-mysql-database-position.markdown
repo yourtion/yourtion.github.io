@@ -10,7 +10,7 @@ wordpress_id: 3927
 categories:
 - 服务器
 tags:
-- MySql
+- MySQL
 ---
 {% include JB/setup %}
 

@@ -7,7 +7,7 @@ author: Yourtion
 keywords: ["leetcode", "java"]
 description: "需要考虑元素移动的操作成本，通过与最后的元素交换获得更好性能；认真学习KMP算法；重新认真对二分法进行实践；了解动态规划与动态规划算法；了解一些基础的学习方法，如“牛顿法”；加强操作列表的结点指针的能力，包括循环条件的设置"
 category: "学习"
-tags: ["leetcode", "java"]
+tags: ["LeetCode", "Java"]
 ---
 {% include JB/setup %}
 

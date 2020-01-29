@@ -11,7 +11,7 @@ categories:
 - VPS
 tags:
 - Debian
-- MySql
+- MySQL
 - Nginx
 - PHP
 ---

@@ -10,7 +10,7 @@ wordpress_id: 2321
 categories:
 - PHP
 tags:
-- MySql
+- MySQL
 ---
 {% include JB/setup %}
 

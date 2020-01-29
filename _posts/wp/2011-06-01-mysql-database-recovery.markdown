@@ -11,7 +11,7 @@ wordpress_id: 2161
 categories:
 - 服务器
 tags:
-- MySql
+- MySQL
 ---
 {% include JB/setup %}
 

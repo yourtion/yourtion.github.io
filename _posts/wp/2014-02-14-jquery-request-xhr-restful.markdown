@@ -9,7 +9,7 @@ wordpress_id: 3970
 categories:
 - HTML
 tags:
-- Javascript
+- JavaScript
 - jQuery
 ---
 {% include JB/setup %}
