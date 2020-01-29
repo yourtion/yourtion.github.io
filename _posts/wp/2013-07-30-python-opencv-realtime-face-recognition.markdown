@@ -10,7 +10,7 @@ wordpress_id: 3839
 categories:
 - OpenCV
 tags:
-- python
+- Python
 ---
 {% include JB/setup %}
 
