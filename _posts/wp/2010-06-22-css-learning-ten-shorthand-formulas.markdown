@@ -7,10 +7,8 @@ layout: post
 slug: css-learning-ten-shorthand-formulas
 title: CSS学习中十条速记口诀
 wordpress_id: 1224
-categories:
-- CSS+DIV
-tags:
-- CSS
+category: "HTML"
+tags: ["CSS"]
 ---
 {% include JB/setup %}
 
@@ -28,7 +26,7 @@ tags:
 
 六、学布局须思路，路随布局原理自然直，轻松驾驭html，流水布局少hack，代码清爽，兼容好，友好引擎喜欢迎。
 
-七、所有标签皆有源，只是默认各不同，span是无极，无极生两仪—内联和块级，img较特殊，但也遵法理，其他只是改造各不同，一个*号全归原，层叠样式理须多练习，万物皆规律。
+七、所有标签皆有源，只是默认各不同，span是无极，无极生两仪—内联和块级，img较特殊，但也遵法理，其他只是改造各不同，一个`*`号全归原，层叠样式理须多练习，万物皆规律。
 
 八、图片链接排版须小心，图片链接文字链接若对齐，padding和vertical-align:middle要设定，虽差微细倒无妨。
 

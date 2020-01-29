@@ -7,8 +7,8 @@ layout: post
 slug: baidu-maps-ali-cloud-map-geographic-coordinates-difference
 title: 百度地图与阿里云地图地理坐标差异
 wordpress_id: 3617
-categories:
-- 百度地图开发
+category: "HTML"
+tags: ["百度地图"]
 ---
 {% include JB/setup %}
 

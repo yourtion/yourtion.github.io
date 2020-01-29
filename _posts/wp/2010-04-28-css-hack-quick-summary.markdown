@@ -7,10 +7,8 @@ layout: post
 slug: css-hack-quick-summary
 title: CSS Hack 汇总速查
 wordpress_id: 1067
-categories:
-- CSS+DIV
-tags:
-- CSS
+category: "HTML"
+tags: ["CSS"]
 ---
 {% include JB/setup %}
 

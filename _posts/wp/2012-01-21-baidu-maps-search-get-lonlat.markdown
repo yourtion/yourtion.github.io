@@ -7,8 +7,8 @@ layout: post
 slug: baidu-maps-search-get-lonlat
 title: 百度地图API地点搜索-获取经纬度
 wordpress_id: 3565
-categories:
-- 百度地图开发
+category: "HTML"
+tags: ["百度地图"]
 ---
 {% include JB/setup %}
 

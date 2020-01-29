@@ -7,7 +7,7 @@ author: Yourtion
 keywords: ["vue", "remote js", "require js http"]
 description: "使用Vue的createElement方法，解决引入远程js问题"
 category: "Vue"
-tags: ["解决问题", "Javascript"]
+tags: ["解决问题", "JavaScript"]
 ---
 {% include JB/setup %}
 

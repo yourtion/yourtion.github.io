@@ -7,8 +7,8 @@ layout: post
 slug: dede-horizontal-navigation-menu
 title: DEDE(织梦)CMS水平二级导航菜单制作
 wordpress_id: 3480
-categories:
-- CSS+DIV
+category: "HTML"
+tags: ["JavaScript"]
 ---
 {% include JB/setup %}
 

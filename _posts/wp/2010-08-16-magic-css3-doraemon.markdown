@@ -7,10 +7,8 @@ layout: post
 slug: magic-css3-doraemon
 title: 神奇的CSS3哆啦A梦
 wordpress_id: 1448
-categories:
-- CSS+DIV
-tags:
-- CSS
+category: "HTML"
+tags: ["CSS"]
 ---
 {% include JB/setup %}
 

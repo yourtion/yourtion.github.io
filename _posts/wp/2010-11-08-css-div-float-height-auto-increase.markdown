@@ -7,11 +7,8 @@ layout: post
 slug: css-div-float-height-auto-increase
 title: css div设置float后高度不自动增加解决
 wordpress_id: 1598
-categories:
-- CSS+DIV
-tags:
-- CSS
-- 解决问题
+category: "HTML"
+tags: ["CSS","解决问题"]
 ---
 {% include JB/setup %}
 

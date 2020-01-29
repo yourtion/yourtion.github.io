@@ -7,10 +7,8 @@ layout: post
 slug: mourning-site-gray-method-change
 title: 悼念——网站变黑白的方法（包括Flash）
 wordpress_id: 1444
-categories:
-- CSS+DIV
-tags:
-- CSS
+category: "HTML"
+tags: ["CSS"]
 ---
 {% include JB/setup %}
 

@@ -7,10 +7,8 @@ layout: post
 slug: add-a-dash-way-the-article-list
 title: 文章列表添加虚线方法
 wordpress_id: 1481
-categories:
-- CSS+DIV
-tags:
-- CSS
+category: "HTML"
+tags: ["CSS"]
 ---
 {% include JB/setup %}
 

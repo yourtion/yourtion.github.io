@@ -6,7 +6,7 @@ layout: post
 slug: mongodb-2-6-adduser
 title: MongoDB2.6添加用户权限方法
 wordpress_id: 4078
-categories: "node.js"
+category: "Node.js"
 tags: ["MongoDB"]
 ---
 {% include JB/setup %}

@@ -7,8 +7,8 @@ layout: post
 slug: special-picture-navigation
 title: 一个特别的五页图片导航特效
 wordpress_id: 2631
-categories:
-- 特效
+category: "HTML"
+tags: ["特效", "插件"]
 ---
 {% include JB/setup %}
 

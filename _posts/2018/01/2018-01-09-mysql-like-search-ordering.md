@@ -7,7 +7,7 @@ author: Yourtion
 keywords: ["MySQL", "like", "ordering"]
 description: "MySQL对Like搜索结果按照匹配程度排序，准确匹配的结果没有排在前面。"
 category: "解决问题"
-tags: ["MySql"]
+tags: ["MySQL"]
 ---
 {% include JB/setup %}
 

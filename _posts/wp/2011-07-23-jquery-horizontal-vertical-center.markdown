@@ -7,11 +7,8 @@ layout: post
 slug: jquery-horizontal-vertical-center
 title: 使用jQuery创建水平和垂直居中的网站
 wordpress_id: 2326
-categories:
-- CSS+DIV
-tags:
-- jQuery
-- 解决问题
+category: "HTML"
+tags: ["jQuery", "解决问题"]
 ---
 {% include JB/setup %}
 

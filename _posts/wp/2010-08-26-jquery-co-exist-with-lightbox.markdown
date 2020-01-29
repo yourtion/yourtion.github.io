@@ -7,10 +7,8 @@ layout: post
 slug: jquery-co-exist-with-lightbox
 title: jquery.min跟lightbox共存
 wordpress_id: 1498
-categories:
-- CSS+DIV
-tags:
-- jQuery
+category: "HTML"
+tags: ["JQuery"]
 ---
 {% include JB/setup %}
 
