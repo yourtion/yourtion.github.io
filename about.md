@@ -5,7 +5,6 @@ date: 2010-02-01 08:55:46+00:00
 layout: page
 slug: about
 title: 关于我
-wordpress_id: 2
 ---
 
 ### 性格
@@ -22,7 +21,7 @@ wordpress_id: 2
 
 ### 常用软件
 
-```Xcode```、```Sublime Text```、```vim```、```iTerm```、```zsh```···
+`Xcode`、`Sublime Text`、`vim`、`iTerm`、`zsh`···
 
 ## 开源项目
 

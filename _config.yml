@@ -2,15 +2,22 @@
 title: 钇钛网
 subtitle: 郭宇翔的博客
 description: Yourtion's Blog
-production_url : https://blog.yourtion.com
+url: https://blog.yourtion.com
 # cdn_url : http://yblog.b0.upaiyun.com
 encoding: utf-8
 
-author :
-  name : Yourtion
-  email : yourtion@gmail.com
-  github : yourtion
-  twitter : yourtion
+author:
+  name: Yourtion
+  img: yourtion.jpg
+  about: 一只喜欢各种折腾的程序猴
+  email: yourtion@gmail.com
+  github: yourtion
+  twitter: yourtion
+  facebook: yourtion
+  linkedin: yourtion
+
+# permalink
+permalink: /:title.html
 
 # Build settings
 safe: false
@@ -19,38 +26,20 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-feed
+  - jemoji
+exclude:
+  - package.json
+feed:
+  path: atom.xml
 
-paginate_path: "page/:num"
 paginate: 5
+paginate_path: "/page/:num"
 
-# permalink
-permalink: /:title.html
+sass:
+  style: compressed
 
-
-JB :
-  version : 0.3.0
-
-  BASE_PATH : false
-  ASSET_PATH : false
-  IMAGE_PATH : false
-
-  categories_path : /categories.html
-  tags_path : /tags.html
-  guestbook_path : /guestbook.html
-  about_path : /about.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
-
-  comments :
-    provider : false
-    duoshuo :
-      short_name : yourtion
-      top_threads_num : 5
-      top_threads_range : monthly
-
-  analytics :
-    provider : google_baidu
-    baidu :
-      tracking_id : '46fcc15011207e116bc3aa85d8a3811e'
-    google :
-      tracking_id : 'UA-12599330-12'
+analytics:
+  provider: google_baidu
+  baidu: "46fcc15011207e116bc3aa85d8a3811e"
+  google: "UA-12599330-12"

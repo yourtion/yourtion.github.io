@@ -1,43 +1,31 @@
 ---
-layout: default
+layout: main
 ---
-<div class="col-md-8" id="page-content">
-  <h1 class="page-header">最新文章</h1>
-  {% for post in paginator.posts %}
-  <!-- Blog Post -->
-  <h2>
-    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </h2>
-  <p class="row">
-    <span class="col-md-2 col-xs-6"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ post.author }}</span>
-    <span class="col-md-2 col-xs-6"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> {{ post.categories[0] }}</span>
-    <span class="col-md-3 col-xs-6"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ post.date | date: "%b %d %Y" }}</span>
-    <span class="col-md-3 col-xs-6">
-      {% if site.JB.comments.provider == 'duoshuo' %}
-      <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-        <a href="{{ post.url }}#ds-thread" title="查看此文章的评论"><span class="ds-thread-count" data-thread-key="{% if post.wordpress_id %}{{ post.wordpress_id }}{% else %}{{ post.title }} {% endif %}" data-count-type="comments"></span></a>
-      {% endif %}
+{% for post in paginator.posts %}
+<article class="post">
+  {% include index_image.html %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    {% if post.category %}
+    <span class="post-cat">
+      <a href="{{site.baseurl}}/categories.html#{{post.category}}" class="cat"><i class="fa fa-folder"></i> {{ post.category }}</a>
     </span>
-  </p>
-  <hr>
-  <p>{{ post.content | strip_html | truncate:200 }}</p>
-  <a class="btn btn-info" href="{{ post.url | prepend: site.baseurl }}">阅读更多 <span class="glyphicon glyphicon-chevron-right"></span></a>
-  <hr>
-  {% endfor %}
-
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="/page/{{ paginator.previous_page }}" class="previous">&laquo; 上一页</a>
-    {% else %}
-      <span class="previous">&laquo; 上一页</span>
     {% endif %}
-    <span class="page_number "> {{ paginator.page }} / {{ paginator.total_pages }} </span>
-    {% if paginator.next_page %}
-      <a href="/page/{{ paginator.next_page }}" class="next">下一页 &raquo;</a>
-    {% else %}
-      <span class="next ">下一页 &raquo;</span>
-    {% endif %}
+    <span class="post-tag">
+      {% for tag in post.tags %}
+        <a href="{{site.baseurl}}/tags.html#{{tag}}" class="tag"><i class="fa fa-tag"></i> {{ tag }}</a>
+      {% endfor %}
+    </span>
+    <br />
+    <span class="post-date">{{post.date | date: '%Y-%m-%d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+      {% capture words %}{{ post.content | number_of_words }}{% endcapture %}
+      {% unless words contains "-" %}{{ words | prepend: "全文约 " | append: " 字" }}，
+      {{ words | plus: 250 | divided_by: 250 | prepend: "预计阅读时间为 " | append: " 分钟"}}{% endunless %}
+    </span>
   </div>
-  {% endif %}
-</div>
+</article>
+{% endfor %}
+
+{% include pagination.html %}

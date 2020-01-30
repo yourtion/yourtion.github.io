@@ -1,0 +1,45 @@
+<script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script>
+var domain_root = document.location.protocol+'//'+document.location.host;
+var cdn_url = "";
+var has_image = false;
+
+var all_links = $('.wrap-content a').each(function(index,element){
+  if(element.href.substr(0,domain_root.length) !== domain_root) {
+    element.target = '_blank';
+    $(element).attr('rel', 'nofollow');
+  }
+  if(element.href.substr(0,cdn_url.length) === cdn_url || element.href.substr(0, domain_root.length + 8) === domain_root + "/images/"){
+  if(element.firstChild.tagName === "IMG"){
+    var name = element.firstChild.alt || "";
+      $(element).attr("data-lightbox","image"+index);
+      $(element).attr("data-title",name);
+      has_image = true;
+    }
+  }
+});
+
+$('table').addClass( "table table-hover" );
+
+if (has_image){
+  function addFile(URL,FileType){
+    var oHead = document.getElementsByTagName('HEAD').item(0);
+    var addheadfile;
+    if(FileType=="js"){
+      addheadfile= document.createElement("script");
+      addheadfile.type = "text/javascript";
+      addheadfile.src=URL;
+    }else{
+      addheadfile= document.createElement("link");
+      addheadfile.type = "text/css";
+      addheadfile.rel="stylesheet";
+      addheadfile.rev = "stylesheet";
+      addheadfile.media = "screen";
+      addheadfile.href=URL;
+    }
+    oHead.appendChild( addheadfile);
+  }
+  addFile("/assets/css/lightbox.min.css","css");
+  addFile("/assets/js/lightbox.min.js","js");
+}
+</script>

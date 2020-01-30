@@ -1,11 +1,25 @@
 ---
-layout: default
+layout: main
 ---
-<div class="col-md-8">
-  <h1 class="page-header">
-    {{ page.title }}
-  </h1>
-  {{ content }}
-  <hr>
-  {% include JB/comments %}
-</div>
+
+<article class="article-page" style="width: 100%;">
+  <div class="page-content">
+    {% if page.img and page.img != "" %}
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src={{ "/images/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+      </figure>
+    </div>
+    <!-- End Page Cover Image -->
+    {% else %} {% endif %}
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">{{page.title}}</h1>
+      </header>
+      {{content | markdownify}}
+    </div>
+    <!-- End Wrap Content -->
+  </div>
+  <!-- End Page Content -->
+</article>
+<!-- End Article Page -->

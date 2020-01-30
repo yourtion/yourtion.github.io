@@ -1,0 +1,10 @@
+{
+  "name": "yourtion-blog",
+  "version": "1.0.0",
+  "description": "Yourtion's Blog",
+  "main": "_scripts/index.js",
+  "scripts": {
+    "dev": "bundle exec jekyll server --incremental"
+  },
+  "author": "Yourtion <yourtion@gmail.com>"
+}

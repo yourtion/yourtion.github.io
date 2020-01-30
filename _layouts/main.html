@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.author.img %}{{site.author.img}}{% endif %}" alt="{{site.author.name}}"></a>
+      </div>
+      <div class="author-name">{{site.author.name}}</div>
+      <p>{{site.author.about}}</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">联系我</h3>
+      <ul>
+        {% if site.author.twitter %}
+          <li><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.author.facebook %}
+          <li><a href="https://facebook.com/{{ site.author.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.author.github %}
+          <li class="github"><a href="http://github.com/{{site.author.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+        {% endif %}
+        {% if site.author.linkedin %}
+          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.author.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        {% endif %}
+        {% if site.author.email %}
+          <li class="email"><a href="mailto:{{site.author.email}}"><i class="fa fa-envelope-o"></i></a></li>
+        {% endif %}
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>{{site.time | date: '%Y'}} &copy; {{site.author.name}}</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  {{ content }}
+</div>

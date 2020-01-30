@@ -1,0 +1,23 @@
+{% if post.img and post.img != "" %}
+<!-- 如果有头图使用头图 -->
+  {% assign img = "/images/" | prepend: site.baseurl | append : post.img %}
+{% else %}
+  {% if post.category and site.data.images[post.category] %}
+<!-- 尝试使用 category -->
+    {% assign img = "/assets/img/" | prepend: site.baseurl | append : site.data.images[post.category] %}
+  {% else %}
+<!-- 尝试使用 tags -->
+    {% for tag in post.tags %}
+      {% if site.data.images[tag] %}
+        {% assign img = "/assets/img/" | prepend: site.baseurl | append : site.data.images[tag]  %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
+
+{% if img and img != "" %}
+<a class="post-thumbnail" style="background-image: url({{img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+{% endif %}
+<!-- 记得将变量置空 -->
+{% assign img = nil %}

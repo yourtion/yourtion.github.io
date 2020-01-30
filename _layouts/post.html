@@ -1,29 +1,51 @@
 ---
-layout: default
-type: post
+layout: main
 ---
-{% include JB/setup %}
-<div class="col-md-8" id="page-content">
-  <h1 class="page-header">
-    {{ page.title }}
-    <small>{% if page.meta %} • {{ page.meta }}{% endif %}</small>
-  </h1>
-  <p  class="row">
-    <span class="col-md-2 col-xs-6">
-      <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-      <a href="/categories.html#{{ post.categories[0] }}-ref">{{ page.categories[0] }}</a>
-    </span>
-    <span class="col-md-3 col-xs-6"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ page.date | date: "%B %d %Y" }}</span>
-    <span class="col-md-3 col-xs-6">
-      <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-        {% for tag in page.tags limit: 2 %}
-          <a class="tag" href="/tags.html#{{ tag }}-ref">{{ tag }}</a>
-        {% endfor %}
-    </span>
-  </p>
-  <hr>
-  {{ content }}
-  <p class="source">原文链接：<a href="{{ site.production_url }}{{ page.url }}">{{ site.production_url }}{{ page.url }}</a></p>
-  <hr>
-  {% include JB/comments %}
-</div>
+<article class="article-page">
+  <div class="page-content">
+    {% if page.img and page.img != "" %}
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src={{ "/images/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+        {% if page.fig-caption %}
+          <figcaption>{{page.fig-caption}}</figcaption>
+        {% endif %}
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    {% else %}
+    {% endif %}
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">{{page.title}}</h1>
+        <div class="page-date">
+          <span>
+            {{page.author}} 创作于：{{page.date | date: '%Y-%m-%d'}}&nbsp;&nbsp;&nbsp;&nbsp;
+          </span>
+          <span class="post-words">
+            {% capture words %}{{ page.content | number_of_words }}{% endcapture %}
+            {% unless words contains "-" %}{{ words | prepend: "全文约 " | append: " 字" }}，
+            {{ words | plus: 250 | divided_by: 250 | prepend: "预计阅读时间为 " | append: " 分钟"}}{% endunless %}
+          </span>
+        </div>
+      </header>
+      {{content | markdownify}}
+      <p class="source">原文链接：<a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a></p>
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="http://service.weibo.com/share/share.php?url={{ site.url }}{{ page.url }}&sharesource=weibo&title={{page.title}}&appkey=4272648849" title="Share on WeiBo" rel="nofollow" target="_blank">WeiBo</a>
+        </div>
+        <div class="page-tag">
+          {% if page.category %}
+            <a href="{{site.baseurl}}/categories.html#{{page.category}}" class="cat"><i class="fa fa-folder"></i> {{ page.category }}</a>
+          {% endif %}
+          {% for tag in page.tags %}
+            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+{% include js_post.html %}

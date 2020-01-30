@@ -1,22 +1,28 @@
 ---
-layout: page
+layout: main
 title: 分类
-header: Posts By Category
-group: navigation
-comments: false
-type: tag
+slug: categories
 ---
-{% include JB/setup %}
+{% capture site_cats %}{% for cat in site.categories %}{{ cat | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign cat_words = site_cats | split:',' %}
 
-<ul class="tag-box inline" style="margin-bottom: 20px;">
-  {% assign categories_list = site.categories %}
-  {% include JB/categories_list %}
-</ul>
-
-{% for category in site.categories %}
-<h4 id="{{ category[0] }}"><i class="fa fa-folder-o"></i> {{ category[0] | join: "/" }}</h4>
-<ul class="tag-list">
-  {% assign pages_list = category[1] %}
-  {% include JB/pages_list %}
-</ul>
-{% endfor %}
+<section class="blog-tags">
+  <h1>分类</h1>
+  <ul class="tags">
+<!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
+  {% for this_word in cat_words %}
+    <li ><a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>{{ site.categories[this_word].size }}</span></a></li>
+  {% endfor %}
+  </ul>
+<!--cycles through tag list and creates subheader for each tag name...-->
+  {% for this_word in cat_words %}
+  <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+<!--  lists all posts corresponding to specific tag...-->
+    {% for post in site.categories[this_word] %}{% if post.title != null %}
+    <div class="tag-list">
+        <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+        <small><span>| {{ post.date | date: '%Y-%m-%d' }}</span></small>
+    </div>
+    {% endif %}{% endfor %}
+  {% endfor %}
+</section>
