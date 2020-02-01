@@ -9,6 +9,7 @@ encoding: utf-8
 author:
   name: Yourtion
   img: yourtion.jpg
+  picture: /assets/img/yourtion.jpg
   about: 一只喜欢各种折腾的程序猴
   email: yourtion@gmail.com
   github: yourtion

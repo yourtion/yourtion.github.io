@@ -1,0 +1,13 @@
+<script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script>
+var domain_root = document.location.protocol+'//'+document.location.host;
+
+var all_links = $('.wrap-content a').each(function(index,element){
+  if(element.href.substr(0,domain_root.length) !== domain_root) {
+    element.target = '_blank';
+    $(element).attr('rel', 'nofollow');
+  }
+});
+
+$('table').addClass( "table table-hover" );
+</script>

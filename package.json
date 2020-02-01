@@ -4,7 +4,8 @@
   "description": "Yourtion's Blog",
   "main": "_scripts/index.js",
   "scripts": {
-    "dev": "bundle exec jekyll server --incremental"
+    "dev": "bundle exec jekyll server --incremental",
+    "clean": "rm -rf _site .jekyll-cache .jekyll-metadata"
   },
   "author": "Yourtion <yourtion@gmail.com>"
 }
