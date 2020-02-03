@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-01-12 19:43:24 +08:00
-slug: leecode-java-02
+slug: leetcode-java-02
 title: "LeetCode 手记 02"
 author: Yourtion
 keywords: ["leetcode", "java"]
