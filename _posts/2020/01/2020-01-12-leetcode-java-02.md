@@ -39,82 +39,79 @@ tags: ["LeetCode", "Java"]
 2. 将问题分解为子问题并递归地解决它们。
 3. 合并子问题的解以获得原始问题的解。
 
-## 第一天
 
-### 27. 移除元素
+## 27. 移除元素
 
 [https://leetcode-cn.com/problems/remove-element/](https://leetcode-cn.com/problems/remove-element/)
 
-#### 思路
+### 思路
 
 这道题目的解决方法跟上一道题移除重复元素一致，就是通过指针把当前的不等于所需移除的数字移到指针所在位置即可。
 
 [https://leetcode-cn.com/submissions/detail/42506804/](https://leetcode-cn.com/submissions/detail/42506804/)
-#### 反思
+### 反思
 
 官方题解的第一个方法跟我的基本一致，我还多余地判断了一次，没有必要。
 
 看到第二个解法“双指针 —— 当要删除的元素很少时”时，明白了在解答时候需要考虑移动元素的次数，如果需要删除的元素较少时，直接交换最后一个元素，可以获得很高效率，减少交换的次数。
 
-## 第二天
 
-### 28. 实现 strStr()
+## 28. 实现 strStr()
 
 
-#### 思路
+### 思路
 
 方法比较简单粗暴，直接遍历haystack，查找needle的第一个值，找到后继续查找needle下面的结果，判断结果。
 
 [https://leetcode-cn.com/submissions/detail/42526981/](https://leetcode-cn.com/submissions/detail/42526981/)
 
-#### 反思
+### 反思
 
 字符串查找有 KMP、BM、Horspool、Sunday 等算法，很多东西还是要好好认真学习的。
 
 > KMP 算法永不回退 txt 的指针 i，不走回头路（不会重复扫描 txt），而是借助 dp 数组中储存的信息把 pat 移到正确的位置继续匹配，时间复杂度只需 O(N)
 
-### 35. 搜索插入位置
+## 35. 搜索插入位置
 
 
-#### 思路
+### 思路
 
 一开始是打算用二分法查找，但是写了五六次没有写出来，心累，所以直接遍历数组找了结果。
 
 [https://leetcode-cn.com/submissions/detail/42656284/](https://leetcode-cn.com/submissions/detail/42656284/)
 
-#### 反思
+### 反思
 
 看了一下题解，才发现之前二分法的写法和思路整个都是错的。
 
 > 首先把循环可以进行的条件写成 `while(left < right)`，在退出循环的时候，一定有 `left == right` 成立，此时返回 `left` 或者 `right` 都可以。
 
-## 第三天
 
-### 38. 外观数列
+## 38. 外观数列
 
 [https://leetcode-cn.com/problems/count-and-say/](https://leetcode-cn.com/problems/count-and-say/)
 
-#### 思路
+### 思路
 
 解题思路还是比较简单的，就是判断每个字符串跟之前一个是不是一样，一样就计数加一，否则把计数数量和字符拼接上去。其实可以使用递归让代码更加优雅，但是懒得写，直接使用了循环代替。
 
 [https://leetcode-cn.com/submissions/detail/42782259/](https://leetcode-cn.com/submissions/detail/42782259/)
 
-#### 反思
+### 反思
 
 看到题解也没有什么特别大的差别，但是有个JS的解法使用正则也是非常新颖：`prev = prev.replace(/(\d)\1*/g, item =>`${item.length}${item[0]}`)`
 
-### 53. 最大子序和
+## 53. 最大子序和
 
 [https://leetcode-cn.com/problems/maximum-subarray/](https://leetcode-cn.com/problems/maximum-subarray/)
 
-#### 思路
+### 思路
 
 一开始看到题目其实也没有想到很好的方法，没有想到题目中O(N)的方法是怎么做的，只能用最笨的方法通过两层循环完成比对。
 
 [https://leetcode-cn.com/submissions/detail/42789278/](https://leetcode-cn.com/submissions/detail/42789278/)
 
-#### 反思
+### 反思
 
 题解中使用“贪心”算法有效地在O(N)时间完成题解，而且整个方法非常优雅。而分治法可以很好的用递归和多线程甚至分布式进行问题求解。
 
@@ -122,84 +119,79 @@ tags: ["LeetCode", "Java"]
 
 > 每一步都选择最佳方案，到最后就是全局最优的方案
 
-## 第四天
 
-### 58. 最后一个单词的长度
+## 58. 最后一个单词的长度
 
 [https://leetcode-cn.com/problems/length-of-last-word/](https://leetcode-cn.com/problems/length-of-last-word/)
 
-#### 思路
+### 思路
 
 用了比较坑的解法，直接split，再取最后一个。
 
 [https://leetcode-cn.com/submissions/detail/42908226/](https://leetcode-cn.com/submissions/detail/42908226/)
 
-#### 反思
+### 反思
 
 正确的方法应该是从字符尾部开始遍历，直到遇到空格（注意一些边界条件，还有最后一个是空格的情况）
 
-### 66. 加一
+## 66. 加一
 
 [https://leetcode-cn.com/problems/plus-one/](https://leetcode-cn.com/problems/plus-one/)
 
-#### 思路
+### 思路
 
 处理方法比较简单，从最后一位开始加一后判断是否为10，如果是10则置为0同时继续循环，否则返回结果。需要注意考虑全部为9进位的情况。
 
 [https://leetcode-cn.com/submissions/detail/42910443/](https://leetcode-cn.com/submissions/detail/42910443/)
 
-#### 反思
+### 反思
 
 大部分解法类似，他们会使用 `% 10` 来判断并处理变为10的情况。
 
-## 第五天
 
-### 67. 二进制求和
+## 67. 二进制求和
 
 [https://leetcode-cn.com/problems/add-binary/](https://leetcode-cn.com/problems/add-binary/)
 
-#### 思路
+### 思路
 
 解题思路还是比较简单直接，通过一个变量确定是否需要进位，然后通过判断字符串进行计算，最后输出结果，注意处理最后的进位的情况，还有循环函数的流程
 
 [https://leetcode-cn.com/submissions/detail/42922249/](https://leetcode-cn.com/submissions/detail/42922249/)
 
-#### 反思
+### 反思
 
 题解中的解法使用0补齐的方法，整体看情况比我写的循环更加简洁
 
-## 第六天
 
-### 69. x 的平方根
+## 69. x 的平方根
 
 [https://leetcode-cn.com/problems/sqrtx/](https://leetcode-cn.com/problems/sqrtx/)
 
-#### 思路
+### 思路
 
 解题比较暴力，直接返回`(int) Math.floor(Math.sqrt(x))`，其实这样是不对的，直接用函数库的方法
 
 [https://leetcode-cn.com/submissions/detail/43039291/](https://leetcode-cn.com/submissions/detail/43039291/)
 
-#### 反思
+### 反思
 
 题解中讲了“二分法”和“牛顿法”，之前有听说过牛顿法求平方根，但是根本不知道这个解法的原理。还是要认真打一下基础才行。
 
 > 使用二分查找法搜索，注意特值对搜索边界的影响
 
 
-## 第七天
-
-### 83. 删除排序链表中的重复元素
+## 83. 删除排序链表中的重复元素
 
 [https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 
-#### 思路
+### 思路
 
 解题方法跟之前删除有序数组重复元素一致，但是一开始还是忽略了一些边界条件
 
 [https://leetcode-cn.com/submissions/detail/43153054/](https://leetcode-cn.com/submissions/detail/43153054/)
 
-#### 反思
+### 反思
 
 官方题解解法中的方法比起我写的代码简洁非常多，通过两个条件的while循环加上判断，很好地解决问题。
 
