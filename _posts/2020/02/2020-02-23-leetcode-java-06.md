@@ -5,7 +5,7 @@ slug: leetcode-java-06
 title: "LeetCode 手记 06"
 author: Yourtion
 keywords: ["leetcode", "java"]
-description: ""
+description: "更多地审题并认真确认题目中隐含的条件；更多实践二分法解题，准确把握判断条件和赋值；对于数组问题，多考虑双指针解法；要仔细看清楚题目的要求和限制；注意一道题目的多种解题方法；可以通过出现调用函数并颠倒参数顺序实现对特定参数的依赖（如长短）；可以使用`new int[26]`替代Map；"
 category: "学习"
 tags: ["LeetCode", "Java"]
 ---
