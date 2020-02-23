@@ -31,6 +31,7 @@ plugins:
   - jemoji
 exclude:
   - package.json
+  - node_modules
 feed:
   path: atom.xml
 
