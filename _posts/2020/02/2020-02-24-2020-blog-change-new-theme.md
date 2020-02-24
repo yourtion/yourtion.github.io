@@ -4,10 +4,10 @@ date: 2020-02-24 11:55:09 +08:00
 slug: 2020-blog-change-new-theme
 title: "2020为博客更换新主题"
 author: Yourtion
-keywords: [""]
+keywords: ["Jekyll", "flexible-jekyll"]
 description: "为博客更换一个新主题的计划其实已经想了很久，从去年就有这样的想法，趁着这个假期一直宅在家，就索性开干了。之前的主题是自己从几个模版里面参考了好几个部分，然后自己使用Bootstrap拼凑起来的，虽然感觉自己写的比较特别，但因为自己审美不行，前端水平也菜，所以一直觉得博客不够好，所以这次就不献丑了。"
-category: ""
-tags: [""]
+category: "博客大事记"
+tags: ["Jekyll"]
 img: 2020/02/2020-blog-change-new-theme-1.jpg
 ---
 {% include JB/setup %}
