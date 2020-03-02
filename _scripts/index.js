@@ -12,9 +12,13 @@ program
   .option("-d, --desc <desc>", "Add desc")
   .option("-c, --cat <cat>", "Add cat");
 // 文章发布
-program.command("post <slug>")
-.option("-f, --fast <template>", "use template")
-.action(post);
+program
+  .command("post <slug>")
+  .option("-f, --fast <template>", "use template")
+  .action(post);
 // 迁移文章
-program.command("mv <file> <slug>").action(mv);
+program
+  .command("mv <file> <slug>")
+  .option("--tiny", "tinyImage")
+  .action(mv);
 program.parse(process.argv);

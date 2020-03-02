@@ -12,6 +12,7 @@
   },
   "author": "Yourtion <yourtion@gmail.com>",
   "devDependencies": {
-    "commander": "^4.1.1"
+    "commander": "^4.1.1",
+    "tinify": "^1.6.0-beta.2"
   }
 }

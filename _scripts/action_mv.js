@@ -2,17 +2,30 @@ const {
   renderPost,
   getDate,
   createNewPost,
-  createImageDir
+  createImageDir,
+  copyFileAsync,
+  readFileAsync,
+  existsAsync
 } = require("./utils");
 const { IMAGE_PATTERN } = require("./utils_const");
 const path = require("path");
-const fs = require("fs");
 const program = require("commander");
+const tinify = require("tinify");
+tinify.key = process.env.TINYPNG_KEY;
+tinify.proxy = "http://127.0.0.1:8092";
+
+function copyImg(source, dist, tiny) {
+  if (tiny && tinify._key) {
+    console.log("tinify image: " + source);
+    return tinify.fromFile(source).toFile(dist);
+  }
+  return copyFileAsync(source, dist);
+}
 
 const PWD = process.cwd();
 const date = new Date();
 
-function processMdArr(slug, arr) {
+async function processMdArr(slug, arr, tiny) {
   const ret = [];
   let fullDir = "";
   let dir = "";
@@ -25,15 +38,15 @@ function processMdArr(slug, arr) {
       const img = path.join(PWD, r[2]);
       const imgName = `${slug}-${c++}${path.extname(img)}`;
       let imgFile;
-      const e = fs.existsSync(img);
+      const e = await existsAsync(img);
       if (e) {
         if (!dir) {
-          const ret = createImageDir(date);
+          const ret = await createImageDir(date);
           fullDir = ret.fullDir;
           dir = ret.dir;
         }
         imgFile = dir + "/" + imgName;
-        fs.copyFileSync(img, path.resolve(fullDir, imgName));
+        await copyImg(img, path.resolve(fullDir, imgName), tiny);
         if (!headImage) {
           headImage = imgFile;
         }
@@ -48,7 +61,7 @@ function processMdArr(slug, arr) {
   }
   return { ret, title, headImage };
 }
-function mv(file, slug, options) {
+async function mv(file, slug, options) {
   // console.log(file, slug);
   if (!slug || !file) return;
   if (path.extname(file) !== ".md") {
@@ -59,13 +72,14 @@ function mv(file, slug, options) {
   if (!path.isAbsolute(file)) {
     source = path.resolve(PWD, file);
   }
-  const mdArr = fs
-    .readFileSync(source)
-    .toString()
-    .split("\n");
+  const md = await readFileAsync(source);
+  const mdArr = md.toString().split("\n");
 
-  const { ret, title, headImage } = processMdArr(slug, mdArr);
-
+  const { ret, title, headImage } = await processMdArr(
+    slug,
+    mdArr,
+    options.tiny
+  );
   const data = {
     date: getDate(date) + " +08:00",
     slug: slug || "",
@@ -78,7 +92,7 @@ function mv(file, slug, options) {
   };
 
   const content = renderPost(data);
-  const { dir, fileName } = createNewPost(
+  const { dir, fileName } = await createNewPost(
     date,
     data.slug,
     content + ret.join("\n")

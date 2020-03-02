@@ -2,7 +2,7 @@ const { renderPost, getDate, createNewPost } = require("./utils");
 const program = require("commander");
 
 const date = new Date();
-function post(slug, options) {
+async function post(slug, options) {
   if (!slug) return;
 
   const data = {
@@ -16,7 +16,7 @@ function post(slug, options) {
     img: program.img || ""
   };
   const content = renderPost(data, options.fast);
-  const { dir, fileName } = createNewPost(date, data.slug, content);
+  const { dir, fileName } = await createNewPost(date, data.slug, content);
   console.log(dir + "/" + fileName);
 }
 
