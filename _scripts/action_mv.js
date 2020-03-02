@@ -1,5 +1,10 @@
-const { render, getDate, createNewPost, createImageDir } = require("./utils");
-const { POST_TEMPLATE, IMAGE_PATTERN } = require("./utils_const");
+const {
+  renderPost,
+  getDate,
+  createNewPost,
+  createImageDir
+} = require("./utils");
+const { IMAGE_PATTERN } = require("./utils_const");
 const path = require("path");
 const fs = require("fs");
 const program = require("commander");
@@ -7,16 +12,18 @@ const program = require("commander");
 const PWD = process.cwd();
 const date = new Date();
 
-function processMdArr(arr) {
+function processMdArr(slug, arr) {
   const ret = [];
   let fullDir = "";
   let dir = "";
   let title = "";
+  let c = 1;
+  let headImage = "";
   for (line of arr) {
     const r = IMAGE_PATTERN.exec(line);
     if (r) {
       const img = path.join(PWD, r[2]);
-      const imgName = path.basename(img);
+      const imgName = `${slug}-${c++}${path.extname(img)}`;
       let imgFile;
       const e = fs.existsSync(img);
       if (e) {
@@ -27,6 +34,9 @@ function processMdArr(arr) {
         }
         imgFile = dir + "/" + imgName;
         fs.copyFileSync(img, path.resolve(fullDir, imgName));
+        if (!headImage) {
+          headImage = imgFile;
+        }
       }
       // console.log(r[2], e);
       ret.push(`[![]({{ IMAGE_PATH }}${imgFile})]({{ IMAGE_PATH }}${imgFile})`);
@@ -36,7 +46,7 @@ function processMdArr(arr) {
       ret.push(line);
     }
   }
-  return { ret, title };
+  return { ret, title, headImage };
 }
 function mv(file, slug, options) {
   // console.log(file, slug);
@@ -54,7 +64,7 @@ function mv(file, slug, options) {
     .toString()
     .split("\n");
 
-  const { ret, title } = processMdArr(mdArr);
+  const { ret, title, headImage } = processMdArr(slug, mdArr);
 
   const data = {
     date: getDate(date) + " +08:00",
@@ -64,11 +74,15 @@ function mv(file, slug, options) {
     desc: program.desc || "",
     cat: program.cat || "",
     tags: program.tags || "",
-    img: program.img || ""
+    img: program.img || headImage || ""
   };
 
-  const content = render(POST_TEMPLATE, data);
-  const { dir, fileName } = createNewPost(date, slug, content + ret.join("\n"));
+  const content = renderPost(data);
+  const { dir, fileName } = createNewPost(
+    date,
+    data.slug,
+    content + ret.join("\n")
+  );
 
   console.log(dir + "/" + fileName);
 }

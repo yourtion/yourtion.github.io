@@ -2,6 +2,7 @@ const { exists, readFile, writeFile } = require("fs");
 const { promisify } = require("util");
 const path = require("path");
 const fs = require("fs");
+const { POST_TEMPLATE, TEMPLATES } = require("./utils_const");
 
 exports.existsAsync = promisify(exists);
 exports.readFileAsync = promisify(readFile);
@@ -20,6 +21,21 @@ exports.writeFileAsync = promisify(writeFile);
  */
 exports.render = function render(template, context) {
   return template.replace(/\{\{(.*?)\}\}/g, (_, key) => context[key]);
+};
+
+exports.renderPost = function renderPost(data, fast) {
+  data.keyword = data.keyword.split(",");
+  data.tags = data.tags.split(",");
+
+  if (fast && TEMPLATES[fast]) {
+    data = TEMPLATES[fast](data);
+  }
+
+  data.keyword = `"${data.keyword.join('", "')}"`;
+  data.tags = `"${data.tags.join('", "')}"`;
+  data.img = data.img && "img: " + data.img;
+
+  return exports.render(POST_TEMPLATE, data);
 };
 
 exports.leftPad = leftPad;
@@ -87,5 +103,5 @@ function createImageDir(date) {
   const dir = `${date.getFullYear()}/${leftPad(date.getMonth() + 1, 2)}`;
   const fullDir = path.resolve(__dirname, "../images/", dir);
   fs.mkdirSync(fullDir, { recursive: true });
-  return { dir, fullDir};
+  return { dir, fullDir };
 }

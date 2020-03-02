@@ -1,5 +1,4 @@
-const { render, getDate, createNewPost } = require("./utils");
-const { POST_TEMPLATE } = require("./utils_const");
+const { renderPost, getDate, createNewPost } = require("./utils");
 const program = require("commander");
 
 const date = new Date();
@@ -16,9 +15,8 @@ function post(slug, options) {
     tags: program.tags || "",
     img: program.img || ""
   };
-
-  const content = render(POST_TEMPLATE, data);
-  const { dir, fileName } = createNewPost(date, slug, content);
+  const content = renderPost(data, options.fast);
+  const { dir, fileName } = createNewPost(date, data.slug, content);
   console.log(dir + "/" + fileName);
 }
 
