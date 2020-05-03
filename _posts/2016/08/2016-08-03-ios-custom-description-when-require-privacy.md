@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-08-03 17:56:05 +08:00
+date: 2016-08-03 17:56:05 +0800
 slug: ios-custom-description-when-require-privacy
 title: "iOS自定义获取权限时的描述"
 author: Yourtion

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-03-21 19:00:04 +08:00
+date: 2016-03-21 19:00:04 +0800
 slug: install-swift-and-solve-library-not-loaded
 title: "Swift开发环境搭建及问题解决"
 author: Yourtion

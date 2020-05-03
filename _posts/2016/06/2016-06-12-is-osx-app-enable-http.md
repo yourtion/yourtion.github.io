@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-06-12 12:01:01 +08:00
+date: 2016-06-12 12:01:01 +0800
 slug: is-osx-app-enable-http
 title: "判断Mac应用是否开放HTTP权限"
 author: Yourtion

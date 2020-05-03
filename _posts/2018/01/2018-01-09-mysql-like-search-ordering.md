@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-01-09 09:44:26 +08:00
+date: 2018-01-09 09:44:26 +0800
 slug: mysql-like-search-ordering
 title: "MySQL对Like搜索结果按照匹配程度排序"
 author: Yourtion

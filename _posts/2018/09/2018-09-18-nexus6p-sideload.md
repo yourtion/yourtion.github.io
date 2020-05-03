@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-09-18 18:00:31 +08:00
+date: 2018-09-18 18:00:31 +0800
 slug: nexus6p-sideload
 title: "Nexus6P SideLoad"
 author: Yourtion

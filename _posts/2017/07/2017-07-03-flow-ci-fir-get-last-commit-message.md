@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-07-03 16:40:53 +08:00
+date: 2017-07-03 16:40:53 +0800
 slug: flow-ci-fir-get-last-commit-message
 title: "flow.ci使用最后的commit信息作为Fir日志"
 author: Yourtion

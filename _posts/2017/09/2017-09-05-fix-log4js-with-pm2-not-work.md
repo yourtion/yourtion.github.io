@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-09-05 10:51:53 +08:00
+date: 2017-09-05 10:51:53 +0800
 slug: fix-log4js-with-pm2-not-work
 title: "log4js在PM2的cluster模式下大坑"
 author: Yourtion

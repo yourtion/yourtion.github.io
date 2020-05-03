@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-07-08 16:13:03 +08:00
+date: 2016-07-08 16:13:03 +0800
 slug: update-react-native-029-bug
 title: "升级 ReactNative 0.29 踩坑"
 author: Yourtion

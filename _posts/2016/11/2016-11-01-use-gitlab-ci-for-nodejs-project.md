@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-11-01 15:24:36 +08:00
+date: 2016-11-01 15:24:36 +0800
 slug: use-gitlab-ci-for-nodejs-project
 title: "使用 GitLab-CI 自动化 Node.js 项目测试"
 author: Yourtion

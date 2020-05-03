@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-03-17 13:06:37 +08:00
+date: 2016-03-17 13:06:37 +0800
 slug: extract-weichat-data-without-jailbreak
 title: "不越狱导出iPhone微信数据教程"
 author: Yourtion

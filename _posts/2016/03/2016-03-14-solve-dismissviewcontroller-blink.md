@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-03-14 13:44:09 +08:00
+date: 2016-03-14 13:44:09 +0800
 slug: solve-dismissviewcontroller-blink
 title: "巧妙化解dismissViewController闪烁问题"
 author: Yourtion

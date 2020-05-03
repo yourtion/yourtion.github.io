@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-08-29 10:27:48 +08:00
+date: 2017-08-29 10:27:48 +0800
 slug: graceful-reload-express-with-pm2
 title: "使用PM2的GracefulReload无停机更新Express应用"
 author: Yourtion

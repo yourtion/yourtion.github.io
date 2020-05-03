@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-02-24 11:55:09 +08:00
+date: 2020-02-24 11:55:09 +0800
 slug: 2020-blog-change-new-theme
 title: "2020为博客更换新主题"
 author: Yourtion

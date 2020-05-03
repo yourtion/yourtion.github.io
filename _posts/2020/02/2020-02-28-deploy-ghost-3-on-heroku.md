@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-02-28 16:06:50 +08:00
+date: 2020-02-28 16:06:50 +0800
 slug: deploy-ghost-3-on-heroku
 title: "在 Heroku 上部署 Ghost 3.x"
 author: Yourtion

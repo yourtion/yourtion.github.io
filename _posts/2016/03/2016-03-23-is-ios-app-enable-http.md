@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-03-23 13:59:49 +08:00
+date: 2016-03-23 13:59:49 +0800
 slug: is-ios-app-enable-http
 title: "判断iOS应用是否开放HTTP权限"
 author: Yourtion

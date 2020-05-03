@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-02-15 10:14:17 +08:00
+date: 2017-02-15 10:14:17 +0800
 slug: vue-require-remote-js
 title: "Vue引入远程JS文件"
 author: Yourtion

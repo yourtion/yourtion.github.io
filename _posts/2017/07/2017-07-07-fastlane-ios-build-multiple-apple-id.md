@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-07-07 14:35:34 +08:00
+date: 2017-07-07 14:35:34 +0800
 slug: fastlane-ios-build-multiple-apple-id
 title: "Fastlane构建多个AppleID的IPA包"
 author: Yourtion

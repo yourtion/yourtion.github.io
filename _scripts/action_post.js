@@ -6,7 +6,7 @@ async function post(slug, options) {
   if (!slug) return;
 
   const data = {
-    date: getDate(date) + " +08:00",
+    date: getDate(date) + " +0800",
     slug: slug || "",
     title: program.title || "",
     keyword: program.keyword || "",

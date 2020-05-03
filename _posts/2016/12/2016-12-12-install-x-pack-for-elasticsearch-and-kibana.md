@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-12-12 12:03:20 +08:00
+date: 2016-12-12 12:03:20 +0800
 slug: install-x-pack-for-elasticsearch-and-kibana
 title: "给Elasticsearch和Kibana安装X-Pack"
 author: Yourtion

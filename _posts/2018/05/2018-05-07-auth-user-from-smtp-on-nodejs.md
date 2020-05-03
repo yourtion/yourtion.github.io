@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-05-07 14:54:34 +08:00
+date: 2018-05-07 14:54:34 +0800
 slug: auth-user-from-smtp-on-nodejs
 title: "使用SMTP服务进行用户登录认证"
 author: Yourtion

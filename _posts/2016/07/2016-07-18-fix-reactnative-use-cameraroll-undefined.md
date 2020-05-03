@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-07-18 17:37:24 +08:00
+date: 2016-07-18 17:37:24 +0800
 slug: fix-reactnative-use-cameraroll-undefined
 title: "解决ReactNative使用CameraRoll时undefined错误"
 author: Yourtion

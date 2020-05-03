@@ -81,7 +81,7 @@ async function mv(file, slug, options) {
     options.tiny
   );
   const data = {
-    date: getDate(date) + " +08:00",
+    date: getDate(date) + " +0800",
     slug: slug || "",
     title: program.title || title || "",
     keyword: program.keyword || "",

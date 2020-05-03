@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-03-29 17:58:12 +08:00
+date: 2020-03-29 17:58:12 +0800
 slug: leetcode-java-11
 title: "LeetCode 手记 11"
 author: Yourtion

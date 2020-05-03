@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-05-05 17:05:25 +08:00
+date: 2017-05-05 17:05:25 +0800
 slug: run-python-on-spss
 title: "使用Python操作SPSS"
 author: Yourtion
@@ -43,9 +43,11 @@ BEGIN PROGRAM.
 # 导入 SpssClient 模块
 import SpssClient
 
-# 启动 SPSS ClientSpssClient.StartClient()
+# 启动 SPSS Client
+SpssClient.StartClient()
 
-# 打印当前工作目录print SpssClient.GetCurrentDirectory()
+# 打印当前工作目录
+print SpssClient.GetCurrentDirectory()
 
 # 结束 SPSS Client
 SpssClient.StopClient()

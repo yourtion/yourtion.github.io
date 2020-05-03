@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-08-04 10:56:31 +08:00
+date: 2016-08-04 10:56:31 +0800
 slug: fix-jekyll-bootstrap-build-warning
 title: "解决 JekyllBootstrap 中 theme.name 出错问题"
 author: Yourtion
