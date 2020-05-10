@@ -5,7 +5,7 @@ slug: leetcode-java-13
 title: "LeetCode 手记 13"
 author: Yourtion
 keywords: ["leetcode", "java"]
-description: "通过一个比较流替换多个标志位，多使用内置函数；了解`Arrays.sort`相关方法的自定义实现；需要注意题目描述中的细节；使用`String.format`进行字符串格式化；使用`continue xxx`跳转回去程序特定标签处"；
+description: "通过一个比较流替换多个标志位，多使用内置函数；了解`Arrays.sort`相关方法的自定义实现；需要注意题目描述中的细节；使用`String.format`进行字符串格式化；使用`continue xxx`跳转回去程序特定标签处"
 category: "学习"
 tags: ["LeetCode", "Java"]
 ---
