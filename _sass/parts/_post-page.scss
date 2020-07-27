@@ -1,5 +1,6 @@
 .wrap-content {
   padding: 20px;
+  word-break: break-all;
   a {
     color: $body-color;
     &:hover {
