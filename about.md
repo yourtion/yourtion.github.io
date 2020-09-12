@@ -3,7 +3,7 @@ author: Yourtion
 comments: true
 date: 2010-02-01 08:55:46+00:00
 layout: page
-slug: about
+slug: about.html
 title: 关于我
 ---
 
