@@ -7,6 +7,9 @@
 	{% when "google_baidu" %}
 	  {% include analytics_google.html %}
 	  {% include analytics_baidu.html %}
+	{% when "google_baidu_sensors" %}
+	  {% include analytics_google.html %}
+	  {% include analytics_baidu.html %}
 	  {% include analytics_sensors.html %}
 	{% endcase %}
 {% endif %}

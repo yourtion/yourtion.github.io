@@ -42,6 +42,7 @@ sass:
   style: compressed
 
 analytics:
-  provider: google_baidu
+  provider: google_baidu_sensors
   baidu: "46fcc15011207e116bc3aa85d8a3811e"
   google: "UA-12599330-12"
+  sensors: "https://track.fc.umer.im/track/sa?project=yblog"
