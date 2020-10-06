@@ -1,6 +1,7 @@
 ---
 layout: main
 title: 分类
+permalink: /categories
 ---
 {% capture site_cats %}{% for cat in site.categories %}{{ cat | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign cat_words = site_cats | split:',' %}

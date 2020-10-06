@@ -32,6 +32,10 @@ plugins:
 exclude:
   - package.json
   - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
 feed:
   path: atom.xml
 
