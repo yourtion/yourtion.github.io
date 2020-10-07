@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh">
 {% include head.html %}
+{% if page.url == "/404.html" %}
+  <meta http-equiv="refresh" content="5; url=/">
+{% endif %}
 <body>
 
   <div id="content" class="wrapper">

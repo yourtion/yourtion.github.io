@@ -1,9 +1,5 @@
 {
   "version": 2,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/index.html" }
-  ],
   "rewrites": [
     { "source": "/about", "destination": "/about.html" },
     { "source": "/tags", "destination": "/tags.html" },
