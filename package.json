@@ -5,6 +5,7 @@
   "main": "_scripts/index.js",
   "scripts": {
     "dev": "bundle exec jekyll server --incremental",
+    "update": "bundle update",
     "clean": "rm -rf _site .jekyll-cache .jekyll-metadata"
   },
   "bin": {
