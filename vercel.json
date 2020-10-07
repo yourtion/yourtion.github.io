@@ -5,9 +5,9 @@
     { "src": "/(.*)", "status": 404, "dest": "/index.html" }
   ],
   "rewrites": [
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/tags", "dest": "/tags.html" },
-    { "src": "/categories", "dest": "/categories.html" },
-    { "src": "/archives", "dest": "/archives.html" }
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/tags", "destination": "/tags.html" },
+    { "source": "/categories", "destination": "/categories.html" },
+    { "source": "/archives", "destination": "/archives.html" }
   ]
 }
