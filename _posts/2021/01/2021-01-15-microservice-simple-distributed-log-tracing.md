@@ -7,7 +7,7 @@ author: Yourtion
 keywords: ["微服务", "分布式日志", "日志追踪", "RequestId"]
 description: "通过 MDC 在日志中输出追踪的 ID，然后在 Feign 和 RestTemplate 中将请求 ID 在微服务中传递"
 category: "开发笔记"
-tags: ["微服务"]
+tags: ["微服务", "Java"]
 ---
 
 {% include JB/setup %}
