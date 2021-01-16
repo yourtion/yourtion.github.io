@@ -38,10 +38,10 @@ layout: main
         </div>
         <div class="page-tag">
           {% if page.category %}
-            <a href="{{site.baseurl}}/categories.html#{{page.category}}" class="cat"><i class="fa fa-folder"></i> {{ page.category }}</a>
+            <a href="{{site.baseurl}}/categories.html#{{page.category}}" class="cat"><i class="iconfont iconfolder"></i> {{ page.category }}</a>
           {% endif %}
           {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
+            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag"><i class="iconfont icontag"></i> {{ tag }}</a>
           {% endfor %}
         </div>
       </div>

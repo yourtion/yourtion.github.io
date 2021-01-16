@@ -2,14 +2,14 @@
   <nav class="pagination" role="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-      <a class="newer-posts" href="{{ site.baseurl }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+      <a class="newer-posts" href="{{ site.baseurl }}/"><i class="iconfont iconarrowleft" aria-hidden="true"></i></a>
       {% else %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+      <a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/"><i class="iconfont iconarrowleft" aria-hidden="true"></i></a>
       {% endif %}
     {% endif %}
     <span class="page-number">{{paginator.page}} / {{paginator.total_pages}}</span>
     {% if paginator.next_page %}
-    <a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+    <a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/"><i class="iconfont iconarrowright" aria-hidden="true"></i></a>
     {% endif %}
   </nav>
 </div>
