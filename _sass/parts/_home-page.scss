@@ -12,6 +12,9 @@
   height: 100%;
   padding: 20px 10px;
   background-color: $white;
+  a {
+    text-decoration: none;
+  }
   #link {
     color: #263959;
     text-decoration: none;
