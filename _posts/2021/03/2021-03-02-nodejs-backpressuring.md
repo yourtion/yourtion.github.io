@@ -198,3 +198,8 @@ Readable.pipe(Transformable).pipe(Writable);
 现在我们希望你有能力进行故障排除，记住了是如何为你的 `Writable` 和 `Readable` 流编写背压处理的。并且你还可以把这些知识分享给你的同事和朋友们。
 
 在此之后请仔细阅读更多的有关 `Stream` 其它 API 函数，这样有助于当你在构建 Node.js 的应用程序之时更好地理解关于流的能力。
+
+## 参考
+
+- https://nodejs.org/en/docs/guides/backpressuring-in-streams/
+- https://nodejs.org/zh-cn/docs/guides/backpressuring-in-streams/
